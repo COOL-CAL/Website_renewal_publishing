@@ -10,16 +10,13 @@
     top: 1rem;
     left: 0;
     right: 0;
-    /* -moz-transition: all 1s ease;
-    -webkit-transition: all 1s ease;
-    -ms-transition: all 1s ease;
-    transition: all 1s ease; */
 }
 .logo { margin: 0;}
 .menu {
     display: flex;
     justify-content: space-between;
     color: #fff;
+    width: 40rem;
     margin: 0;
 }
 

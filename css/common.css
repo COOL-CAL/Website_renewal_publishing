@@ -6,10 +6,11 @@
 html {
     background-color: #030711;
     color: #fff;
-    max-width: 1920px; }
+    max-width: 1920px;
+}
+::-webkit-scrollbar { display: none; }
 #mainWhoWeAre, #mainBusinessProcess, #mainOurValues, #mainRootcoreWay, #mainOurWork, #mainJoinUs { 
     padding:7em 1.4em;
-    /* max-width: 1100px;  */
     max-height: 937px;
 }
 .wrap { width: 1100px; }
@@ -50,9 +51,8 @@ html {
     font-weight: 400;
     font-style: normal;
 }
-.font-kr {
-    font-family: 'Pretendard-Regular';
-}
+.font-kr { font-family: 'Pretendard-Regular'; }
+.font14 { font-size: 0.875rem; }
 .bold { font-weight: bold; }
 .bolder { font-weight: bolder; }
 button {
@@ -67,6 +67,7 @@ button {
     -o-appearance: none;
     appearance: none;
     outline: 0 none;
+    /* transition: all .5s; */
 }
 a { text-decoration: none; color: inherit; }
 li { list-style: none;}
