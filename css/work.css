@@ -16,15 +16,40 @@
     display: flex;
     justify-content: space-between;
     color: #fff;
-    width: 40rem;
     margin: 0;
 }
+.menu > a:hover { color: var(--mainColor); }
 
+/* Work */
+#ourWork {
+    background: url(/img/work_bg.png) no-repeat center center fixed;
+    overflow: auto;
+    padding-bottom: 0;
+}
+#ourWork > .wrap { background-attachment : scroll; padding-top: 10rem; padding-bottom: 10rem; }
 .work-ctnt { text-align: center; margin-bottom: 5rem; }
 .work-ctnt > h2 { margin-bottom: 1rem; }
+.work-ctnt > p { color: var(--lightGray); }
 .work-ctnt > p, .team-nm, .team-nm-en { font-family: 'Montserrat-m'; }
 .work-nm, .work-desc { font-family: 'Pretendard-Regular'; }
 .work-nm { font-size: 1.25rem; }
+.top-btn {
+    border: 2px solid var(--mainColor);
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    color: var(--mainColor);
+    background-color: #ffffff63;
+    position: fixed;
+    bottom: 100px;
+    right: 150px;
+    z-index: 9999;
+}
+.top-btn:hover {
+    background-color: var(--mainColor);
+    color: #fff;
+    transition: all .5s;
+}
 .work-list {
     width: 1100px;
     display: flex;
@@ -35,7 +60,7 @@
 	grid-template-columns: repeat(3, 21rem);
     gap: 35px 50px; */
 }
-.three-imgs { display: flex; }
+.three-imgs { display: flex; margin: 0;}
 .three-imgs .work-list-ctnt {
     border-radius: 16px;
     width: 21rem;
@@ -43,16 +68,20 @@
     background-color: #00000091;
     margin: 35px 25px;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.three-imgs .work-list-ctnt:nth-child(2) {
     position: relative;
-    top: 70px;
+    /* justify-content: center; */
+    /* align-items: center; */
 }
-.work-more { display: flex; align-items: center; margin: 6rem;}
+.three-imgs .work-list-ctnt:nth-child(2) { top: 70px; }
+.work-img, .work-nm, .work-desc { position: absolute; }
+.work-nm {
+    font-weight: bold;
+    bottom: 80px;
+    left: 30px;
+}
+.work-desc { bottom: 30px; left: 30px; margin-right: 30px; }
 
-footer { margin-top: 7.5rem; }
+/* footer */
 .footer-box {
     padding: 50px 410px;
     height: 6.25rem;
