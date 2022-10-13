@@ -4,9 +4,59 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="./css/h_f.css">
+    <title>ROOTCORE</title>
 </head>
 <body>
-    
+    <header>
+        <div class="header-wrap">
+            <a href="main.html" class="logo"><img src="./img/00img_logo_white01.png" alt="Rootcore logo image"></a>
+            <nav class="menu font-en">
+                <a href="contact.html"><p>Contact <i class="fa-solid fa-arrow-right"></i></p></a>
+            </nav>
+        </div>
+    </header>
+
+    <main id="contact">
+        <section>
+            <div>
+                <h2>Contact</h2>
+                <p>We are waiting for you.</p>
+            </div>
+            <div>
+                <h3>안녕하세요! 😄</h3>
+                <div>
+                    <input type="text"><p>프로젝트의</p> <input type="text"> <p>을</p>
+                </div>
+            </div>
+        </section>
+        <section>
+            <h1>프로젝트 문의하기</h1>
+            <input type="radio" @input="option1" = $event.target.id"
+        </section>
+    </main>
+
+    <footer class="font-kr">
+        <div class="footer-box">
+            <div class="logo-box">
+                <img src="./img/00img_logo_white01.png" alt="Rootcore logo image">
+                <p>© ROOTCORE. All Rights Reserved.</p>
+            </div>
+            <div class="location">
+                <p>office.</p>
+                <div class="address">
+                    <p>42198 대구광역시 수성구 지범로 39길 21-3, 3층 루트코어</p>
+                    <p>21-3, Jibeom-ro 39-gil, Suseong-gu,</p>
+                    <p>Daegu, Republic of Korea</p>
+                </div>
+            </div>
+            <div class="tel">
+                <p><span class="bolder">T.</span> 053.783.4582</p>
+                <p><span class="bolder">F.</span> 053.710.4582</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
