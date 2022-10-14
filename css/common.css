@@ -8,6 +8,7 @@ html {
     color: #fff;
     max-width: 1920px;
 }
+::selection { background-color: var(--mainColor); color: #fff; }
 ::-webkit-scrollbar { display: none; }
 #mainWhoWeAre, #mainBusinessProcess, #mainOurValues, #mainRootcoreWay, #mainOurWork, #mainJoinUs { 
     padding:7em 1.4em;

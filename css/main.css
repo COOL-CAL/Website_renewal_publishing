@@ -124,11 +124,15 @@
     text-align: center;
     align-items: center;
     justify-content: center;
+    /* transform: translateX(-50%);
+    translate: 1s all; */
 }
+/* .intro-list > li > p:hover { top: 100px; } */
 .intro-list > li > p {
     position: absolute;
     top: 220px;
     font-family: 'Pretendard-Regular';
+    translate: 1s all;
 }
 /* .intro-list :hover {
     cursor: pointer;
@@ -143,6 +147,8 @@
 .v-ctnt2 {
     border-radius: 16px;
     background-color: #00000091;
+    /* -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px); */
     padding: 7.5rem 0;
     padding-left: 3.5rem;
     padding-right: 8rem;
@@ -160,6 +166,10 @@
     justify-content: space-between;
     flex-direction: row;
     margin-right: 1.25rem;
+    /* content: ''; */
+    /* position: absolute; */
+    /* left: 5%; top: 5%; */
+    /* transform: translateZ(-100px); */
 }
 .process-list-wrap > li {
     width: 260px;
@@ -272,7 +282,7 @@
 .work-ctnt > h2 { margin-bottom: 1rem; }
 .work-ctnt > p { color: var(--lightGray); }
 .work-ctnt > p, .team-nm, .team-nm-en { font-family: 'Montserrat-m'; }
-.work-nm, .work-desc { font-family: 'Pretendard-Regular'; }
+.work-nm, .work-desc { font-family: 'Pretendard-Regular'; z-index: 1; }
 .work-nm { font-size: 1.25rem; }
 .work-list {
     width: 1100px;
@@ -289,13 +299,13 @@
     border-radius: 16px;
     width: 21rem;
     height: 26rem;
-    background-color: #00000091;
+    /* background-color: #00000091; */
     margin: 35px 25px;
     display: flex;
     position: relative;
-    /* justify-content: center; */
-    /* align-items: center; */
 }
+.three-imgs .work-list-ctnt:hover .list-dark { opacity: 0.4; }
+.three-imgs .work-list-ctnt:hover .magnify { opacity: 1; }
 .three-imgs .work-list-ctnt:nth-child(2) { top: 70px; }
 .work-img, .work-nm, .work-desc { position: absolute; }
 .work-nm {
@@ -304,6 +314,24 @@
     left: 30px;
 }
 .work-desc { bottom: 30px; left: 30px; margin-right: 30px; }
+.list-dark {
+    position: absolute;
+    background-color: #000;
+    opacity: 0;
+    translate: all .5s;
+    border-radius: 16px;
+    width: 20.85rem;
+    height: 26.25rem;
+}
+.magnify {
+    position: absolute;
+    top: 11rem;
+    left: 9rem;
+    color: #fff;
+    text-align: center;
+    opacity: 0;
+    /* translate: all 2s linear; */
+}
 .work-more { margin: 5rem 0; transition: all .5s; }
 .work-more:hover { transform: rotate(90deg); }
 

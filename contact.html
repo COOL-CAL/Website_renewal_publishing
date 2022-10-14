@@ -28,12 +28,18 @@
             <div>
                 <h3>안녕하세요! 😄</h3>
                 <div>
-                    <input type="text"><p>프로젝트의</p> <input type="text"> <p>을</p>
+                    <p> { option1 } 프로젝트의 { option2 }을 { option3 }의 규모로 { option4 }동안 루트코어와 함께 진행하시겠습니까?</p>
+                    <p>문의를 남겨주시면 확인 후 담당자가 빠른 시일 내에 연락 드리겠습니다.</p>
                 </div>
             </div>
         </section>
         <section>
             <h1>프로젝트 문의하기</h1>
+            <h3>프로젝트 이름을 알려주세요.</h3>
+            <input type="text" placeholder="프로젝트명">
+
+            <h3>어떤 프로젝트를 문의하고 싶으신가요?</h3>
+            <p>(중복 선택이 가능합니다.)</p>
             <input type="radio" @input="option1" = $event.target.id"
         </section>
     </main>

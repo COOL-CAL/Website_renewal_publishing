@@ -7,14 +7,19 @@
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"> -->
+    
+    <!-- modal -->
+    <!-- <script src="jquery-1.11.0.min.js"></script>
+    <script src="jquery.plainmodal.min.js"></script> -->
 
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/main_h_f.css">
-    <script src="js/main_animation.js"></script>
+    <link rel="stylesheet" href="./css/modal.css">
+    <!-- <script src="js/main_animation.js"></script> -->
     <title>ROOTCORE</title>
 </head>
 <body>
@@ -221,7 +226,7 @@
             </div>
         </section>
 
-        <section id="mainOurWork">
+        <section id="mainOurWork" class="modal-overlay">
             <div class="wrap">
                 <div class="work-ctnt">
                     <h2>Our Work</h2>
@@ -233,11 +238,13 @@
                             <div class="work-img"><img src="/img/분양해양.png" alt=""></div>
                             <p class="work-nm">분양해양</p>
                             <p class="work-desc">거품은 빼고 혜택은 더하는 분양정보의 모든 것, 하이브리드 웹앱 제작</p>
+                            <div class="list-dark"></div>
+                            <button class="magnify"><i class="fa-solid fa-magnifying-glass fa-3x"></i></button>
                         </div>
                         <div class="work-list-ctnt">
                             <div class="work-img"></div>
                             <p class="work-nm">HanA IT</p>
-                            <p class="work-desc">wellink 서비스 앱 제작</p> 
+                            <p class="work-desc">wellink 서비스 앱 제작</p>
                         </div>
                         <div class="work-list-ctnt">
                             <div class="work-img"></div>
@@ -262,6 +269,23 @@
                             <p class="work-desc">나에게 맞는 생산 관리를 한번에, 네이티브 앱 제작</p>
                         </div>
                     </div>
+                    <!-- work modal -->
+                    <div id="modal" class="modal-overlay">
+                        <!-- <div class="modal-window"> -->
+                            <div class="modal-window">
+                                <div>
+                                    <h2>거품은 빼고 혜택은 더하는 분양정보의 모든 것, 분양해양</h2>
+                                    <p>하이브리드 웹앱, 웹 기획/디자인/개발</p>
+                                    <p>분양에 대한 정보를 바탕으로 현장 관리, 고객 관리를 더욱 체계적으로 할 수 있는 분양 해양 서비스는 
+                                        단순히 분양 정보만 알 수 있는 서비스가 아닌 고객과 대행사, 시행사 간에 연결고리로 자리매김할 수 있도록 
+                                        설계되었습니다. 사용자 앱, 시행사 대행사 웹, 관리자페이지를 제작하였습니다.</p>
+                                </div>
+                                <div><button class="closeBtn"><i class="fa fa-close"></i></button></div>
+                                <div class="modal-ctnt"><img src="./img/work-img/분양해양 1.png" alt=""></div>
+                            </div>
+                        <!-- </div> -->
+                    </div>
+
                     <button  class="work-more">
                         <a href="work.html"><img src="./img/more.png" alt="더보기 버튼"></a>
                     </button>
@@ -269,7 +293,7 @@
             </div>
         </section>
 
-        <section id="mainJoinUs">
+        <div id="mainJoinUs">
             <div class="wrap">
                 <div class="join-wrap">
                     <h2>Contact</h2>
@@ -287,7 +311,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </div>
     </main>
 
     <footer class="font-kr">
@@ -311,5 +335,6 @@
             </div>
         </div>
     </footer>
+    <script src=".js/modal.js"></script>
 </body>
 </html>
