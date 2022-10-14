@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/h_f.css">
@@ -14,37 +15,116 @@
         <div class="header-wrap">
             <a href="main.html" class="logo"><img src="./img/00img_logo_white01.png" alt="Rootcore logo image"></a>
             <nav class="menu font-en">
-                <a href="contact.html"><p>Contact <i class="fa-solid fa-arrow-right"></i></p></a>
+                <a href="contact.html"><p>Our Work <i class="fa-solid fa-arrow-right"></i></p></a>
             </nav>
         </div>
     </header>
 
     <main id="contact">
-        <section>
-            <div>
+        <section id="left">
+            <div class="page-nm">
                 <h2>Contact</h2>
-                <p>We are waiting for you.</p>
+                <p class="font-en font14">We are waiting for you.</p>
             </div>
-            <div>
+            <div class="contact-ctnt">
                 <h3>안녕하세요! 😄</h3>
                 <div>
-                    <p> { option1 } 프로젝트의 { option2 }을 { option3 }의 규모로 { option4 }동안 루트코어와 함께 진행하시겠습니까?</p>
+                    <p> <span id="option1"></span> 프로젝트의 { option2 }을 { option3 }의 규모로 { option4 }동안 루트코어와 함께 진행하시겠습니까?</p>
                     <p>문의를 남겨주시면 확인 후 담당자가 빠른 시일 내에 연락 드리겠습니다.</p>
                 </div>
             </div>
         </section>
-        <section>
+        <section id="right">
             <h1>프로젝트 문의하기</h1>
             <h3>프로젝트 이름을 알려주세요.</h3>
             <input type="text" placeholder="프로젝트명">
 
-            <h3>어떤 프로젝트를 문의하고 싶으신가요?</h3>
-            <p>(중복 선택이 가능합니다.)</p>
-            <input type="radio" @input="option1" = $event.target.id"
+            <div class="pjt-nm">
+                <h3>어떤 프로젝트를 문의하고 싶으신가요?</h3>
+                <p>(중복 선택이 가능합니다.)</p>
+                <div>
+                    <input type="checkbox" @input="option1" id="web" name="project_nm1" value="web">
+                    <label for="web">웹사이트 제작</label>
+                </div>
+                <div>
+                    <input type="checkbox" @input="option1" id="app" name="project_nm2" value="app">
+                    <label for="app">앱 제작</label>
+                </div>
+                <div>
+                    <input type="checkbox" @input="option1" id="branding" name="project_nm3" value="branding">
+                    <label for="branding">브랜딩 제작</label>
+                </div>
+                <div>
+                    <input type="checkbox" @input="option1" id="etc" name="project_nm4" value="etc" checked>
+                    <label for="etc">그 외 작업</label>
+                </div>
+            </div>
+            <div class="price">
+                <h3>프로젝트 예산을 알려주세요.</h3>
+                <div>
+                    <input type="radio" @input="option2" id="thousand" name="price" value="thousand">
+                    <label for="thousand">1,000만원</label>
+                </div>
+                <div>
+                    <input type="radio" @input="option2" id="three-thousand" name="price" value="three-thousand">
+                    <label for="three-thousand">3,000만원</label>
+                </div>
+                <div>
+                    <input type="radio" @input="option2" id="five-thousand" name="price" value="five-thousand">
+                    <label for="five-thousand">5,000만원</label>
+                </div>
+                <div>
+                    <input type="radio" @input="option2" id="less-ten-thousand" name="price" value="less-ten-thousand">
+                    <label for="less-ten-thousand">1억원 미만</label>
+                </div>
+                <div>
+                    <input type="radio" @input="option2" id="more-ten-thousand" name="price" value="more-ten-thousand">
+                    <label for="more-ten-thousand">1억원 이상</label>
+                </div>
+                <div>
+                    <input type="radio" @input="option2" id="undefine" name="price" value="undefine">
+                    <label for="undefine">미정</label>
+                </div>
+            </div>
+            <div class="period">
+                <h3>프로젝트 일정에 대해 알려주세요.</h3>
+                <div>
+                    <input type="radio" @input="option3" id="one-two-m" name="period" value="one-two-m">
+                    <label for="one-two-m">1-2개월</label>
+                </div>
+                <div>
+                    <input type="radio" @input="option3" id="three-five-m" name="period" value="three-five-m">
+                    <label for="three-five-m">3-5개월</label>
+                </div>
+                <div>
+                    <input type="radio" @input="option3" id="six-nine-m" name="period" value="six-nine-m">
+                    <label for="six-nine-m">6-9개월</label>
+                </div>
+                <div>
+                    <input type="radio" @input="option3" id="more-nine-m" name="period" value="more-nine-m">
+                    <label for="more-nine-m">9개월 이상</label>
+                </div>
+            </div>
+            <div class="about-pjt">
+                <textarea name="abt-pjt" id="" cols="71" rows="10"></textarea>
+            </div>
+            <div class="file-btn">
+                <label for="upload-file">파일 첨부하기</label>
+                <input type="file" id="upload-file">
+            </div>
+            <div class="intro-charger">
+                <h3>담당자님을 소개해주세요.</h3>
+                <input type="text" id="company_nm" placeholder="회사명">
+                <input type="text" id="nm" placeholder="이름">
+                <input type="text" id="tel" placeholder="연락처">
+                <input type="text" id="mail" placeholder="이메일">
+                <input type="checkbox" id="using_data"> <label for="using_data"><span> 개인정보보호정책에 동의합니다. </span></label>
+            </div>
+            <button class="submit">제출하기</button>
         </section>
-    </main>
+    </main> 
 
-    <footer class="font-kr">
+    <!-- <footer class="font-kr" style="top:0; width: 100%;">
         <div class="footer-box">
             <div class="logo-box">
                 <img src="./img/00img_logo_white01.png" alt="Rootcore logo image">
@@ -63,6 +143,12 @@
                 <p><span class="bolder">F.</span> 053.710.4582</p>
             </div>
         </div>
-    </footer>
+    </footer> -->
+    <script>
+        function option(e) {
+            const value = e.value;
+            document.getElementById('option1').innerText = value;
+        }
+    </script>
 </body>
 </html>

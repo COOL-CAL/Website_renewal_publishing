@@ -1,0 +1,9 @@
+#contact { font-family: 'Pretendard-Regular'; width: 1100px; }
+
+#left { float: left; width: 226px;}
+#right { float: right; width: 717px;}
+#left, #right { padding: 10rem 0;}
+.page-nm { margin-bottom: 50px; }
+.page-nm h2 { margin-bottom: 14px; }
+.contact-ctnt h3 { font-size: 20px; margin-bottom: 1rem; }
+.contact-ctnt p { font-size: 1rem; }
