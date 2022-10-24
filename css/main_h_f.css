@@ -4,6 +4,33 @@
     top: -1rem;
     z-index: 9999;
 }
+/* .on {
+    position: sticky;
+    border-radius: 16px;
+    background-color: #ffffff3a;
+    width: 1100px;
+    height: 3.75rem;
+} */
+
+.active{
+    background-color: white;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+  }
+  
+  .deactive{
+    
+    background-color: transparent;
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+    
+    -webkit-transition-duration:0.4s;
+    -webkit-transition-timing-function:ease;
+  }
+
 .header-wrap {
     display: flex;
     justify-content: space-between;
