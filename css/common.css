@@ -4,7 +4,7 @@
     scroll-behavior: smooth;
 }
 html {
-    background-color: #030711;
+    background-color: var(--bgBlack);
     color: #fff;
     max-width: 1920px;
 }
@@ -31,6 +31,7 @@ html {
     --mainColor: #FFC034;
     --lightGray: #BDBDBD;
     --darkGray: #7C7C7C;
+    --bgBlack: #030711;
 }
 @font-face {
     font-family: 'Montserrat-m';
@@ -56,25 +57,13 @@ html {
 .font14 { font-size: 0.875rem; }
 .bold { font-weight: bold; }
 .bolder { font-weight: bolder; }
-button {
-    cursor: pointer;
-    border: 0 none;
-    background: none;
-    border-radius: 0;
-    -webkit-border-radius: 0;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    outline: 0 none;
-    /* transition: all .5s; */
-}
+
+button { cursor: pointer; border: 0 none; background: none; border-radius: 0; -webkit-border-radius: 0; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none; outline: 0 none; /* transition: all .5s; */ }
 input {
     /* -webkit-appearance: none; */
     -moz-appearance: none;
     appearance: none;
-    }
+}
 a { text-decoration: none; color: inherit; }
 li { list-style: none;}
 h2 { font-family: 'Montserrat-bi'; font-size: 1.875rem;}

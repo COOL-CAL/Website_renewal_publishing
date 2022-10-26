@@ -11,13 +11,13 @@ $(function(){
 		$('#layer_pop').hide();
 		back = 0;
 	});
-	$(document).mouseup(function (e){
-	  var LayerPopup = $("#layer_pop");
-	  if(back == 0){
-		  if(LayerPopup.has(e.target).length === 0){
-			$('#layer_pop').hide();
-		  }
-	  }
+	// $(document).mouseup(function (e){
+	//   var LayerPopup = $("#layer_pop");
+	//   if(back == 0){
+	// 	  if(LayerPopup.has(e.target).length === 0){
+	// 		$('#layer_pop').hide();
+	// 	  }
+	//   }
 	});
 	$('input[name="telephone"]').keydown(function(event) {
 		var key = event.charCode || event.keyCode || 0;
@@ -34,61 +34,61 @@ $(function(){
 		return (key == 8 || key == 9 || key == 46 || (key >= 48 && key <= 57) || (key >= 96 && key <= 105));          
 	});
 	/*�ㅽ겕濡ㅼ떆 寃��뺣같寃�*/
-	if($(window).width() > 1024){
-		$(window).scroll(function(event){
-			var scTop = $(this).scrollTop();
-			var scBottom = scTop + $(this).innerHeight();
-			//console.log(scBottom);
-			if($('.control-privacy').length){
-				if(scBottom > ($('#formMail .result_box .send_btn').offset().top + ($('#formMail .result_box .send_btn').innerHeight()/2)) ){
-					$('.contact-wrap').addClass('black');
-					$('#formMail .result_box .send_btn').addClass('apply');
-					$('.contact-wrap .left_contact .scroll_box').hide();
-				}else{
-					$('.contact-wrap').removeClass('black');
-					$('#formMail .result_box .send_btn').removeClass('apply');
-					$('.contact-wrap .left_contact .scroll_box').show();
-				}
-			}
-		});
-	}else{
-		var height = $('.contact-wrap .left_contact').innerHeight() + 50;
-		$('.contact-wrap .left_contact').css({"bottom":- height});
-		$(".contact-wrap #formMail .send_btn").click(function(e){
-			e.preventDefault();
-			$('.contact-wrap .left_contact').css({"bottom":0});
-		});
-		// �몃��곸뿭 �대┃ �� �앹뾽 �リ린
-		$(document).mouseup(function (e){
-		  var LayerPopup = $(".contact-wrap .left_contact");
-		  if(LayerPopup.has(e.target).length === 0){
-			$('.contact-wrap .left_contact').css({"bottom":- height});
-		  }
-		});
-	}
-	/*醫뚯륫 sticky�곸뿭 span �대┃�� �대떦 �ㅽ겕濡ㅻ줈*/
-	var location01 = $('#formMail form > div .contact_type').offset().top - ($(window).innerHeight()/2) + 70;
-	var location02 = $('#formMail form > div .contact_cname').offset().top - ($(window).innerHeight()/2) + 70;
-	var location03 = $('#formMail form > div .contact_budget').offset().top - ($(window).innerHeight()/2) + 70;
-	var location04 = $('#formMail form > div .contact_timeline').offset().top - ($(window).innerHeight()/2) + 70;
-	var location05 = $('#formMail form > div .contact_comment').offset().top - ($(window).innerHeight()/2) + 70;
-	var location06 = $('#formMail form > div .contact_right').offset().top - ($(window).innerHeight()/2) + 70;
-	var location07 = $('#formMail form > div .contact_right').offset().top - ($(window).innerHeight()/2) + 70;
-	var location08 = $('#formMail form > div .contact_right').offset().top - ($(window).innerHeight()/2) + 70;
-	var location09 = $('#formMail form > div .contact_right').offset().top - ($(window).innerHeight()/2) + 70;
+	// if($(window).width() > 1024){
+	// 	$(window).scroll(function(event){
+	// 		var scTop = $(this).scrollTop();
+	// 		var scBottom = scTop + $(this).innerHeight();
+	// 		//console.log(scBottom);
+	// 		if($('.control-privacy').length){
+	// 			if(scBottom > ($('#formMail .result_box .send_btn').offset().top + ($('#formMail .result_box .send_btn').innerHeight()/2)) ){
+	// 				$('.contact-wrap').addClass('black');
+	// 				$('#formMail .result_box .send_btn').addClass('apply');
+	// 				$('.contact-wrap .left_contact .scroll_box').hide();
+	// 			}else{
+	// 				$('.contact-wrap').removeClass('black');
+	// 				$('#formMail .result_box .send_btn').removeClass('apply');
+	// 				$('.contact-wrap .left_contact .scroll_box').show();
+	// 			}
+	// 		}
+	// 	});
+	// }else{
+	// 	var height = $('.contact-wrap .left_contact').innerHeight() + 50;
+	// 	$('.contact-wrap .left_contact').css({"bottom":- height});
+	// 	$(".contact-wrap #formMail .send_btn").click(function(e){
+	// 		e.preventDefault();
+	// 		$('.contact-wrap .left_contact').css({"bottom":0});
+	// 	});
+	// 	// �몃��곸뿭 �대┃ �� �앹뾽 �リ린
+	// 	$(document).mouseup(function (e){
+	// 	  var LayerPopup = $(".contact-wrap .left_contact");
+	// 	  if(LayerPopup.has(e.target).length === 0){
+	// 		$('.contact-wrap .left_contact').css({"bottom":- height});
+	// 	  }
+	// 	});
+	// }
+	// /*醫뚯륫 sticky�곸뿭 span �대┃�� �대떦 �ㅽ겕濡ㅻ줈*/
+	// var location01 = $('#formMail form > div .contact_type').offset().top - ($(window).innerHeight()/2) + 70;
+	// var location02 = $('#formMail form > div .contact_cname').offset().top - ($(window).innerHeight()/2) + 70;
+	// var location03 = $('#formMail form > div .contact_budget').offset().top - ($(window).innerHeight()/2) + 70;
+	// var location04 = $('#formMail form > div .contact_timeline').offset().top - ($(window).innerHeight()/2) + 70;
+	// var location05 = $('#formMail form > div .contact_comment').offset().top - ($(window).innerHeight()/2) + 70;
+	// var location06 = $('#formMail form > div .contact_right').offset().top - ($(window).innerHeight()/2) + 70;
+	// var location07 = $('#formMail form > div .contact_right').offset().top - ($(window).innerHeight()/2) + 70;
+	// var location08 = $('#formMail form > div .contact_right').offset().top - ($(window).innerHeight()/2) + 70;
+	// var location09 = $('#formMail form > div .contact_right').offset().top - ($(window).innerHeight()/2) + 70;
 	
-	$('#load_cate').click(function(){
-		$('html,body').animate({scrollTop:location01},300);
-	});
-	$('span.load_title').click(function(){
-		$('html,body').animate({scrollTop:location02},300);
-	});
-	$('#load_budget').click(function(){
-		$('html,body').animate({scrollTop:location03},300);
-	});
-	$('#load_time').click(function(){
-		$('html,body').animate({scrollTop:location04},300);
-	});
+	// $('#load_cate').click(function(){
+	// 	$('html,body').animate({scrollTop:location01},300);
+	// });
+	// $('span.load_title').click(function(){
+	// 	$('html,body').animate({scrollTop:location02},300);
+	// });
+	// $('#load_budget').click(function(){
+	// 	$('html,body').animate({scrollTop:location03},300);
+	// });
+	// $('#load_time').click(function(){
+	// 	$('html,body').animate({scrollTop:location04},300);
+	// });
 	var c1,c2,c3,c4 = 0;
 	var text01 = "�섎굹 �댁긽�� �좏삎�� �좏깮�섏꽭��.";
 	var text02 = "�꾨줈�앺듃紐낆쓣 �낅젰�댁＜��떆��.";
@@ -635,4 +635,4 @@ $(function(){
 			}
 		});
 	}
-});	 
+// });	 

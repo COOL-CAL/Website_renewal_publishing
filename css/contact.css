@@ -1,30 +1,30 @@
-#contact { font-family: 'Pretendard-Regular'; width: 1100px; }
+#contact, #apply { font-family: 'Pretendard-Regular'; width: 1100px; }
 
-#left { float: left; width: 226px;}
-#right { float: right; width: 717px;}
+#left { float: left; width: 226px; position: sticky; height: 60vh; }
+#right { float: right; width: 700px; }
 #left, #right { padding: 10rem 0;}
 .page-nm { margin-bottom: 50px; }
-.page-nm h2 { margin-bottom: 14px; }
-.contact-ctnt h3 { font-size: 20px; margin-bottom: 1rem; }
-.contact-ctnt p { font-size: 1rem; }
+.page-nm h2 { font-size: 30px; margin-bottom: 14px; }
+/* .contact-ctnt > h3, .apply-ctnt > h3 { font-size: 20px; margin-bottom: 1rem; }
+.contact-ctnt p, .apply-ctnt > p { font-size: 1rem; }
 
 .pjt-nm > .btn-wrap {
     /* box-sizing: border-box; */
-    display: flex;
+    /* display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 16px 40px;
+    padding: 16px 40px; */
     /* gap: 10px; */
     /* position: absolute;
     width: 151px;
     height: 51px;
     left: 793px;
     top: 469px; */
-    background: #030711;
-    border: 1px solid #FFFFFF;
+    /* background: var(--bgBlack);
+    border: 1px solid #FFF;
     border-radius: 16px;
-}
+} */
 
 /* .pjt-nm > label {
     border: 1px solid var(--mainColor);
@@ -43,16 +43,16 @@
     padding: 15px;
 } */
 .btn-wrap > div { position: absolute; width: 150px; height: 50px;}
-label {
+/* label {
     text-align: center;
     padding: 10px 15px;
     color: var(--mainColor);
     border: 2px solid var(--mainColor);
     border-radius: 16px;
     margin: 30px;
-    /* height: 34px; */
-    /* width: 150px; */
-}
+    height: 34px;
+    width: 150px;
+} */
 input[type=checkbox]:checked + label {
     background-color: var(--mainColor);
     color: #fff;
