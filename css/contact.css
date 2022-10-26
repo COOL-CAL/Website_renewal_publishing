@@ -57,3 +57,7 @@ input[type=checkbox]:checked + label {
     background-color: var(--mainColor);
     color: #fff;
 }
+input[type=radio]:checked + label {
+    background-color: var(--mainColor);
+    color: #fff;
+}
