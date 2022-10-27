@@ -1,8 +1,7 @@
 #contact, #apply { font-family: 'Pretendard-Regular'; width: 1100px; }
 
-#left { float: left; width: 226px; position: sticky; height: 60vh; }
 #right { float: right; width: 700px; }
-#left, #right { padding: 10rem 0;}
+#left { padding: 10rem 0;}
 .page-nm { margin-bottom: 50px; }
 .page-nm h2 { font-size: 30px; margin-bottom: 14px; }
 /* .contact-ctnt > h3, .apply-ctnt > h3 { font-size: 20px; margin-bottom: 1rem; }
@@ -53,11 +52,11 @@
     height: 34px;
     width: 150px;
 } */
-input[type=checkbox]:checked + label {
+/* input[type=checkbox]:checked + label {
     background-color: var(--mainColor);
     color: #fff;
 }
 input[type=radio]:checked + label {
     background-color: var(--mainColor);
     color: #fff;
-}
+} */

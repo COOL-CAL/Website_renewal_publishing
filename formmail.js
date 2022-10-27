@@ -1,16 +1,5 @@
 $(function(){
 	
-	/*寃쎄퀬李� �덉씠�� �앹뾽*/
-	$('#layer_pop').find('.exit a').click(function(e){
-		e.preventDefault();
-		$('#layer_pop').hide();
-
-	});
-	$('#layer_pop').find('.pop_exit').click(function(e){
-		e.preventDefault();
-		$('#layer_pop').hide();
-		back = 0;
-	});
 	// $(document).mouseup(function (e){
 	//   var LayerPopup = $("#layer_pop");
 	//   if(back == 0){
@@ -18,7 +7,7 @@ $(function(){
 	// 		$('#layer_pop').hide();
 	// 	  }
 	//   }
-	});
+	// });
 	$('input[name="telephone"]').keydown(function(event) {
 		var key = event.charCode || event.keyCode || 0;
 		$text = $(this);
@@ -80,7 +69,7 @@ $(function(){
 	// $('#load_cate').click(function(){
 	// 	$('html,body').animate({scrollTop:location01},300);
 	// });
-	// $('span.load_title').click(function(){
+	// $('span #load_title').click(function(){
 	// 	$('html,body').animate({scrollTop:location02},300);
 	// });
 	// $('#load_budget').click(function(){
@@ -107,7 +96,7 @@ $(function(){
 	var newValue07;
 	//臾몄쓽�좏삎
 	$(".chk_hidden").click(function(){  
-		var check = $("#qatype01").is(":checked") + $("#qatype02").is(":checked") + $("#qatype03").is(":checked");
+		var check = $("#qatype01").is(":checked") + $("#qatype02").is(":checked") + $("#qatype03").is(":checked") + $("#qatype04").is(":checked");
 		if($(".chk_hidden").is(":checked")){
 			var qatype = "";  
 			$(".chk_hidden").each(function(){  
@@ -186,7 +175,7 @@ $(function(){
 		// �꾩옱 蹂�寃쎈맂 �곗씠�� �뗮똿
 		newValue02 = $(this).val();
 		// �꾩옱 �ㅼ떆媛� �곗씠�� �쒖툕
-		$(".load_title").text(newValue02);
+		$("#load_title").text(newValue02);
 		
 		if($(this).val() == ""){
 			c2 = 0;
@@ -224,9 +213,9 @@ $(function(){
 
 		}
 		if($(this).val().length >= 1 ){
-			$(".load_title").addClass('min_auto');
+			$("#load_title").addClass('min_auto');
 		}else{
-			$(".load_title").removeClass('min_auto');
+			$("#load_title").removeClass('min_auto');
 		}
 	 });
 	//�덉궛
@@ -635,4 +624,4 @@ $(function(){
 			}
 		});
 	}
-// });	 
+}); 

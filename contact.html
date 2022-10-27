@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script src="/formmail.js"></script>
+    <script src="./js/contact.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/common.css">
@@ -31,19 +32,20 @@
                 <p class="contact_stit font-en font14">We are waiting for you.</p>
             </div>
             <div class="input_wr">
+                <p>안녕하세요! 😄</p>
                 <div class="input_line_wr">
-                    <span id="load_title"></span>프로젝트의 &nbsp;<div class="hidden1700"><span id="" class="load_title"></span>을</div>
+                    <span id="load_title"></span>프로젝트의 &nbsp;
                 </div>
-                <div class="input_line_wr visible1700">
-                    <span id="load_cate"></span> 을<br>
+                <div class="input_line_wr">
+                    <span id="load_cate" class="load_title"></span>을<br>
                 </div>
                 <div class="input_line_wr">
                     <span id="load_budget"></span>의 규모로&nbsp;
-                    <span id="load_time"></span>동안<br>
                 </div>
                 <div class="input_line_wr">
-                    <b>루트코어</b>와 함께 진행하시겠습니까?
+                    <span id="load_time"></span>동안<br>
                 </div>
+                    <b>루트코어</b>와 함께 진행하시겠습니까?
             </div>
             <p class="contact_stit">문의를 남겨주시면 확인 후 담당자가 빠른 시일 내에<br>연락 드리겠습니다.</p>
 
@@ -122,7 +124,7 @@
                             <p class="help-block text-danger"></p>
                         </div>
                         
-                        <div class="control-group contact_budget contact-readonly" tabindex="">
+                        <div class="control-group contact_budget" tabindex="">
                             <h3 class="contact_tit">프로젝트 예산을 알려주세요.</h3>
                             <label for="budget" class="formTitle"></label>
                             <div class="budget_type_check">
@@ -185,7 +187,7 @@
                             </div>
                             <p class="help-block text-danger"></p>
                         </div>
-                        <div class="control-group contact_timeline contact-readonly" tabindex="">
+                        <div class="control-group contact_timeline" tabindex="">
                             <h3 class="contact_tit">프로젝트의 일정에 대해 알려주세요.</h3>
                             <label for="timeline" class="formTitle"></label>
                             <div class="time_type_check">
@@ -230,50 +232,74 @@
                             </div>
                             <p class="help-block text-danger"></p>
                         </div>
-                        <div class="control-group contact_comment contact-readonly">
+                        <div class="control-group contact_comment">
                             <h3 class="contact_tit">프로젝트에 대해 이야기 해주세요.</h3>
                             <div class="textarea_wr">
                                 <label for="comments" class="formTitle"></label>
-                                <textarea rows="5" name="comments" class="form-control form-control-text" placeholder="의뢰할 내용을 기재해주세요." id="comments" required data-validation-required-message="Please enter a message." readonly></textarea>
+                                <textarea rows="5" name="comments" class="form-control form-control-text font-kr"
+                                    placeholder="의뢰할 내용을 기재해주세요." id="comments"
+                                    data-validation-required-message="Please enter a message."
+                                    onkeydown="resize(this)" onkeyup="resize(this)" required></textarea>
+
                                 <p class="help-block text-danger"></p>
                                 <div class="formmail_file">
-                                    <input class="upload-name" value="" placeholder="파일 첨부는 선택사항입니다." disabled="disabled" style="border:0; background:transparent;width:100%;">
-                                    <label for="userfile1"><img src="/images/contact_icon_upload.svg" alt=""></label>
-                                    <input type="file" name="userfile1" id="userfile1" value="파일첨부1" class="upload-hidden">
+                                    <label for="userfile1">
+                                        <div>파일 첨부하기</div><img src="/img/file_upload_icon.png" alt="">
+                                    </label>
+                                    <input id="userfile1" type="file" multiple style="width:300px" class="upload-hidden font-kr">
+                                    <input class="upload-name font-kr" value="" disabled="disabled">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="contact_right contact-readonly">
-                        <h3 class="contact_tit">담당자를 소개해주세요.</h3>
-                        <div class="control-group contact-readonly">
+
+                    <script>
+                        function resize(obj) {
+                            obj.style.height = '1px';
+                            obj.style.height = (20 + obj.scrollHeight) + 'px';
+                        }
+
+                        $(document).ready(function () {
+                            var fileTarget = $('.formmail_file .upload-hidden');
+                            fileTarget.on('change', function () { // 값이 변경되면 
+                                if (window.FileReader) { // modern browser 
+                                    var filename = $(this)[0].files[0].name;
+                                } else { // old IE 
+                                    var filename = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출
+                                } // 추출한 파일명 삽입 
+                                $(this).siblings('.upload-name').css({ 'textAlign': "left" });
+                                $(this).siblings('.upload-name').val(filename);
+                            });
+                        });
+                    </script>
+
+                    <div class="contact_right"> 
+                        <h3 class="contact_tit">담당자님을 소개해주세요.</h3>
+                        <div class="control-group">
                             <div class="">
-                                <input type="text" name="company" class="form-control" placeholder="회사명" id="company" required data-validation-required-message="Please enter your company."autocomplete='off'  readonly>
+                                <input type="text" name="company" class="form-control" placeholder="회사명" id="company" required data-validation-required-message="Please enter your company."autocomplete='off'>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <div class="control-group contact-readonly">
+                        <div class="control-group">
                             <div class="">
-                                
-                                <input type="text" name="first_name" class="form-control" placeholder="담당자" id="first_name" required data-validation-required-message="Please enter your name."autocomplete='off'  readonly>
+                                <input type="text" name="first_name" class="form-control" placeholder="담당자" id="first_name" required data-validation-required-message="Please enter your name."autocomplete='off'>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <div class="control-group contact-readonly">
+                        <div class="control-group">
                             <div class="">
-                                
-                                <input type="tel" name="telephone" class="form-control" placeholder="연락처" id="telephone" required data-validation-required-message="Please enter your phone number."  oninput="this.value = this.value.replace(/[^0-9-]/g, '').replace(/(\..*)\./g, '$1');"maxlength="13"autocomplete='off'  readonly>
+                                <input type="tel" name="telephone" class="form-control" placeholder="연락처" id="telephone" required data-validation-required-message="Please enter your phone number."  oninput="this.value = this.value.replace(/[^0-9-]/g, '').replace(/(\..*)\./g, '$1');"maxlength="13"autocomplete='off'>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <div class="control-group contact-readonly">
+                        <div class="control-group">
                             <div class="">
-                                
-                                <input type="email" name="email" class="form-control" placeholder="이메일" id="email" required data-validation-required-message="Please enter your email address."autocomplete='off'  readonly>
+                                <input type="email" name="email" class="form-control" placeholder="이메일" id="email" required data-validation-required-message="Please enter your email address."autocomplete='off'>
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
-                        <div class="control-privacy " style="">
+                        <div class="control-privacy">
                             <div class="agree-box">
                                 <input type="checkbox" name="privacy" id="privacy" class="hide" value="Y"  >
                                 <label for="privacy"><span class="cbox"></span><u>개인정보보호정책</u>에 동의합니다.</label>
@@ -281,29 +307,18 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="result_box">
-                    <div class="cen1540">
-                        <div class="send_btn hidden1024">
-                            <button type="button" value="문의하기" class="btn" onclick="form_Check();">지금 <br class="hidden1024">함께하기</button>
-                        </div>
-                        <div class="send_btn visible1024">
-                            
-                            <a href="#">지금 함께하기<img src="/images/contact_result_arrow.svg" alt="" style="margin:0 0 3px 10px;"></a>
-                        </div>
-                    </div>
-                </div> -->
             </form>
-        </section>
-        <!-- <div class="sendBtn hide" style="text-align:center;">
-            <div class="form-group col-xs-12">
-                <button type="button" class="btn btn-success btn-lg btn-lg-custom hidden570" value="제출하기" onclick="form_Check();">
-                    <span class="text">제출하기</span>
-                </button>
+            <div class="sendBtn" style="text-align:center;">
+                <div class="form-group col-xs-12">
+                    <button type="button" value="제출하기" onclick="form_Check();">
+                        <span class="text font-kr">제출하기</span>
+                    </button>
+                </div>
             </div>
-        </div> -->
+        </section>
     </main> 
 
-    <!-- <footer class="font-kr" style="top:0; width: 100%;">
+    <footer class="font-kr" style="top:0; width: 100%;">
         <div class="footer-box">
             <div class="logo-box">
                 <img src="./img/00img_logo_white01.png" alt="Rootcore logo image">
@@ -322,7 +337,7 @@
                 <p><span class="bolder">F.</span> 053.710.4582</p>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <!-- <script>
         function option(e) {
             const value = e.value;
