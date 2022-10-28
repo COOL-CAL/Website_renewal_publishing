@@ -1,0 +1,69 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+html {
+    background-color: var(--bgBlack);
+    color: #fff;
+    max-width: 1920px;
+}
+::selection { background-color: var(--mainColor); color: #fff; }
+::-webkit-scrollbar { display: none; }
+#mainWhoWeAre, #mainBusinessProcess, #mainOurValues, #mainRootcoreWay, #mainOurWork, #mainJoinUs { 
+    padding:7em 1.4em;
+    max-height: 937px;
+}
+.wrap { width: 1100px; }
+.sa {
+    opacity: 0;
+    transition: all 3s ease;
+}
+/* 아래에서 위로 페이드 인 */
+.sa-up {
+    transform: translate(0, 500px);
+}
+.sa.show {
+    opacity: 1;
+    transform: none;
+}
+:root {
+    --mainColor: #FFC034;
+    --lightGray: #BDBDBD;
+    --darkGray: #7C7C7C;
+    --bgBlack: #030711;
+}
+@font-face {
+    font-family: 'Montserrat-m';
+    src: url(../font/static/Montserrat-Medium.ttf);
+}
+@font-face {
+    font-family: 'Montserrat-bi';
+    src: url(../font/static/Montserrat-BlackItalic.ttf);
+}
+.font-en {
+    font-family: 'Montserrat-m';
+}
+.font-en-italic {
+    font-family: 'Montserrat-bi';
+}
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+.font-kr { font-family: 'Pretendard-Regular'; }
+.font14 { font-size: 0.875rem; }
+.bold { font-weight: bold; }
+.bolder { font-weight: bolder; }
+
+button { cursor: pointer; border: 0 none; background: none; border-radius: 0; -webkit-border-radius: 0; -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; -o-appearance: none; appearance: none; outline: 0 none; /* transition: all .5s; */ }
+input {
+    /* -webkit-appearance: none; */
+    -moz-appearance: none;
+    appearance: none;
+}
+a { text-decoration: none; color: inherit; }
+li { list-style: none;}
+h2 { font-family: 'Montserrat-bi'; font-size: 1.875rem;}

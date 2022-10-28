@@ -71,46 +71,46 @@ $(function(){
 	//문의 유형
 	$(".chk_hidden").click(function(){  
 		var check = $("#qatype01").is(":checked") + $("#qatype02").is(":checked") + $("#qatype03").is(":checked") + $("#qatype04").is(":checked");
-		if($(".chk_hidden").is(":checked")){
-			var qatype = "";
-			var qatype1 = $("#load_cate");
-			$(".chk_hidden").each(function(idx){  
-				if($(this).is(":checked")){
-					qatype += $(this).val() + "<strong>,</strong> ";
-					if(idx === 2){
-						qatype += "<br>"
-					}
-					// else if(idx === 3 ){
-					// 	qatype1 += `<span class="load_ctnt">을</span>`
-					// }
-				}
-			});
-
-			$("#load_cate").html(qatype);  
-			c1 = 1;
-		}
-
 		// if($(".chk_hidden").is(":checked")){
-        //     var qatype = "";  
-        //     $(".chk_hidden").each(function(idx){  
-        //         if($(this).is(":checked")){
-        //             console.log(idx);
-        //             if(idx === 3){
-		// 				qatype += "<strong>"+ $(this).val() + "</strong>"; 
-		// 			} else if(idx === 2){
-		// 				qatype += "<strong>"+ $(this).val() + "</strong>, <br>";
-		// 			} else {
-		// 				qatype += "<strong>"+ $(this).val() + "</strong>, "; 
+		// 	var qatype = "";
+		// 	var qatype1 = $("#load_cate");
+		// 	$(".chk_hidden").each(function(idx){  
+		// 		if($(this).is(":checked")){
+		// 			qatype += $(this).val() + "<strong>,</strong> ";
+		// 			if(idx === 2){
+		// 				qatype += "<br>"
 		// 			}
+		// 			// else if(idx === 3 ){
+		// 			// 	qatype1 += `<span class="load_ctnt">을</span>`
+		// 			// }
 		// 		}
-        //     });
-        //     console.log(qatype);
-        //     // $(".text").html(qatype);
-        // // }
+		// 	});
 
 		// 	$("#load_cate").html(qatype);  
 		// 	c1 = 1;
 		// }
+
+		if($(".chk_hidden").is(":checked")){
+            var qatype = "";  
+            $(".chk_hidden").each(function(idx){  
+                if($(this).is(":checked")){
+                    console.log(idx);
+                    if(idx === 3){
+						qatype += "<strong>"+ $(this).val() + "</strong>"; 
+					} else if(idx === 2){
+						qatype += "<strong>"+ $(this).val() + "</strong>, <br>";
+					} else {
+						qatype += "<strong>"+ $(this).val() + "</strong>, "; 
+					}
+				}
+            });
+            console.log(qatype);
+            // $(".text").html(qatype);
+        // }
+
+					$("#load_cate").html(qatype);  
+			c1 = 1;
+		}
 		
 
 

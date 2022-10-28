@@ -5,10 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="/formmail.js"></script>
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/common.css">
     <link rel="stylesheet" href="./css/contact.css">
     <link rel="stylesheet" href="./css/h_f.css">
+    <link rel="stylesheet" href="/formmail.css">
     <title>ROOTCORE</title>
 </head>
 <body>
@@ -25,38 +28,36 @@
         <section id="left">
             <div class="page-nm">
                 <h2>Apply</h2>
-                <p class="font-en font14">We are waiting for you.</p>
+                <p class="contact_stit font-en font14">We are waiting for you.</p>
             </div>
-            <div class="apply-ctnt">
+            <div class="input_wr">
                 <h3>안녕하세요! 😄</h3>
                 <div class="input_wr">
                     <div class="input_line_wr">
-                        <span id="load_cate"></span>의 &nbsp;&nbsp;<div class="hidden1700"><span id="" class="load_title"></span>&nbsp;프로젝트를</div>
+                        루트코어에서&nbsp;
+                        <span id="load_cate"></span>로 함께 하고싶은
+                        <span id="" class="load_title"></span>&nbsp; 입니다.
                     </div>
-                    <div class="input_line_wr visible1700">
+                    <!-- <div class="input_line_wr visible1700">
                         <span class="load_title"></span> 프로젝트를<br>
-                    </div>
-                    <div class="input_line_wr">
-                        <span id="load_budget"></span>의 규모로 <span id="load_time"></span> 동안<br>
-                    </div>
-                    <div class="input_line_wr">
-                        <b>플랜에이</b>와 함께 하시겠습니까?
-                    </div>
+                    </div> -->
+                    <p class="contact_stit">문의를 남겨주시면 확인 후 담당자가 빠른 시일 내에<br>연락 드리겠습니다.</p>
                 </div>
             </div>
         </section>
+
         <section id="right">
             <h1>채용 지원하기</h1>
             <div class="apply_type">
                 <div class="control-group " tabindex="">
-                    <h3 class="contact_tit choice">어떤 프로젝트를 문의하고 싶으신가요?<p class="contact_stit">(중복 선택이 가능합니다.)</p></h3>
+                    <h3 class="contact_tit choice">지원하실 분야를 선택해주세요.</h3>
                     <div class="qatype_check">
                         <div class="qatype00">
                             <label for="qatype01">
-                                <input type="checkbox" name="qatype01" id="qatype01" class="chk_hidden qatype[]" value="웹사이트 제작" >
+                                <input type="radio" id="qatype01" class="chk_hidden qatype[]" value="Project Manager" >
                                 <span class="cb-checkbox_rounded-box">
                                     <span class="cb-checkbox_rounded-title">
-                                        <span data-text="웹사이트 제작">웹사이트 제작</span>
+                                        <span data-text="Project Manager">Project Manager</span>
                                     </span>
                                     <span class="cb-checkbox_rounded-ripple"><span></span></span>
                                 </span>
@@ -64,10 +65,10 @@
                         </div>
                         <div class="qatype00">
                             <label for="qatype02">
-                                <input type="checkbox" name="qatype02" id="qatype02" class="chk_hidden qatype[]" value="브랜딩" >
+                                <input type="radio" id="qatype02" class="chk_hidden qatype[]" value="Designer" >
                                 <span class="cb-checkbox_rounded-box">
                                     <span class="cb-checkbox_rounded-title">
-                                        <span data-text="브랜딩">브랜딩</span>
+                                        <span data-text="Designer">Designer</span>
                                     </span>
                                     <span class="cb-checkbox_rounded-ripple"><span></span></span>
                                 </span>
@@ -75,10 +76,21 @@
                         </div>
                         <div class="qatype00">
                             <label for="qatype03">
-                                <input type="checkbox" name="qatype03" id="qatype03" class="chk_hidden qatype[]" value="마케팅" >
+                                <input type="radio" id="qatype03" class="chk_hidden qatype[]" value="Publisher" >
                                 <span class="cb-checkbox_rounded-box">
                                     <span class="cb-checkbox_rounded-title">
-                                        <span data-text="마케팅">마케팅</span>
+                                        <span data-text="Publisher">Publisher</span>
+                                    </span>
+                                    <span class="cb-checkbox_rounded-ripple"><span></span></span>
+                                </span>
+                            </label>
+                        </div>				
+                        <div class="qatype00">
+                            <label for="qatype04">
+                                <input type="radio" id="qatype04" class="chk_hidden qatype[]" value="Developer" >
+                                <span class="cb-checkbox_rounded-box">
+                                    <span class="cb-checkbox_rounded-title">
+                                        <span data-text="Developer">Developer</span>
                                     </span>
                                     <span class="cb-checkbox_rounded-ripple"><span></span></span>
                                 </span>
@@ -89,43 +101,19 @@
                 </div>
             </div>
             <div class="control-group contact_cname contact-readonly">
-                <h3 class="contact_tit">프로젝트 이름을 알려주세요.</h3>
+                <h3 class="contact_tit">지원자님의 이름을 알려주세요.</h3>
                 <div class="">
                     <label for="title" class="formTitle"></label>
                     <input type="title" name="title" class="form-control" placeholder="프로젝트명" id="title" required data-validation-required-message="Please enter a title." readonly >
                     <p class="help-block text-danger"></p>
                 </div>
             </div>
-
-            <div class="price">
-                <h3>프로젝트 예산을 알려주세요.</h3>
-                <div class="btn-wrap">
-                    <div>
-                        <input type="radio" id="thousand" name="price" value="thousand">
-                        <label for="thousand">1,000만원</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="three-thousand" name="price" value="three-thousand">
-                        <label for="three-thousand">3,000만원</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="five-thousand" name="price" value="five-thousand">
-                        <label for="five-thousand">5,000만원</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="less-ten-thousand" name="price" value="less-ten-thousand">
-                        <label for="less-ten-thousand">1억원 미만</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="more-ten-thousand" name="price" value="more-ten-thousand">
-                        <label for="more-ten-thousand">1억원 이상</label>
-                    </div>
-                    <div>
-                        <input type="radio" id="undefine" name="price" value="undefine">
-                        <label for="undefine">미정</label>
-                    </div>
-                </div>
+            <div class="intro-charger">
+                <h3>지원자님의 정보를 알려주세요.</h3>
+                <input type="text" id="tel" placeholder="연락처">
+                <input type="text" id="mail" placeholder="이메일">
             </div>
+            
             <div class="period">
                 <h3>프로젝트 일정에 대해 알려주세요.</h3>
                 <div>
@@ -152,18 +140,12 @@
                 <label for="upload-file">파일 첨부하기</label>
                 <input type="file" id="upload-file">
             </div>
-            <div class="intro-charger">
-                <h3>담당자님을 소개해주세요.</h3>
-                <input type="text" id="company_nm" placeholder="회사명">
-                <input type="text" id="nm" placeholder="이름">
-                <input type="text" id="tel" placeholder="연락처">
-                <input type="text" id="mail" placeholder="이메일">
-                <input type="checkbox" id="using_data"> <label for="using_data"><span> 개인정보보호정책에 동의합니다. </span></label>
-            </div>
+            
+            <input type="radio" id="using_data"> <label for="using_data"><span> 개인정보보호정책에 동의합니다. </span></label>
             <button class="submit">제출하기</button>
         </section>
     </main> 
-
+    
     <!-- <footer class="font-kr" style="top:0; width: 100%;">
         <div class="footer-box">
             <div class="logo-box">
