@@ -27,8 +27,8 @@
     cursor: pointer;
 }
 #left .input_wr .load_ctnt { border: none; color: #fff;}
-#left .input_wr span:nth-child(1){ min-width:200px;
-    max-width: 390px;
+#left .input_wr span:nth-child(1){
+    min-width:150px;
     text-overflow: ellipsis;
     overflow: hidden;
     -webkit-line-clamp: 2;
