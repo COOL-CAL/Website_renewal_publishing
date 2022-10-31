@@ -27,40 +27,40 @@ $(function(){
 		// 현재 실시간 데이터 표츌
 		$("#load_title").text(newValue02);
 		
-		if($(this).val() == ""){
-			c2 = 0;
-			$('.contact_cname').nextAll('.control-group').addClass('contact-readonly');
-			$('.contact_right').find('.control-group').addClass('contact-readonly');
-		}else{
-			c2 = 1;
-			if($("input[name='BUDGET']").is(":checked")){
-				$('.contact_timeline').removeClass('contact-readonly');
-			}
-			if($("input[name='TIMELINE']").is(":checked")){
-				$('.contact_comment').removeClass('contact-readonly');
-			}
-			if(!newValue03 == ""){
-				$('#comments').val(newValue03);
-				$('.contact_right').removeClass('contact-readonly');
-			}
-			if(!newValue04 == ""){
-				$('#company').val(newValue04);
-				$('.contact_right .control-group').eq(0).removeClass('contact-readonly');
-			}
-			if(!newValue05 == ""){
-				$('#first_name').val(newValue05);
-				$('.contact_right .control-group').eq(1).removeClass('contact-readonly');
-			}
-			if(!newValue06 == ""){
-				$('#telephone').val(newValue06);
-				$('.contact_right .control-group').eq(2).removeClass('contact-readonly');
-			}
-			if(!newValue07 == ""){
-				$('#email').val(newValue07);
-				$('.contact_right .control-group').eq(3).removeClass('contact-readonly');
-			}
-			$('.contact_budget').removeClass('contact-readonly');
-		}
+		// if($(this).val() == ""){
+		// 	c2 = 0;
+		// 	$('.contact_cname').nextAll('.control-group').addClass('contact-readonly');
+		// 	$('.contact_right').find('.control-group').addClass('contact-readonly');
+		// }else{
+		// 	c2 = 1;
+		// 	if($("input[name='BUDGET']").is(":checked")){
+		// 		$('.contact_timeline').removeClass('contact-readonly');
+		// 	}
+		// 	if($("input[name='TIMELINE']").is(":checked")){
+		// 		$('.contact_comment').removeClass('contact-readonly');
+		// 	}
+		// 	if(!newValue03 == ""){
+		// 		$('#comments').val(newValue03);
+		// 		$('.contact_right').removeClass('contact-readonly');
+		// 	}
+		// 	if(!newValue04 == ""){
+		// 		$('#company').val(newValue04);
+		// 		$('.contact_right .control-group').eq(0).removeClass('contact-readonly');
+		// 	}
+		// 	if(!newValue05 == ""){
+		// 		$('#first_name').val(newValue05);
+		// 		$('.contact_right .control-group').eq(1).removeClass('contact-readonly');
+		// 	}
+		// 	if(!newValue06 == ""){
+		// 		$('#telephone').val(newValue06);
+		// 		$('.contact_right .control-group').eq(2).removeClass('contact-readonly');
+		// 	}
+		// 	if(!newValue07 == ""){
+		// 		$('#email').val(newValue07);
+		// 		$('.contact_right .control-group').eq(3).removeClass('contact-readonly');
+		// 	}
+		// 	$('.contact_budget').removeClass('contact-readonly');
+		// }
 		if($(this).val().length >= 1 ){
 			$("#load_title").addClass('min_auto');
 		}else{
@@ -71,46 +71,50 @@ $(function(){
 	//문의 유형
 	$(".chk_hidden").click(function(){  
 		var check = $("#qatype01").is(":checked") + $("#qatype02").is(":checked") + $("#qatype03").is(":checked") + $("#qatype04").is(":checked");
+		if($(".chk_hidden").is(":checked")){
+			var qatype = "";
+			// var qatype1 = $("#load_cate");
+			$(".chk_hidden").each(function(idx, item){
+				if($(this).is(":checked")){
+					if(idx <= 2) {
+					qatype += $(this).val() + "<strong>,</strong> "; 
+					// qatype +=  "<strong>,</strong> ";
+					// // if(idx === 2){
+					// // 	qatype += "<br>"
+					}
+					else 
+					if(idx ===3 ){
+						qatype += $(this).val() + ` <span class="load_ctnt">을</span>`
+						$(".load_ctnt").addClass('hidden');
+					}
+				}
+			});
+
+			$("#load_cate").html(qatype);  
+			c1 = 1;
+		}
+
 		// if($(".chk_hidden").is(":checked")){
-		// 	var qatype = "";
-		// 	var qatype1 = $("#load_cate");
-		// 	$(".chk_hidden").each(function(idx){  
-		// 		if($(this).is(":checked")){
-		// 			qatype += $(this).val() + "<strong>,</strong> ";
-		// 			if(idx === 2){
-		// 				qatype += "<br>"
+        //     var qatype = "";  
+        //     $(".chk_hidden").each(function(idx){  
+        //         if($(this).is(":checked")){
+        //             console.log(idx);
+        //             if(idx === 3){
+		// 				qatype += "<strong>"+ $(this).val() + "</strong>"; 
+		// 			} else if(idx === 2){
+		// 				qatype += "<strong>"+ $(this).val() + "</strong>, <br>";
+		// 			} else {
+		// 				qatype += "<strong>"+ $(this).val() + "</strong>, "; 
 		// 			}
-		// 			// else if(idx === 3 ){
-		// 			// 	qatype1 += `<span class="load_ctnt">을</span>`
-		// 			// }
 		// 		}
-		// 	});
+        //     });
+        //     console.log(qatype);
+        //     // $(".text").html(qatype);
+        // // }
 
 		// 	$("#load_cate").html(qatype);  
 		// 	c1 = 1;
 		// }
-
-		if($(".chk_hidden").is(":checked")){
-            var qatype = "";  
-            $(".chk_hidden").each(function(idx){  
-                if($(this).is(":checked")){
-                    console.log(idx);
-                    if(idx === 3){
-						qatype += "<strong>"+ $(this).val() + "</strong>"; 
-					} else if(idx === 2){
-						qatype += "<strong>"+ $(this).val() + "</strong>, <br>";
-					} else {
-						qatype += "<strong>"+ $(this).val() + "</strong>, "; 
-					}
-				}
-            });
-            console.log(qatype);
-            // $(".text").html(qatype);
-        // }
-
-					$("#load_cate").html(qatype);  
-			c1 = 1;
-		}
 		
 
 
@@ -169,8 +173,8 @@ $(function(){
 		
 		if(check >= 1){
 			$("#load_cate").addClass('min_auto');
-			$(".load_ctnt").addClass('min_auto');
-			$('#title').attr('readonly',false);
+			// $(".load_ctnt").addClass('min_auto');
+			// $('#title').attr('readonly',false);
 		}else{
 			$("#load_cate").removeClass('min_auto');
 		}
@@ -259,10 +263,10 @@ $(function(){
 		}
 	});
 	// �댁슜
-	 $("#comments").click(function(){
-		 if($(".chk_hidden:checked").length <= 0){
-			 $('#layer_pop').show();
-			$('#layer_pop').find('.pop_text').text(text01);
+	$("#comments").click(function(){
+		if($(".chk_hidden:checked").length <= 0){
+			// $('#layer_pop').show();
+			// $('#layer_pop').find('.pop_text').text(text01);
 			$('html,body').animate({scrollTop:location01},300);
 
 			return false;
@@ -316,11 +320,11 @@ $(function(){
 			
 
 		};
-	 });
+	});
 
 	 //�뚯궗紐�
 	$("#company").click(function(){
-		 if($(".chk_hidden:checked").length <= 0){
+		if($(".chk_hidden:checked").length <= 0){
 			$('#layer_pop').show();
 			$('#layer_pop').find('.pop_text').text(text01);
 			$('html,body').animate({scrollTop:location01},300);

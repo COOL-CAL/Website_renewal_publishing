@@ -139,7 +139,7 @@
 } */
 
 /* Our Values */
-#mainOurValues { background: url(/img/values_bg.png) no-repeat; }
+#mainOurValues { background: url(../img/values_bg.png) no-repeat; }
 #mainOurValues .wrap { display: flex; align-items: center; }
 .v-ctnt1 { padding-right: 5rem;}
 .v-ctnt1 > h2 { margin-bottom: 1rem; }
@@ -200,7 +200,7 @@
 }
 
 /* Rootcore Way */
-#mainRootcoreWay { background: url(/img/way_bg.png) no-repeat;}
+#mainRootcoreWay { background: url(../img/way_bg.png) no-repeat;}
 .way-ctnt { text-align: center; margin-bottom: 3.125rem; }
 .way-ctnt > h2 { margin-bottom: 1rem; }
 .way-ctnt > p { color: var(--lightGray); }
@@ -273,7 +273,7 @@
 
 /* Our work */
 #mainOurWork {
-    background: url(/img/work_bg.png) no-repeat center center fixed;
+    background: url(../img/work_bg.png) no-repeat center center fixed;
     overflow: auto;
     padding-bottom: 0;
 }
@@ -336,7 +336,7 @@
 .work-more:hover { transform: rotate(90deg); }
 
 /* Join Us */
-#mainJoinUs { background: url(/img/contact.png) no-repeat; padding-bottom: 0; }
+#mainJoinUs { background: url(../img/contact.png) no-repeat; padding-bottom: 0; }
 #mainJoinUs .wrap { display: flex; align-items: center; }
 .join-wrap { padding-right: 6.5rem; padding-bottom: 5rem; }
 .join-wrap > h2 { margin-bottom: 1rem; }

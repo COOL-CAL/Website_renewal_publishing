@@ -5,20 +5,21 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="/formmail.js"></script>
-    <script src="./js/contact.js"></script>
+    <script src="js/common.js"></script>
+    <script src="js/formmail.js"></script>
+    <script src="js/contact.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/contact.css">
-    <link rel="stylesheet" href="/formmail.css">
-    <link rel="stylesheet" href="./css/h_f.css">
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/formmail.css">
+    <link rel="stylesheet" href="css/h_f.css">
     <title>ROOTCORE</title>
 </head>
 <body>
     <header>
         <div class="header-wrap">
-            <a href="main.html" class="logo"><img src="./img/00img_logo_white01.png" alt="Rootcore logo image"></a>
+            <a href="main.html" class="logo"><img src="img/00img_logo_white01.png" alt="Rootcore logo image"></a>
             <nav class="menu font-en">
                 <a href="work.html"><p>Our Work <i class="fa-solid fa-arrow-right"></i></p></a>
             </nav>
@@ -36,23 +37,16 @@
                 <div class="input_line_wr">
                     <span id="load_title"></span> <span class="load_ctnt">프로젝트의</span>
                 </div>
-                <div class="text"></div>
+                <!-- <div class="text"></div> -->
                 <div class="input_line_wr">
-                    <span id="load_cate"></span> <span class="load_ctnt">을</span>
+                    <span id="load_cate"></span> <span class="load_ctnt hide">을</span>
                 </div>
                 <div class="input_line_wr">
-                    <span id="load_budget"></span> <span class="load_ctnt">의 규모로 &nbsp; </span><span id="load_time"></span> <span class="load_ctnt">동안</span>
+                    <span id="load_budget"></span> <span class="load_ctnt">의 규모로 </span><span id="load_time"></span> <span class="load_ctnt">동안</span>
                 </div>
                 <b>루트코어</b>와 함께 진행하시겠습니까?
             </div>
             <p class="contact_stit">문의를 남겨주시면 확인 후 담당자가 빠른 시일 내에<br>연락 드리겠습니다.</p>
-
-            <!-- <div class="scroll_box">
-                <div class="scroll_box_wr">
-                    <div class="chevron"></div>
-                    <div class="chevron"></div>
-                </div>
-            </div> -->
         </section>
 
         <section id="right">
@@ -60,7 +54,7 @@
                 <input type="hidden" name="mode" value="send">
                 <div class="contact_cont clearfix font-kr">
                     <div class="contact_left">
-                        <h2 class="font-kr">프로젝트 문의하기</h2>
+                        <h1 class="font-kr">프로젝트 문의하기</h1>
                         <div class="control-group contact_title">
                             <h3 class="contact_tit choice">프로젝트 이름을 알려주세요.</h3>
                             <div>
@@ -237,25 +231,21 @@
                                 <div class="control-group charger">
                                     <div class="">
                                         <input type="text" name="company" class="form-control" placeholder="회사명" id="company" required data-validation-required-message="Please enter your company."autocomplete='off'>
-                                        <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
                                 <div class="control-group charger">
                                     <div class="">
                                         <input type="text" name="first_name" class="form-control" placeholder="담당자" id="first_name" required data-validation-required-message="Please enter your name."autocomplete='off'>
-                                        <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
                                 <div class="control-group charger">
                                     <div class="">
                                         <input type="tel" name="telephone" class="form-control" placeholder="연락처" id="telephone" required data-validation-required-message="Please enter your phone number."  oninput="this.value = this.value.replace(/[^0-9-]/g, '').replace(/(\..*)\./g, '$1');"maxlength="13"autocomplete='off'>
-                                        <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
                                 <div class="control-group charger">
                                     <div class="">
                                         <input type="email" name="email" class="form-control" placeholder="이메일" id="email" required data-validation-required-message="Please enter your email address."autocomplete='off'>
-                                        <p class="help-block text-danger"></p>
                                     </div>
                                 </div>
                             </div>
@@ -270,10 +260,10 @@
                                     data-validation-required-message="Please enter a message."
                                     onkeydown="resize(this)" onkeyup="resize(this)" required></textarea>
 
-                                <p class="help-block text-danger"></p>
+                                <!-- <p class="help-block text-danger"></p> -->
                                 <div class="formmail_file">
                                     <label for="userfile1">
-                                        <div>파일 첨부하기</div><img src="/img/file_upload_icon.png" alt="">
+                                        <div>파일 첨부하기</div><img src="img/file_upload_icon.png" alt="">
                                     </label>
                                     <input id="userfile1" type="file" multiple style="width:300px" class="upload-hidden font-kr">
                                     <input class="upload-name font-kr" value="" disabled="disabled">
@@ -295,28 +285,6 @@
                                 </div>
                             </div>
                         </div>
-
-                        <script> //textarea 크기 조절, file upload
-                            function resize(obj) {
-                                obj.style.height = '1px';
-                                obj.style.height = (12 + obj.scrollHeight) + 'px';
-                            }
-
-                            $(document).ready(function () {
-                                var fileTarget = $('.formmail_file .upload-hidden');
-                                fileTarget.on('change', function () { // 값이 변경되면 
-                                    if (window.FileReader) { // modern browser 
-                                        var filename = $(this)[0].files[0].name;
-                                    } else { // old IE 
-                                        var filename = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출
-                                    } // 추출한 파일명 삽입 
-                                    $(this).siblings('.upload-name').css({ 'textAlign': "left" });
-                                    $(this).siblings('.upload-name').val(filename);
-                                });
-                            });
-                        </script>
-                    
-                        
                     </div>
                 </div>
                 
@@ -327,7 +295,7 @@
     <footer class="font-kr" style="top:0; width: 100%;">
         <div class="footer-box">
             <div class="logo-box">
-                <img src="./img/00img_logo_white01.png" alt="Rootcore logo image">
+                <img src="img/00img_logo_white01.png" alt="Rootcore logo image">
                 <p>© ROOTCORE. All Rights Reserved.</p>
             </div>
             <div class="location">

@@ -54,7 +54,11 @@ html {
     font-style: normal;
 }
 .font-kr { font-family: 'Pretendard-Regular'; }
-.font14 { font-size: 0.875rem; }
+.font30 { font-size: 30px; }
+.font20 { font-size: 20px; }
+.font18 { font-size: 18px; }
+.font16 { font-size: 16px; }
+.font14 { font-size: 14px; }
 .bold { font-weight: bold; }
 .bolder { font-weight: bolder; }
 
@@ -65,5 +69,5 @@ input {
     appearance: none;
 }
 a { text-decoration: none; color: inherit; }
-li { list-style: none;}
-h2 { font-family: 'Montserrat-bi'; font-size: 1.875rem;}
+li { list-style: none; }
+h1 { font-family: 'Montserrat-bi'; font-size: 1.875rem; }

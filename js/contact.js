@@ -176,31 +176,31 @@ function wrestAlpha(fld)
 // 배부른꿀꿀이님 추가 (http://dasir.com) 2003-07-07
 function wrestAlNum(fld)
 {
-   if (!wrestTrim(fld)) return;
+    if (!wrestTrim(fld)) return;
 
-   var pattern = /(^[a-zA-Z0-9]+$)/;
+    var pattern = /(^[a-zA-Z0-9]+$)/;
 
-   if (!pattern.test(fld.value)) {
-       if (wrestFld == null) {
-           wrestMsg = wrestItemname(fld) + " : 영문 또는 숫자가 아닙니다.\n";
-           wrestFld = fld;
-       }
-   }
+    if (!pattern.test(fld.value)) {
+        if (wrestFld == null) {
+            wrestMsg = wrestItemname(fld) + " : 영문 또는 숫자가 아닙니다.\n";
+            wrestFld = fld;
+        }
+    }
 }
 
 // 영문자와 숫자 그리고 _ 검사
 function wrestAlNum_(fld)
 {
-   if (!wrestTrim(fld)) return;
+    if (!wrestTrim(fld)) return;
 
-   var pattern = /(^[a-zA-Z0-9\_]+$)/;
+    var pattern = /(^[a-zA-Z0-9\_]+$)/;
 
-   if (!pattern.test(fld.value)) {
-       if (wrestFld == null) {
-           wrestMsg = wrestItemname(fld) + " : 영문, 숫자, _ 가 아닙니다.\n";
-           wrestFld = fld;
-       }
-   }
+    if (!pattern.test(fld.value)) {
+        if (wrestFld == null) {
+            wrestMsg = wrestItemname(fld) + " : 영문, 숫자, _ 가 아닙니다.\n";
+            wrestFld = fld;
+        }
+    }
 }
 
 // 최소 길이 검사

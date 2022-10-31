@@ -1,6 +1,6 @@
 /* Work */
 #ourWork {
-    background: url(/img/work_bg.png) no-repeat center center fixed;
+    background: url(img/work_bg.png) no-repeat center center fixed;
     overflow: auto;
     padding-bottom: 0;
 }

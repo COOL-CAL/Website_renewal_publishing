@@ -107,3 +107,36 @@ function header(){
 //     const date = document.querySelector("#date").offsetTop;
 //     window.scrollTo({ left: 0, top: date, behavior: "smooth" });
 // }
+
+// contact, apply page
+
+    //textarea 크기 자동 조절
+function resize(obj) {
+    obj.style.height = '1px';
+    obj.style.height = (12 + obj.scrollHeight) + 'px';
+}
+    // 파일명 
+$(document).ready(function () {
+    var fileTarget = $('.formmail_file .upload-hidden');
+    fileTarget.on('change', function () { // 값이 변경되면 
+        if (window.FileReader) { // modern browser 
+            var filename = $(this)[0].files[0].name;
+        } else { // old IE 
+            var filename = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출
+        } // 추출한 파일명 삽입 
+        $(this).siblings('.upload-name').css({ 'textAlign': "left" });
+        $(this).siblings('.upload-name').val(filename);
+    });
+});
+
+function fileUpload(){
+    var fileInput = document.getElementsByClassName("apply_file");
+
+    for( var i=0; i<fileInput.length; i++ ){
+        if( fileInput[i].files.length > 0 ){
+            for( var j = 0; j < fileInput[i].files.length; j++ ){
+                console.log(fileInput[i].files[j].name); // 파일명 출력
+            }
+        }
+    }
+}
