@@ -1,10 +1,3 @@
-#contact, #apply { font-family: 'Pretendard-Regular'; width: 1100px; }
-
-#right { float: right; width: 700px; }
-#left { padding: 10rem 0;}
-.page-nm { margin-bottom: 50px; }
-.page-nm h2 { font-size: 30px; margin-bottom: 14px; }
-
 #formMail{margin:0px auto; padding:0;}
 .MR1per{margin-right:1%;}
 .width-half{width:49.5%; float:left;}
@@ -18,7 +11,7 @@
   color: #fff;
   border: 1px solid #fff;
   border-radius: 16px;
-  font-size: 16px;
+  font-size: 13px;
 }
 .sendBtn > div > button:hover {
   background-color: rgba(255, 255, 255, 0.2);
@@ -36,9 +29,9 @@
 
 /* left side */
 #contact{ padding-top: 100px; }
-#contact #left{width: 350px; position: fixed; top: 3.5%; float: left; height: 60vh; }
-#contact #left .input_wr{font-size:20px; font-weight:400; color:#fff; line-height: 40px; margin-bottom: 30px;}
-#contact #left .input_wr .input_line_wr{ margin-bottom:30px;font-weight:300; margin-bottom: 0; }
+#contact #left{ width: 350px; position: fixed; top: 3.5%; float: left; height: 60vh; }
+#contact #left .input_wr{ font-size:20px; font-weight:400; color:#fff; line-height: 40px; margin-bottom: 30px; }
+#contact #left .input_wr .input_line_wr{ margin-bottom:30px; font-weight:300; margin-bottom: 0; }
 #contact #left .input_wr span {
   border: none;
   border-bottom: 1px solid #fff;
@@ -47,12 +40,10 @@
   display: inline-block;
   font-weight: 500;
   width: auto;
-  /* min-width: 130px; */
   margin-right: 5px;
   vertical-align: bottom;
   min-height: 30px;
   cursor: pointer;
-  /* line-height: 40px; */
 }
 #contact #left .input_wr .load_ctnt { border: none; color: #fff;}
 #contact #left .input_wr .hide.hidden { display: none; }
@@ -73,27 +64,27 @@
 .contact_cname{position:relative;}
 .contact_cname > div::after{content:"";position:absolute;width:0;height:3px; background:#191919;left:0;bottom:0;}
 .contact_cname > div.on::after{width:100%;transition:all .5s;}
-#contact #right { float: right; width: 700px; padding-top: 8rem; }
-#contact #right .control-group > div{position:relative;}
+/* #contact #right { float: right; width: 700px; padding-top: 8rem; } */
+#contact #right .control-group .contact_tit { margin-bottom: 20px; font-size: 20px; font-weight: 400;}
+#contact #right .contact_charger .contact_tit { margin-bottom: 20px; }
+#contact #right .control-group > div{ position:relative; margin-left: 0; }
 #contact #right .control-group > div:after{content:"";position:absolute;width:0;height:3px; background:#191919;left:0;bottom:0;}
 #contact #right .control-group > div.on:after{width:100%;transition:all .5s;}
-#contact #formMail{float:right;width:52%;}
-.control-privacy{ margin-top: 23px; margin-bottom: 100px; }
-.control-privacy .agree-text{border:1px solid #d5d5d5; padding: 20px; font-size:15px; margin-bottom:20px; color:#2a2a2a; width:100%;height:150px;overflow: auto;}
-.control-privacy .agree-box{font-size:16px; color:#2a2a2a; font-weight:300;}
-.control-privacy .agree-box label.t{margin-right:20px;}
-.control-privacy .agree-box label{cursor:pointer;}
+
+/* #contact #formMail{float:right;width:52%;} */
 
 .formTitle{font-size:14px; color:#333; margin-bottom:10px; /*display:inline-block;*/}
-#right .control-group { margin-bottom: 50px; }
+#right .control-group { margin-bottom: 40px; margin-top: 35px; }
+#right .contact_title { margin-top: 50px; }
+#right .contact_budget { margin-bottom: 25px !important; }
+#right .contact_timeline { margin-top: 35px !important; margin-bottom: 35px; }
 #right .control-group input { font-family: "Pretendard-Regular"; }
-#right .form-control{font-size:18px; font-weight:400;}
+#right .form-control{font-size:13px; font-weight:400;}
 .form-control{
   display:block;
   width: 100%;
   height: 45px;
   padding: 0;
-  padding-left: 10px;
   line-height: 1.42857143;
   color: #fff;
   background-color: transparent;
@@ -105,26 +96,28 @@
   position: relative;
 }
 .form-control label{color:#fff;}
+
+/* about project */
 .form-control-text{
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
   resize:none;
   min-height: 1rem;
+  padding-top: 11px;
   overflow-y: hidden;
-  font-size:18px; font-weight:400; color:#fff;
+  font-size: 13px; font-weight: 400; color:#fff;
+  line-height: 19px;
 }
-.form-control:focus {
-  outline: 0;
-  /* -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(44, 62, 80, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(44, 62, 80, 0.6); */
-  border-bottom: 2px solid var(--mainColor); 
-}
+.form-control:focus { outline: 0; border-bottom: 2px solid var(--mainColor); }
 .form-control::-moz-placeholder{color:#aaa}
 .form-control:-ms-input-placeholder{color:#aaa}
 .form-control::-webkit-input-placeholder{color:#aaa}
 .form-control[disabled],fieldset[disabled] .form-control{cursor:not-allowed}
+
 .budget_type_check label{display:inline-block;margin-bottom:15px;margin-right:15px;}
 .time_type_check label{display:inline-block; margin-right:15px;margin-bottom:15px;}
+
+/* 파일 첨부  */
 .formmail_file{position:static; padding-top: 14px; padding-right: 20px;}
 .formmail_file input[type="file"] { position: absolute; width: 0; height: 0; padding: 0; overflow: hidden; border: 0; }
 .formmail_file label {
@@ -137,20 +130,21 @@
   justify-content: center;
   align-items: center;
 }
-.formmail_file > label > div { margin-right: 0; margin-left: 15px;}
+.formmail_file > label > div { font-size: 13px; margin-right: 0; margin-left: 24px;}
 .formmail_file > label > img { padding-bottom: 1px; margin-left: 5px;}
 .formmail_file .upload-name {
   display: inline-block;
   height: 43px;
-  font-size:15px;
+  font-size: 13px;
   background: transparent;
   border: 0;
   padding-left: 15px;
+  color: #fff;
+  border-radius: 16px;
   /* width: 70%; */
   /* vertical-align: middle; */
   /* background-color: #7C7C7C;
   border-radius: 16px; */
-  color: #fff;
 }
 
 .textarea_wr{position:relative;}
@@ -208,47 +202,18 @@ textarea.input-lg,select[multiple].input-lg{height:auto}
 input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"].btn-block{width:100%}
 .form-control:focus,input:focus{-webkit-box-shadow:none;box-shadow:none}
 
-.contact_charger .charger-box { display: flex; flex-flow: row wrap; }
-.contact_charger .control-group { width: 340px; }
-.contact_charger .control-group:nth-child(odd) { margin-right: 20px; }
-.contact_charger .control-group .form-control { width: 340px; }
-.contact_charger .control-group .form-control:nth-child(odd) { padding-left: 0; padding-right: 20px;}
+/* 담당자 소개 */
+#contact #right .contact_charger { padding-bottom: 0px; }
+#contact #right .contact_charger .charger-box { display: flex; flex-flow: row wrap; }
+#contact #right .contact_charger .control-group { display: contents; }
+#contact #right .contact_charger .control-group .form-control { width: 340px; }
+#contact #right .contact_charger .control-group .form-control:nth-child(2n) { padding-left: 20px; }
+#contact #right .contact_charger .charger-box .control-group div { margin-bottom: 15px; margin-right: 0;} 
+#contact #right .contact_charger .charger-box .control-group div:nth-child(2n) { margin-left: 20px; }
 
 /*** END formmail css ***/
 
-
-.control-privacy .agree-box input[type="checkbox"]+label span.cbox {
-  position: relative;
-  width: 20px;
-  height: 20px;
-  display: inline-block;
-  border: 1px solid #ddd;
-  vertical-align: sub;
-  margin-left: 0px;
-  margin-right: 15px;
-}
-.control-privacy .agree-box input[type="checkbox"]:checked+label span.cbox {
-  background: url('../img/check-solid.svg') no-repeat 50% 50%;
-  background-color: #fff;
-  color: #fff;
-  /* border: none; */
-}
-.control-privacy .agree-box input[type="checkbox"] + label{color:#999999;}
-.control-privacy .agree-box input[type="checkbox"]:checked + label{color:#fff;}
-.control-privacy .agree-box input.chk_hidden{display:none;}
-
-.contact_cont{margin-bottom:30px;}
-.contact_cont > .contact_left > h1 { margin-bottom: 50px; }
-.contact_tit {
-  font-size: 20px;
-  font-weight: 400;
-  margin-bottom: 25px;
-  font-family: 'Pretendard-Regular';
-  transition: color .3s;
-  color: #fff;
-}
-
-.contact_stit{ font-size:16px; font-weight:300; color:#999999; }
+.contact_stit{ font-weight:300; color:#999999; line-height: 22px;}
 
 /* 문의 폼 */
 .qatype_check .qatype00{margin-right:15px;}
@@ -277,7 +242,7 @@ input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"
   -ms-flex-pack: center;
   justify-content: center;
   padding: 0 33px;
-  height: 55px;
+  height: 50px;
   overflow: hidden;
   font-size: 16px;
   letter-spacing: -.01em;
@@ -292,28 +257,7 @@ input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"
   -moz-transition: opacity .4s;
   transition: opacity .4s;
 }
-/* .qatype00 .cb-checkbox_rounded-box:checked{
-  border-color: var(--mainColor);
-} */
-/* input[type=checkbox]:checked + label { */
-/* .cb-checkbox_rounded-box:checked{
-  border-color: var(--mainColor);
-  border-radius: 16px;
-} */
-/* .cb-checkbox_rounded-box:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border: 1px rgba(0,0,0,.1) solid;
-  
-  -webkit-transition: border-color .2s;
-  -o-transition: border-color .2s;
-  -moz-transition: border-color .2s;
-  transition: border-color .2s;
-} */
+.qatype00 input:checked~.cb-checkbox_rounded-box { border: none; height: 52px; padding: 0 34px; }
 
 .cb-checkbox_rounded-ripple {
   display: block;
@@ -403,6 +347,7 @@ input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"
   text-align: center;
   transform-origin: left top;
   transition: color 0.2s, transform 0.4s;
+  font-size: 13px;
 }
 .qatype00 label .cb-checkbox_rounded-box .cb-checkbox_rounded-title span:after {
   content: attr(data-text);
@@ -431,7 +376,7 @@ input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"
   width: 100%;
   height: 100%;
   transform: translateY(105%);
-  background-color: #fff;
+  background-color: #ffffff6b;
   border-radius: 50%;
   transition: transform 0.5s cubic-bezier(0.4, 0, 0, 1), border-radius 0.5s cubic-bezier(0.4, 0, 0, 1);
   animation: none;
@@ -506,11 +451,11 @@ input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"
 	#contact #left .input_wr span{font-size:22px;}
 	.cb-checkbox_rounded-box{height:50px;line-height:50px;font-size:14px;}
 
-	.contact_tit{ font-size: 20px; margin-bottom: 22px; }
+	.contact_tit{ font-size: 20px; margin-bottom: 20px; }
 	.contact_stit{ font-size:13px; }
 	.control-group{margin-bottom:100px;}
 	.form-control{font-size:18px;}
-	.form-control-text{padding:20px;font-size:16px; max-height: 500px;}
+	.form-control-text{padding:20px;font-size:13px; max-height: 500px;}
 	#right .form-control{font-size:16px;}
 	.control-privacy .agree-box{font-size:14px;}
 	.result_box{padding:160px 0 260px;}

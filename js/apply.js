@@ -41,5 +41,12 @@ $(function(){
 			$("#apply_type").html(applyType);  
 			c1 = 1;
 		}
+		if(check >= 1){
+			$("#apply_type").addClass('min_auto');
+			// $(".load_ctnt").addClass('min_auto');
+			// $('#title').attr('readonly',false);
+		}else{
+			$("#apply_type").removeClass('min_auto');
+		}
     });
 });

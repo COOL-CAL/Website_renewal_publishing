@@ -29,7 +29,7 @@
     <main id="contact">
         <section id="left">
             <div class="page-nm">
-                <h2>Contact</h2>
+                <h1>Contact</h1>
                 <p class="contact_stit font-en font14">We are waiting for you.</p>
             </div>
             <div class="input_wr">
@@ -37,7 +37,6 @@
                 <div class="input_line_wr">
                     <span id="load_title"></span> <span class="load_ctnt">프로젝트의</span>
                 </div>
-                <!-- <div class="text"></div> -->
                 <div class="input_line_wr">
                     <span id="load_cate"></span> <span class="load_ctnt hide">을</span>
                 </div>
@@ -46,7 +45,7 @@
                 </div>
                 <b>루트코어</b>와 함께 진행하시겠습니까?
             </div>
-            <p class="contact_stit">문의를 남겨주시면 확인 후 담당자가 빠른 시일 내에<br>연락 드리겠습니다.</p>
+            <p class="contact_stit font16">문의를 남겨주시면 확인 후 담당자가 빠른 시일 내에<br>연락 드리겠습니다.</p>
         </section>
 
         <section id="right">
@@ -59,13 +58,13 @@
                             <h3 class="contact_tit choice">프로젝트 이름을 알려주세요.</h3>
                             <div>
                                 <label for="title" class="formTitle"></label>
-                                <input type="title" name="title" class="form-control font-kr" style="font-size: 20px;" placeholder="프로젝트명" id="title" required data-validation-required-message="Please enter a title.">
+                                <input type="title" name="title" class="form-control font-kr" placeholder="프로젝트명" id="title" required data-validation-required-message="Please enter a title.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
 
                         <div class="control-group contact_type">
-                            <h3 class="contact_tit">어떤 프로젝트를 문의하고 싶으신가요?<p class="contact_stit">(중복 선택이 가능합니다.)</p></h3>
+                            <h3 class="contact_tit">어떤 프로젝트를 문의하고 싶으신가요?<p class="contact_stit font13">(중복 선택이 가능합니다.)</p></h3>
                             <label for="type" class="formTitle"></label>
                             <div class="qatype_check">
                                 <div class="qatype00">
@@ -111,12 +110,12 @@
                                             <span class="cb-checkbox_rounded-ripple"><span></span></span>
                                         </span>
                                     </label>
-                                </div>				
+                                </div>
                             </div>
                             <p class="help-block text-danger"></p>
                         </div>
                         
-                        <div class="control-group contact_budget" tabindex="">
+                        <div class="control-group contact_budget" style="padding-bottom: 0;" tabindex="">
                             <h3 class="contact_tit">프로젝트 예산을 알려주세요.</h3>
                             <label for="budget" class="formTitle"></label>
                             <div class="budget_type_check">
@@ -177,7 +176,7 @@
                                     </label>
                                 </div>
                             </div>
-                            <p class="help-block text-danger"></p>
+                            <!-- <p class="help-block text-danger"></p> -->
                         </div>
                         <div class="control-group contact_timeline" tabindex="">
                             <h3 class="contact_tit">프로젝트의 일정에 대해 알려주세요.</h3>
@@ -229,21 +228,15 @@
                             <h3 class="contact_tit">담당자님을 소개해주세요.</h3>
                             <div class="charger-box">
                                 <div class="control-group charger">
-                                    <div class="">
+                                    <div>
                                         <input type="text" name="company" class="form-control" placeholder="회사명" id="company" required data-validation-required-message="Please enter your company."autocomplete='off'>
                                     </div>
-                                </div>
-                                <div class="control-group charger">
                                     <div class="">
                                         <input type="text" name="first_name" class="form-control" placeholder="담당자" id="first_name" required data-validation-required-message="Please enter your name."autocomplete='off'>
                                     </div>
-                                </div>
-                                <div class="control-group charger">
                                     <div class="">
                                         <input type="tel" name="telephone" class="form-control" placeholder="연락처" id="telephone" required data-validation-required-message="Please enter your phone number."  oninput="this.value = this.value.replace(/[^0-9-]/g, '').replace(/(\..*)\./g, '$1');"maxlength="13"autocomplete='off'>
                                     </div>
-                                </div>
-                                <div class="control-group charger">
                                     <div class="">
                                         <input type="email" name="email" class="form-control" placeholder="이메일" id="email" required data-validation-required-message="Please enter your email address."autocomplete='off'>
                                     </div>
@@ -273,7 +266,7 @@
                             <div class="control-privacy">
                                 <div class="agree-box">
                                     <input type="checkbox" name="privacy" id="privacy" class="hide" value="Y"  >
-                                    <label for="privacy"><span class="cbox"></span><u>개인정보보호정책</u>에 동의합니다.</label>
+                                    <label for="privacy"><span class="cbox"></span><span><u>개인정보보호정책</u>에 동의합니다.</span> </label>
                                 </div>
                             </div>
                             
