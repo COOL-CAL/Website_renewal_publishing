@@ -108,6 +108,26 @@ function header(){
 //     window.scrollTo({ left: 0, top: date, behavior: "smooth" });
 // }
 
+// our work 스크롤
+
+// const main = document.querySelector('main');
+// const work = document.querySelector('#mainOurWork');
+
+// // 컨텐츠 영역부터 브라우저 최상단까지의 길이 구하기
+// const contentTop = content.getBoundingClientRect().top + window.scrollY;
+
+// window.addEventListener('scroll', function(){
+//     if(window.scrollY >= contentTop){
+//         work.classList.add('fixed');
+//     }else{
+//         work.classList.remove('fixed');
+//     }
+// });
+
+
+
+
+
 // contact, apply page
 
     //textarea 크기 자동 조절
