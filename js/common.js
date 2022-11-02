@@ -72,6 +72,30 @@ function header(){
 //     });
 // });
 
+// $(document).ready(function() {
+//     $('.bg-slide').slick({
+//         dots: true,
+//         infinite: true,
+//         speed: 500,
+//         fade: true,
+//         cssEase: 'linear'
+//     });
+// })
+
+$(document).ready(function() {
+    $('.bg-slide').slick({
+        dots: true,
+        infinite: true,
+        arrows: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+});
+
+
+
+
 // Business process
 
 // let moveForce = 30;

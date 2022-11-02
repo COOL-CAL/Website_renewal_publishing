@@ -11,9 +11,14 @@ html {
 ::selection { background-color: var(--mainColor); color: #fff; }
 ::-webkit-scrollbar { display: none; }
 #mainWhoWeAre, #mainBusinessProcess, #mainOurValues, #mainRootcoreWay, #mainOurWork, #mainJoinUs { 
-    padding:7em 1.4em;
+    /* padding:7.5em 6.875rem 1.4em 1.4rem; */
+    padding-top: 7.3rem;
+    padding-bottom: 6.7rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
     max-height: 937px;
 }
+#mainWhoWeAre { padding-top: 30rem;}
 .wrap { width: 1100px; }
 .sa {
     opacity: 0;
@@ -29,23 +34,24 @@ html {
 }
 :root {
     --mainColor: #FFC034;
+    --gray2: #EBEBEB;
     --lightGray: #BDBDBD;
     --darkGray: #7C7C7C;
     --bgBlack: #030711;
 }
-@font-face {
-    font-family: 'Montserrat-m';
-    src: url(../font/static/Montserrat-Medium.ttf);
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,500;0,700;1,900&display=swap');
+.font-en-b {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
-@font-face {
-    font-family: 'Montserrat-bi';
-    src: url(../font/static/Montserrat-BlackItalic.ttf);
+.font-en-i {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-style: italic;
 }
-.font-en {
-    font-family: 'Montserrat-m';
-}
-.font-en-italic {
-    font-family: 'Montserrat-bi';
+.font-en-m {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
 }
 @font-face {
     font-family: 'Pretendard-Regular';
