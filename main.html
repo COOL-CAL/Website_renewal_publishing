@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="./css/modal.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- 한글폰트 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
-    
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <script src="js/modal.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+     <!-- <script defer src="js/modal.js"></script> -->
     <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     <script src="js/common.js"></script>
 
@@ -27,7 +29,7 @@
         <!-- <section id="header"> -->
             <div class="header-wrap">
                 <a href="main.html" class="logo"><img src="img/00img_logo_white01.png " alt="Rootcore logo image"></a>
-                <nav class="menu font-kr">
+                <nav class="menu">
                     <a href="#mainWhoWeAre"><p>Who We Are</p></a>
                     <a href="#mainOurValues"><p>Our Values</p></a>
                     <a href="#mainBusinessProcess"><p>Business Process</p></a>
@@ -48,10 +50,10 @@
         </div>
         <section id="submit">
             <div class="sub-box">
-                <div class="sub-p font-kr">
-                    <img class="sub-icon" src="img/main_tools_icon.svg" alt="서비스 및 유지보수 아이콘">
-                    <p class="sub-ctnt">서비스 유지보수 업체를 찾으시나요? 합리적인 가격으로 온라인 서비스 유지보수를 맡겨 보세요.</p>
-                    <a href="contact.html"><button class="sub-btn font-kr">문의하기</button></a>
+                <div class="sub-p">
+                    <img src="img/main_tools_icon.svg" alt="서비스 및 유지보수 아이콘">
+                    <p>서비스 유지보수 업체를 찾으시나요? 합리적인 가격으로 온라인 서비스 유지보수를 맡겨 보세요.</p>
+                    <a href="contact.html"><button class="sub-btn">문의하기</button></a>
                 </div>
             </div>
         </section>
@@ -79,23 +81,27 @@
             <div class="intro-ctnt">
                 <h2 class="font-en-i">Who We Are</h2>
                 <p class="font-en-m font14">ROOTCORE is a software / Web, App / Sercives platform / Smart software design & development,</p>
-                <p class="font-en font14">maintenance and operation agency business.</p>
+                <p class="font-en-m font14">maintenance and operation agency business.</p>
             </div>
-            <ul class="intro-list font-kr">
+            <ul class="intro-list">
                 <li>
                     <img src="img/software.png" alt="소프트웨어 개발 및 대행">
+                    <span></span>
                     <p>소프트웨어 개발 및 대행</p>
                 </li>
                 <li>
                     <img src="img/web_app.png" alt="웹&앱/서비스 플랫폼 구축">
+                    <span></span>
                     <p>웹&앱/서비스 플랫폼 구축</p>
                 </li>
                 <li>
                     <img src="img/contents.png" alt="콘텐츠 UI&UX 디자인">
+                    <span></span>
                     <p>콘텐츠 UI&UX 디자인</p>
                 </li>
                 <li>
                     <img src="img/service.png" alt="서비스 운영&유지보수">
+                    <span></span>
                     <p>서비스 운영&유지보수</p>
                 </li>
             </ul>
@@ -108,7 +114,7 @@
                 <h2>Our Values</h2>
                 <p class="font-en-m font16">We will brighten up your business.</p>
             </div>
-            <div class="v-ctnt2 font-kr">
+            <div class="v-ctnt2">
                 <h3>당신의 비지니스에 <span style="color: var(--mainColor);">빛</span>을 밝혀드립니다.</h3>
                 <p>통찰력 있는 전문가의 웹 개발 노하우로 무장한 루트코어는 PC/Mobile Web, Android,</p>
                 <p>iOS 등 모든 환경에서 최적화된 기술 개발 솔루션을 제공합니다.</p>
@@ -310,35 +316,35 @@
                     </div>
                 </div>
 
-                
                 <button  class="work-more">
                     <a href="work.html"><img src="img/more.png" alt="더보기 버튼"></a>
                 </button>
             </div>
         </div>
     </section>
+    <script defer src="js/modal.js"></script>
 
     <section id="mainJoinUs">
         <div class="wrap">
             <div class="join-wrap">
                 <h2>Contact</h2>
-                <p class="font-en-m font14">We are waiting for you.</p>
+                <p class="font-en-m font16">We are waiting for you.</p>
             </div>
-            <div class="join-box font-kr">
+            <div class="join-box">
                 <p class="join-ctnt">문의하실 내용이 있으신가요?</p>
                 <div class="join-btns"> 
                     <a href="contact.html">
-                        <button class="join-btn font-kr" type="button">프로젝트 문의하기 <i class="fa-solid fa-arrow-right"></i></button>
+                        <button class="join-btn"><p>프로젝트 문의하기<i class="fa-solid fa-arrow-right"></i></p></button>
                     </a>
                     <a href="apply.html">
-                        <button class="apply-btn font-kr" type="button">채용 지원하기 <i class="fa-solid fa-arrow-right"></i></button>
+                        <button class="apply-btn" type="button">채용 지원하기<i class="fa-solid fa-arrow-right"></i></button>
                     </a>
                 </div>
             </div>
         </div>
     </section>
     
-    <footer class="font-kr">
+    <footer>
         <div class="footer-box">
             <div class="logo-box">
                 <img src="img/00img_logo_white01.png" alt="Rootcore logo image">
@@ -354,8 +360,8 @@
                 </div>
             </div>
             <div class="tel">
-                <p><span class="bolder">T.</span> 053.783.4582</p>
-                <p><span class="bolder">F.</span> 053.710.4582</p>
+                <span class="bolder">T.</span><p>053.783.4582</p>
+                <span class="bolder">F.</span><p>053.710.4582</p>
             </div>
         </div>
     </footer>
