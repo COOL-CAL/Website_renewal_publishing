@@ -1,87 +1,66 @@
 // header 
-// $(document).ready(function() {
-    // let header = document.querySelector("header");
-    // let headerHeight = header.offsetHeight;
+// $(function(){
+//     var $header = $('header'); //헤더를 변수에 넣기
+//     var $page = $('.page-start'); //색상이 변할 부분
+//     var $window = $(window);
+//     var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
+    
+//     $window.resize(function(){ //반응형을 대비하여 리사이즈시 top값을 다시 계산
+//       pageOffsetTop = $page.offset().top;
+//     });
+    
+//     $window.on('scroll', function(){ //스크롤시
+//       var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
+//       $header.toggleClass('down', scrolled); //클래스 토글
+//     });
+//   });
 
-    // window.onscroll = function () {
-    //     let windowTop = window.scrollY;
-    //     if (windowTop >= 80) {
-    //         header.classList.add("on");
-    //     } else {
-    //         header.classList.remove("on");
-    //     }
-    // };
-// });
 
-function header(){
-    // 스크롤 시 header fade-in
-    $(document).on('scroll', function(){
-        if($(window).scrollTop() > 100){
-            $("#header").removeClass("deactive");
-            $("#header").addClass("active");
-        }else{
-            $("#header").removeClass("active");
-            $("#header").addClass("deactive");
+window.onload = function() {
+    const header = document.querySelector(".header-wrap")
+
+    window.onscroll = function() {
+        if(window.scrollY >= 50) {
+            header.classList.add("header-blur");
+        } else {
+            header.classList.remove("header-blur");
         }
-    })
-
+    }
 };
+    // console.log(header);
 
+    // window.addEventListener("scroll", () => {
+    //     if(window.scrollY > headerHeight){
+    //         header.classList.add("header-blur");
+    //     } else {
+    //         header.classList.remove("header-blur");
+    //     }
+    // });
 
-// // Scroll Animation (sa, 스크롤 애니메이션)
-// const saDefaultMargin = 300;
-// let saTriggerMargin = 0;
-// let saTriggerHeight = 0;
-// const saElementList = document.querySelectorAll('.sa');
+// var lnb = $("#header").offset().top;
+// $(window).scroll(function() {
+//   	var window = $(this).scrollTop();
 
-// const saFunc = function() {
-//   for (const element of saElementList) {
-//     if (!element.classList.contains('show')) {
-//       if (element.dataset.saMargin) {
-//         saTriggerMargin = parseInt(element.dataset.saMargin);
-//       } else {
-//         saTriggerMargin = saDefaultMargin;
-//       }
-
-//       if (element.dataset.saTrigger) {
-//         saTriggerHeight = document.querySelector(element.dataset.saTrigger).getBoundingClientRect().top + saTriggerMargin;
-//       } else {
-//         saTriggerHeight = element.getBoundingClientRect().top + saTriggerMargin;
-//       }
-
-//       if (window.innerHeight > saTriggerHeight) {
-//         let delay = (element.dataset.saDelay) ? element.dataset.saDelay : 0;
-//         setTimeout(function() {
-//           element.classList.add('show');
-//         }, delay);
-//       }
+//     if(lnb <= window) {
+//       $("#lnb").addClass("header-blur");
+//     } else {
+//       $("#lnb").removeClass("header-blur");
 //     }
-//   }
-// }
-
-// window.addEventListener('load', saFunc);
-// window.addEventListener('scroll', saFunc);
-
-// $(document).ready(function(){
-//     $('.main-bg').slick({
-//         dots: true,
-//         infinite: true,
-//         speed: 500,
-//         fade: true,
-//         cssEase: 'linear'
-//     });
-// });
-
-// $(document).ready(function() {
-//     $('.bg-slide').slick({
-//         dots: true,
-//         infinite: true,
-//         speed: 500,
-//         fade: true,
-//         cssEase: 'linear'
-//     });
 // })
 
+$(document).ready(function(){
+    $(window).scroll(function(){
+      var scroll = $(window).scrollTop();
+      if (scroll > 1) {
+        $(".header-wrap").addClass("header-blur");
+      }
+      else{
+        $(".header-wrap").addClass("header-blur");   
+      }
+    })
+})
+
+// slick 슬라이드 
 $(document).ready(function() {
     $('.bg-slide').slick({
         dots: true,
@@ -131,26 +110,6 @@ $(document).ready(function() {
 //     const date = document.querySelector("#date").offsetTop;
 //     window.scrollTo({ left: 0, top: date, behavior: "smooth" });
 // }
-
-// our work 스크롤
-
-// const main = document.querySelector('main');
-// const work = document.querySelector('#mainOurWork');
-
-// // 컨텐츠 영역부터 브라우저 최상단까지의 길이 구하기
-// const contentTop = content.getBoundingClientRect().top + window.scrollY;
-
-// window.addEventListener('scroll', function(){
-//     if(window.scrollY >= contentTop){
-//         work.classList.add('fixed');
-//     }else{
-//         work.classList.remove('fixed');
-//     }
-// });
-
-
-
-
 
 // contact, apply page
 
