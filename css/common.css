@@ -2,11 +2,40 @@
     margin: 0 auto;
     padding: 0;
     scroll-behavior: smooth;
+    /* cursor: none; */
 }
 html {
     background-color: var(--bgBlack);
     color: #fff;
     max-width: 1920px;
+}
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+    position: absolute; left: 0; top: 0;
+    z-index: 9999;
+    /* transition: backgroud-color .2s, border-color .2s, border-radius .2s, transform .6s; */
+
+    /* width: 3rem;
+      height: 3rem;
+      border: 2px solid var(--color-texta);
+      border-radius: 50%;
+      position: absolute;
+      z-index: 1000; */
+      transform: translate(-50%, -50%);
+      pointer-events: none;
+      transition: all 0.3s ease;
+      transition-property: background, transform;
+      transform-origin: 100% 100%;
+      backdrop-filter: sepia(20%);
+      background-size: cover;
+}
+.cursor-grow {
+    transform: scale(2);
+    background-color: #BDBDBD;
+    opacity: 30%;
 }
 ::selection { background-color: var(--mainColor); color: #fff; }
 ::-webkit-scrollbar { display: none; }

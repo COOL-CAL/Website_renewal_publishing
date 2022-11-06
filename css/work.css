@@ -1,3 +1,14 @@
+.cursor {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: var(--mainColor);
+    position: absolute; left: 0; top: 0;
+    z-index: 9999;
+    transition: backgroud-color .2s, border-color .2s, border-radius .2s, transform .6s;
+}
+
+
 /* Work */
 #ourWork {
     background: url(../img/work_bg.png) no-repeat center center fixed;
