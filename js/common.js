@@ -1,64 +1,29 @@
 // header 
-// $(function(){
-//     var $header = $('header'); //헤더를 변수에 넣기
-//     var $page = $('.page-start'); //색상이 변할 부분
-//     var $window = $(window);
-//     var pageOffsetTop = $page.offset().top;//색상 변할 부분의 top값 구하기
-    
-//     $window.resize(function(){ //반응형을 대비하여 리사이즈시 top값을 다시 계산
-//       pageOffsetTop = $page.offset().top;
-//     });
-    
-//     $window.on('scroll', function(){ //스크롤시
-//       var scrolled = $window.scrollTop() >= pageOffsetTop; //스크롤된 상태; true or false
-//       $header.toggleClass('down', scrolled); //클래스 토글
-//     });
-//   });
+let header = document.querySelector(".header-wrap");
+// let headerHeight = header.offsetHeight;
 
-
-window.onload = function() {
-    const header = document.querySelector(".header-wrap")
-
-    window.onscroll = function() {
-        if(window.scrollY >= 50) {
-            header.classList.add("header-blur");
-        } else {
-            header.classList.remove("header-blur");
-        }
+window.onscroll = function () {
+    let windowTop = window.scrollY;
+    if (windowTop >= 60) {
+        header.classList.add("header-blur");
+    } else {
+        header.classList.remove("header-blur");
     }
 };
-    // console.log(header);
 
-    // window.addEventListener("scroll", () => {
-    //     if(window.scrollY > headerHeight){
-    //         header.classList.add("header-blur");
-    //     } else {
-    //         header.classList.remove("header-blur");
-    //     }
-    // });
+// header(work, contact, apply)
+let header1 = document.querySelector(".header-wrap1");
+// let headerHeight1 = header.offsetHeight;
 
-// var lnb = $("#header").offset().top;
-// $(window).scroll(function() {
-//   	var window = $(this).scrollTop();
+window.onscroll = function () {
+    let windowTop = window.scrollY;
+    if (windowTop >= 60) {
+        header.classList.add("header-blur");
+    } else {
+        header.classList.remove("header-blur");
+    }
+};
 
-//     if(lnb <= window) {
-//       $("#lnb").addClass("header-blur");
-//     } else {
-//       $("#lnb").removeClass("header-blur");
-//     }
-// })
-
-$(document).ready(function(){
-    $(window).scroll(function(){
-      var scroll = $(window).scrollTop();
-      if (scroll > 1) {
-        $(".header-wrap").addClass("header-blur");
-      }
-      else{
-        $(".header-wrap").addClass("header-blur");   
-      }
-    })
-})
 
 // slick 슬라이드 
 $(document).ready(function() {

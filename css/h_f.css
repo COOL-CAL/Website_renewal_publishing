@@ -1,8 +1,8 @@
 /* header */
-.header-wrap {
+.header-wrap1 {
     display: flex;
     justify-content: space-between;
-    padding-top: 1rem;
+    padding-top: 1.2rem;
     padding-bottom: 2rem;
     width: 1100px;
     position: fixed;
@@ -10,6 +10,19 @@
     top: 1rem;
     left: 0;
     right: 0;
+}
+.header-wrap1.header-blur {
+    width: 1100px;
+    border-radius: 16px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    height: 3.75rem;
+    padding-top: 1rem;
+    padding: 0 20px;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    transition: all .3s;
 }
 .logo { margin: 0;}
 .logo img { width: 150px; }

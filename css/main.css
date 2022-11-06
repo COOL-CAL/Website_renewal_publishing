@@ -102,6 +102,12 @@ main {
     color: var(--mainColor);
     transition: all .5s;
 }
+.sub-btn > span {
+    -webkit-animation: wt-btn_sign-marquee 2s linear infinite;
+    -moz-animation: wt-btn_sign-marquee 2s linear infinite;
+    -o-animation: wt-btn_sign-marquee 2s linear infinite;
+    animation: wt-btn_sign-marquee 2s linear infinite;
+}
 
 #main-ctnt { position: relative; margin-top: 170px; margin-bottom: 10rem; }
 .main-box {

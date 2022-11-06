@@ -10,18 +10,32 @@
     <link rel="stylesheet" href="css/work.css">
     <link rel="stylesheet" href="css/h_f.css">
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <!-- <script src="js/common.js"></script> -->
 
     <title>ROOTCORE</title>
 </head>
 <body>
     <header>
-        <div class="header-wrap">
+        <div class="header-wrap1">
             <a href="main.html" class="logo"><img src="img/00img_logo_white01.png" alt="Rootcore logo image"></a>
-            <nav class="menu font-en">
+            <nav class="menu">
                 <a href="contact.html"><p>Contact</p><img src="img/arrow_r.svg" alt=""></a>
             </nav>
         </div>
-    </header> 
+    </header>
+    <script>
+        let header1 = document.querySelector(".header-wrap1");
+        let headerHeight1 = header1.offsetHeight;
+
+        window.onscroll = function () {
+            let windowTop = window.scrollY;
+            if (windowTop >= 60) {
+                header1.classList.add("header-blur");
+            } else {
+                header1.classList.remove("header-blur");
+            }
+        };
+    </script>
     <main id="ourWork">
         <div id="modal" class="wrap">
             <div class="work-ctnt">
