@@ -1,40 +1,77 @@
-// window.onload = function() {
+window.onload = function() {
 
-// const modal = document.getElementById("modal");
-// // const overlay = document.querySelector(".");
-// function modalOn() {
-//     modal.style.display = "block"
+    // const modal = document.querySelector("#modal");
+    // const overlay = document.querySelector(".modal-overlay");
+    // function modalOn() {
+    //     modal.style.display = "block"
+    //     overlay.style.display = "block"
+    // }
+    // // function isModalOn() {
+    // //     return modal.style.display === "flex"
+    // // }
+    // function modalOff() {
+    //     overlay.style.display = "none"
+    //     modal.style.display = "none"
+    // }
     
-// }
-// // function isModalOn() {
-// //     return modal.style.display === "flex"
-// // }
-// function modalOff() {
-//     modal.style.display = "none"
-// }
+    // const btnModal = document.querySelector(".magnify");
+    // btnModal.addEventListener("click", e => {
+    //     // modal.classList.add("modal-overlay");
+    //     modalOn()
+    // })
+    
+    // const closeBtn = document.querySelector(".closeBtn");
+    // closeBtn.addEventListener("click", e => {
+    //     // modal.classList.remove("modal-overlay");
+    //     modalOff()
+    //     // isModalOn()
+    // })
+    //     // modal.addEventListener("click", e => {
+    //         //     const evTarget = e.target
+    // //     if(evTarget.addClass("modal-overlay")) {
+    // //         modalOff()
+    // //     }
+    // // })
 
-// const btnModal = document.querySelector(".magnify");
-// btnModal.addEventListener("click", e => {
-//     modalOn()
-// })
+    // window.addEventListener("keyup", e => {
+    //     if(modalOn() && e.key === "Escape") {
+    //         modalOff()
+    //     }
+    // })
 
-// const closeBtn = modal.querySelector(".closeBtn");
-// closeBtn.addEventListener("click", e => {
-//     modalOff()
-// })
-// modal.addEventListener("click", e => {
-//     const evTarget = e.target
-//     if(evTarget.addClass("modal-overlay")) {
-//         modalOff()
-//     }
-// })
+    const modal = document.getElementById("modal")
+    function modalOn() {
+        modal.style.display = "flex"
+    }
+    function isModalOn() {
+        return modal.style.display === "flex"
+    }
+    function modalOff() {
+        modal.style.display = "none"
+    }
+    const btnModal = document.querySelector(".magnify")
+    btnModal.addEventListener("click", e => {
+        modalOn()
+    })
+    const closeBtn = modal.querySelector(".closeBtn")
+    closeBtn.addEventListener("click", e => {
+        modalOff()
+    })
+    modal.addEventListener("click", e => {
+        const evTarget = e.target
+        if(evTarget.classList.contains("modal-overlay")) {
+            modalOff()
+        }
+    })
+    window.addEventListener("keyup", e => {
+        if(isModalOn() && e.key === "Escape") {
+            modalOff()
+        }
+    })
+}
 
-// window.addEventListener("keyup", e => {
-//     if(modalOn() && e.key === "Escape") {
-//         modalOff()
-//     }
-// })
-// }
+
+
 
 // // mouse cursor
 // let mouseCursor = document.querySelector(".cursor");
