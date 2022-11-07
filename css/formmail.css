@@ -28,8 +28,6 @@
 /*** START formmail css ***/
 
 /* left side */
-#contact{ padding-top: 100px; }
-#contact #left{ width: 350px; position: fixed; top: 3.5%; float: left; height: 60vh; }
 #contact #left .input_wr{ font-size:20px; font-weight:400; color:#fff; line-height: 40px; margin-bottom: 30px; }
 #contact #left .input_wr .input_line_wr{ margin-bottom:30px; font-weight:300; margin-bottom: 0; }
 #contact #left .input_wr span {

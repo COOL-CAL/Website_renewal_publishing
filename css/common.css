@@ -40,28 +40,10 @@ html {
 ::selection { background-color: var(--mainColor); color: #fff; }
 ::-webkit-scrollbar { display: none; }
 #mainWhoWeAre, #mainBusinessProcess, #mainOurValues, #mainRootcoreWay, #mainOurWork, #mainJoinUs { 
-    /* padding:7.5em 6.875rem 1.4em 1.4rem; */
     padding-top: 7.5rem;
     padding-bottom: 6.25rem;
-    /* padding-left: 1.4rem;
-    padding-right: 1.4rem; */
-    /* max-height: 937px; */
 }
-/* #mainJoinUs { padding-top: 120px; } */
-/* #mainWhoWeAre { padding-top: 30rem;} */
 .wrap { width: 1100px; }
-.sa {
-    opacity: 0;
-    transition: all 3s ease;
-}
-/* 아래에서 위로 페이드 인 */
-.sa-up {
-    transform: translate(0, 500px);
-}
-.sa.show {
-    opacity: 1;
-    transform: none;
-}
 :root {
     --mainColor: #FFC034;
     --gray2: #EBEBEB;

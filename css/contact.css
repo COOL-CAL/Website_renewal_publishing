@@ -1,18 +1,17 @@
 #contact, #apply { font-family: 'Pretendard-Regular'; width: 1100px; }
 
-#left { padding: 10rem 0;}
-#left h1, #right h1 { font-family: 'Montserrat-bi'; font-size: 30px; }
+#left { padding: 10rem 0; top: 0; width: 350px; position: fixed; float: left; }
+#left h1, #right h1 { font-size: 30px; }
 #right { float: right; width: 700px; padding-top:8.1rem; };
 #right h1 { padding-bottom: 50px; }
-.page-nm { margin-bottom: 45px; }
-.page-nm h2 { font-size: 30px; margin-bottom: 14px; }
-.page-nm p { font-size: 14px; padding-top: 10px; }
+.page-nm { margin-bottom: 40px; font-family: 'Montserrat',sans-serif; }
+.page-nm h1 { font-style: italic; font-weight: 900; }
+.page-nm p { font-size: 14px; font-weight: 400; padding-top: 10px; color: var(--lightGray);}
 
 /* 개인정보 체크박스(공통) */
 .control-privacy{ margin-top: 23px; margin-bottom: 100px; }
 .control-privacy .agree-text{border:1px solid #d5d5d5; padding: 20px; font-size:15px; margin-bottom:20px; color:#2a2a2a; width:100%;height:150px;overflow: auto;}
 .control-privacy .agree-box{font-size:16px; color:#2a2a2a; font-weight:300;}
-/* .control-privacy .agree-box label.t{margin-right:20px;} */
 .control-privacy .agree-box label{ cursor:pointer; display: inline-flex; align-items: center; }
 
 .control-privacy .agree-box input[type="checkbox"]+label span.cbox {
@@ -30,8 +29,6 @@
     background: url('../img/check-solid.svg') no-repeat 50% 50%;
     background-color: #fff;
     color: #fff;
-    /* border: none; */
 }
 .control-privacy .agree-box input[type="checkbox"] + label{font-size: 13px; color:#999999;}
 .control-privacy .agree-box input[type="checkbox"]:checked + label{color:#fff;}
-.control-privacy .agree-box input.chk_hidden{display:none;}
