@@ -1,15 +1,15 @@
-#contact, #apply { font-family: 'Pretendard-Regular'; width: 1100px; }
+#contact, #apply { font-family: 'Pretendard', sans-serif; width: 1100px; }
 
 #left { padding: 10rem 0; top: 0; width: 350px; position: fixed; float: left; }
 #left h1, #right h1 { font-size: 30px; }
-#right { float: right; width: 700px; padding-top:8.1rem; };
+#right { float: right; width: 717px; top: 0; padding-top:12.1rem; };
 #right h1 { padding-bottom: 50px; }
 .page-nm { margin-bottom: 40px; font-family: 'Montserrat',sans-serif; }
 .page-nm h1 { font-style: italic; font-weight: 900; }
 .page-nm p { font-size: 14px; font-weight: 400; padding-top: 10px; color: var(--lightGray);}
 
 /* 개인정보 체크박스(공통) */
-.control-privacy{ margin-top: 23px; margin-bottom: 100px; }
+.control-privacy{ margin-top: 23px; margin-bottom: 50px; }
 .control-privacy .agree-text{border:1px solid #d5d5d5; padding: 20px; font-size:15px; margin-bottom:20px; color:#2a2a2a; width:100%;height:150px;overflow: auto;}
 .control-privacy .agree-box{font-size:16px; color:#2a2a2a; font-weight:300;}
 .control-privacy .agree-box label{ cursor:pointer; display: inline-flex; align-items: center; }
@@ -19,16 +19,17 @@
     width: 20px;
     height: 20px;
     display: inline-block;
-    border: 1px solid #ddd;
+    border: 1px solid #fff;
     border-radius: 4px;
     vertical-align: sub;
     margin-left: 0px;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 .control-privacy .agree-box input[type="checkbox"]:checked+label span.cbox {
-    background: url('../img/check-solid.svg') no-repeat 50% 50%;
-    background-color: #fff;
-    color: #fff;
+    background: url('../img/check.svg') no-repeat 50% 50%;
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
+    /* color: #fff; */
 }
 .control-privacy .agree-box input[type="checkbox"] + label{font-size: 13px; color:#999999;}
 .control-privacy .agree-box input[type="checkbox"]:checked + label{color:#fff;}

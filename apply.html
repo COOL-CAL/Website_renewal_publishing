@@ -35,13 +35,13 @@
             </div>
             <div class="input_wr">
                 <p>안녕하세요! 😄</p>
-                <div class="input_wr font20">
+                <!-- <div class="input_wr font20"> -->
                     <div class="input_line_wr">
                         <span class="apply_ctnt">루트코어에서 </span>
                         <span id="apply_type"></span> <span class="apply_ctnt"> 로<br></span>
                         <span class="apply_ctnt">함께하고 싶은</span> <span id="applicant_nm"></span> <span class="apply_ctnt">입니다.</span>
                     </div>
-                </div>
+                <!-- </div> -->
             </div>
             <p class="apply_stit font16">문의를 남겨주시면 확인 후 담당자가 빠른 시일 내에<br>연락 드리겠습니다.</p>
         </section>
@@ -122,8 +122,8 @@
                 <h3 class="apply_tit">지원자님에 대해 알려주세요.</h3>
                 <div class="textarea_wr">
                     <label for="abt_applicant" class="formTitle"></label>
-                    <textarea rows="1" name="abt_applicant" class="form-control form-control-text font-kr"
-                        placeholder="의뢰할 내용을 기재해주세요." id="comments"
+                    <textarea rows="1" name="abt_applicant" class="form-control form-control-text"
+                        placeholder="내용을 기재해주세요." id="comments"
                         data-validation-required-message="Please enter a message."
                         onkeydown="resize(this)" onkeyup="resize(this)" required></textarea>
                     <div class="apply-file-btn">
@@ -166,7 +166,7 @@
         </section>
     </main> 
     
-    <footer class="font-kr" style="top:0; width: 100%;">
+    <footer>
         <div class="footer-box">
             <div class="logo-box">
                 <img src="img/00img_logo_white01.png" alt="Rootcore logo image">
@@ -176,13 +176,16 @@
                 <p>office.</p>
                 <div class="address">
                     <p>42198 대구광역시 수성구 지범로 39길 21-3, 3층 루트코어</p>
+                    <!-- <p>21-3, Jibeom-ro 39-gil, Suseong-gu, Daegu, Republic of Korea</p> -->
                     <p>21-3, Jibeom-ro 39-gil, Suseong-gu,</p>
                     <p>Daegu, Republic of Korea</p>
                 </div>
             </div>
             <div class="tel">
-                <p><span class="bolder">T.</span> 053.783.4582</p>
-                <p><span class="bolder">F.</span> 053.710.4582</p>
+                <span class="bolder">T.</span>
+                <p>053.783.4582</p>
+                <span class="bolder">F.</span>
+                <p>053.710.4582</p>
             </div>
         </div>
     </footer>

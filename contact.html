@@ -49,22 +49,23 @@
         </section>
 
         <section id="right">
-            <form enctype="multipart/form-data" id="contactform" name="contactform" method="post" action="/formmail/form_send.php">
+            <form enctype="multipart/form-data" id="contactform" name="contactform" method="post" action="">
                 <input type="hidden" name="mode" value="send">
-                <div class="contact_cont clearfix font-kr">
+                <div class="contact_cont clearfix">
                     <div class="contact_left">
-                        <h1 class="font-kr">프로젝트 문의하기</h1>
+                        <h1>프로젝트 문의하기</h1>
                         <div class="control-group contact_title">
-                            <h3 class="contact_tit choice">프로젝트 이름을 알려주세요.</h3>
+                            <h3 class="contact_tit">프로젝트 이름을 알려주세요.</h3>
                             <div>
                                 <label for="title" class="formTitle"></label>
-                                <input type="title" name="title" class="form-control font-kr" placeholder="프로젝트명" id="title" required data-validation-required-message="Please enter a title.">
+                                <input type="title" name="title" class="form-control" placeholder="프로젝트명을 입력해주세요." id="title" required data-validation-required-message="Please enter a title.">
                                 <p class="help-block text-danger"></p>
                             </div>
                         </div>
 
                         <div class="control-group contact_type">
-                            <h3 class="contact_tit">어떤 프로젝트를 문의하고 싶으신가요?<p class="contact_stit font13">(중복 선택이 가능합니다.)</p></h3>
+                            <h3 class="contact_tit">어떤 프로젝트를 문의하고 싶으신가요?</h3>
+                            <p class="contact_stit font13">(중복 선택이 가능합니다.)</p>
                             <label for="type" class="formTitle"></label>
                             <div class="qatype_check">
                                 <div class="qatype00">
@@ -248,7 +249,7 @@
                             <h3 class="contact_tit">프로젝트에 대해 이야기 해주세요.</h3>
                             <div class="textarea_wr">
                                 <label for="comments" class="formTitle"></label>
-                                <textarea rows="1" name="comments" class="form-control form-control-text font-kr"
+                                <textarea rows="1" name="comments" class="form-control form-control-text font"
                                     placeholder="의뢰할 내용을 기재해주세요." id="comments"
                                     data-validation-required-message="Please enter a message."
                                     onkeydown="resize(this)" onkeyup="resize(this)" required></textarea>
@@ -270,17 +271,17 @@
                                 </div>
                             </div>
                             
-                            <div class="sendBtn" style="text-align:center;">
-                                <div class="form-group col-xs-12">
-                                    <button type="button" value="제출하기" onclick="form_Check();">
-                                        <span class="text font-kr">제출하기</span>
-                                    </button>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </div>
                 
+                <div class="sendBtn" style="text-align:center;">
+                    <div class="form-group col-xs-12">
+                        <button type="button" value="제출하기" onclick="form_Check();">
+                            <span class="text font-kr">제출하기</span>
+                        </button>
+                    </div>
+                </div>
             </form>
         </section>
     </main> 
