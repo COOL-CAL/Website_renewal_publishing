@@ -1,5 +1,19 @@
-// 전화번호 숫자만 입력
 $(function(){
+	// mouse cursor
+	let mouseCursor = document.querySelector(".cursor");
+	// let navLinks = document.querySelectorAll(".gnb li a"); //메뉴 링크
+	//window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
+	
+	window.addEventListener("scroll", cursor);
+	window.addEventListener("mousemove", cursor);
+	//커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
+	
+	function cursor(e) {
+		mouseCursor.style.left = e.windowX + "px";
+		mouseCursor.style.top = e.windowY - scrollY + "px";
+	};
+	
+	// 전화번호 숫자만 입력
 	$('input[name="telephone"]').keydown(function(event) {
 		let key = event.charCode || event.keyCode || 0;
 		$text = $(this);
@@ -14,12 +28,13 @@ $(function(){
 		return (key == 8 || key == 9 || key == 46 || (key >= 48 && key <= 57) || (key >= 96 && key <= 105));          
 	});
 
+	var c1 = 0;
 	let newValue02;
-	let newValue03;
-	let newValue04;
-	let newValue05;
-	let newValue06;
-	let newValue07;
+	// let newValue03;
+	// let newValue04;
+	// let newValue05;
+	// let newValue06;
+	// let newValue07;
 
 // 프로젝트명
 $("#title").on("propertychange change keyup paste input", function() {
@@ -40,11 +55,11 @@ $(".chk_hidden").click(function(){
 	var check = $("#qatype01").is(":checked") + $("#qatype02").is(":checked") + $("#qatype03").is(":checked") + $("#qatype04").is(":checked");
 	if($(".chk_hidden").is(":checked")){
 		var qatype = "";
-		$(".chk_hidden").each(function(idx, item){
-			if($(item).is(":checked")){
+		$(".chk_hidden").each(function(idx){
+			if($(this).is(":checked")){
 				if(idx === 3 ){
-					qatype += $(this).val() + ` <span class="load_ctnt">을</span>`
-					$(item).addClass('hidden');
+					qatype += $(this).val() + ` <span class="load_ctnt1">을</span>`
+					$(".hide").addClass('hidden');
 					// $(".hidden").css('height', '0');
 				}
 				else if(idx <= 2) {
@@ -52,16 +67,28 @@ $(".chk_hidden").click(function(){
 					// qatype +=  "<strong>,</strong> ";
 					// // if(idx === 2){
 					// // 	qatype += "<br>"
-				} 
-				else {
-					$(item).removeClass('hidden');
-					// $(".load_ctnt1").addClass('hidden');
 				}
+				else if(idx === 1) {
+					qatype += $(this).val()
+				}
+				// else {
+				// 	$(".load_ctnt").removeClass('hidden');
+				// 	qatype = "";
+				// 	$(".load_ctnt1").addClass('hidden');
+				// }
 			}
 		});
 
 		$("#load_cate").html(qatype);  
 		c1 = 1;
+
+		// $(".chk_hidden").each(function(){  
+		// 	if($(this).is(":checked")){
+		// 		qatype += $(this).val() + "<strong>,</strong> "; 
+		// 	}
+		// });
+		// $("#load_cate").html(qatype);  
+		// c1 = 1;
 	}
 	if(check >= 1){
 		$("#load_cate").addClass('min_auto');
@@ -70,6 +97,34 @@ $(".chk_hidden").click(function(){
 	}
 
 });
+
+
+
+
+
+// document.getElementByClassName("chk_hidden").click(function(){  
+// 	let check = document.getElementById("qatype01").is(":checked") + document.getElementById("qatype02").is(":checked") + document.getElementById("qatype03").is(":checked") + document.getElementById("qatype04").is(":checked");
+// 	if(document.getElementByClassName("chk_hidden").is(":checked")){
+// 		let qatype = "";
+// 	document.getElementByClassName("chk_hidden").each(function(){  
+// 			if(this.is(":checked")){
+// 				qatype += this.value + "<strong>,</strong> "; 
+// 			}
+// 		});
+// 		document.getElementById("load_cate").innerHTML = qatype;  
+// 		c1 = 1;
+// 	}
+// 	if(check >= 1){
+// 		document.getElementById("load_cate").classList.add("min_auto");
+// 	} else if(check === 0) {
+// 		document.getElementById("load_cate").classList.remove("min_auto");
+// 	}
+
+// });
+
+
+
+
 
 		// if($(".chk_hidden").is(":checked")){
         //     var qatype = "";  

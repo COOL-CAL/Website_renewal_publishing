@@ -16,9 +16,10 @@
     z-index: 10;
 }
 #modal .modal-window {
-    height: 900px;
+    /* height: 600px; */
     position: relative;
     margin: 100px 20px;
+    /* overflow-y: scroll; */
     /* width: 1100px; */
     /* top: 100px; */
     /* margin-right: 10px; */
@@ -43,19 +44,14 @@
 #modal .modal-head .ctnt-desc p:last-child { font-size: 16px; width: 727px; line-height: 22px; text-overflow: ellipsis; -webkit-box-orient: vertical;word-break:keep-all;}
 #modal .closeBtn {
     position: sticky;
-    top: 100px;
+    top: 80px;
     float: right;
     padding-right: 10px;
     cursor: pointer;
     color: #fff;
     font-size: 30px;
     margin: 0;
-    margin-top: 130px;
+    margin-top: 100px;
 }
 #modal .closeBtn > img { width: 30px; height: 30px; }
-#modal .modal-ctnt {
-    margin-top: 20px;
-    padding: 0px 10px;
-    /* text-shadow: 1px 1px 2px gray; */
-    color: white;
-}
+#modal .modal-ctnt { margin-top: 20px; padding: 0px 10px; }
