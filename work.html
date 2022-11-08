@@ -174,32 +174,39 @@
                 <script>
                     window.onload = function() {
 
+                        const body = document.querySelector("body");
                         const modal = document.getElementById("modal")
                         function modalOn() {
                             modal.style.display = "flex"
+                            
                         }
                         function isModalOn() {
                             return modal.style.display === "flex"
                         }
                         function modalOff() {
                             modal.style.display = "none"
+                            
                         }
                         const btnModal = document.querySelector(".magnify")
                         btnModal.addEventListener("click", e => {
+                            body.classList.add("stop-scroll");
                             modalOn()
                         })
                         const closeBtn = modal.querySelector(".closeBtn")
                         closeBtn.addEventListener("click", e => {
+                            body.classList.remove("stop-scroll");
                             modalOff()
                         })
                         modal.addEventListener("click", e => {
                             const evTarget = e.target
                             if(evTarget.classList.contains("modal-overlay")) {
+                                body.classList.remove("stop-scroll");
                                 modalOff()
                             }
                         })
                         window.addEventListener("keyup", e => {
                             if(isModalOn() && e.key === "Escape") {
+                                body.classList.remove("stop-scroll");
                                 modalOff()
                             }
                         })
