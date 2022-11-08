@@ -58,9 +58,9 @@ $(".chk_hidden").click(function(){
 		$(".chk_hidden").each(function(idx){
 			if($(this).is(":checked")){
 				if(idx === 3 ){
-					qatype += $(this).val() + ` <span class="load_ctnt1">을</span>`
+					qatype += `<br>` + $(this).val() + ` <span class="load_ctnt1">을</span>`
 					$(".hide").addClass('hidden');
-					// $(".hidden").css('height', '0');
+					$("#load_cate").css('width', '300px');
 				}
 				else if(idx <= 2) {
 					qatype += $(this).val() + "<strong>,</strong> "; 
@@ -71,11 +71,11 @@ $(".chk_hidden").click(function(){
 				else if(idx === 1) {
 					qatype += $(this).val()
 				}
-				// else {
-				// 	$(".load_ctnt").removeClass('hidden');
-				// 	qatype = "";
-				// 	$(".load_ctnt1").addClass('hidden');
-				// }
+				else {
+					$(".hide").removeClass('hidden');
+					qatype = "";
+					$(".hide").addClass('hidden');
+				}
 			}
 		});
 

@@ -16,44 +16,47 @@
     <!-- 한글폰트 -->
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    <!-- slick(슬라이드) -->
+    <link rel="stylesheet" type="text/css" href="lib/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="lib/slick-theme.css"/>
+    <link rel="stylesheet" href="lib/fonts/slick.ttf">
+    <link rel="stylesheet" href="lib/fonts/slick.woff">
+    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" /> -->
 
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script type="text/javascript" src="lib/slick.js"></script>
+    <!-- <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
     <!-- <script defer src="js/modal.js"></script> -->
-    <script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
     
     <title>ROOTCORE</title>
 </head>
 
 <body>
     <header>
-        <!-- <section id="header"> -->
         <div class="header-wrap">
             <a href="main.html" class="logo"><img src="img/00img_logo_white01.png " alt="Rootcore logo image"></a>
             <nav class="menu">
                 <a href="#mainWhoWeAre">
-                    <p>Who We Are</p>
+                    <p data-text="Who We Are">Who We Are</p>
                 </a>
                 <a href="#mainOurValues">
-                    <p>Our Values</p>
+                    <p data-text="Our Values">Our Values</p>
                 </a>
                 <a href="#mainBusinessProcess">
-                    <p>Business Process</p>
+                    <p data-text="Business Process">Business Process</p>
                 </a>
                 <a href="#mainRootcoreWay">
-                    <p>Rootcore Way</p>
+                    <p data-text="Rootcore Way">Rootcore Way</p>
                 </a>
                 <a href="#mainJoinUs">
-                    <p>Contact</p>
+                    <p data-text="Contact">Contact</p>
                 </a>
                 <a href="work.html">
-                    <p>Our Work</p><img src="img/arrow_r.svg" alt="">
+                    <p data-text="Our Work">Our Work</p><img src="img/arrow_r.svg" alt="">
                 </a>
             </nav>
         </div>
-        <!-- </section> -->
     </header>
     <script defer type="text/javascript" src="js/common.js"></script>
 

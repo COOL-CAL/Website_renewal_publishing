@@ -39,17 +39,19 @@ main {
     height: 937px !important;
     left: 0px !important;
     width: 50% !important;
-    cursor: pointer !important;
+    cursor: url(../img/angle_left.png) !important;
     opacity: 0 !important;
     z-index: 1 !important;
 }
+/* .slick-prev:hover {  } */
 .slick-next {
     height: 937px !important;
     right: 0px !important;
     width: 50% !important;
-    cursor: pointer !important;
+    /* cursor: pointer !important; */
     opacity: 0 !important;
     z-index: 1 !important;
+    cursor: url(../img/angle_right.png) !important;
 }
 /* .slick-next:hover {
     cursor: url();

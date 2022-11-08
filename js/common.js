@@ -22,19 +22,25 @@ window.onscroll = function () {
     }
 };
 
+window.onload = function() {
 // mouse cursor
-let mouseCursor = document.querySelector(".cursor");
-// let navLinks = document.querySelectorAll(".gnb li a"); //메뉴 링크
-//window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
+// let cursor = document.querySelector(".cursor");
+// // let navLinks = document.querySelectorAll(".gnb li a"); //메뉴 링크
+// // window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
 
-window.addEventListener("scroll", cursor);
-window.addEventListener("mousemove", cursor);
-//커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
+// window.addEventListener("scroll", cursor);
+// window.addEventListener("mousemove", cursor);
+// // //커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
 
-function cursor(e) {
-  mouseCursor.style.left = e.pageX + "px";
-  mouseCursor.style.top = e.pageY - scrollY + "px";
-};
+// function cursor(e) {
+//   mouseCursor.style.left = e.pageX + "px";
+//   mouseCursor.style.top = e.pageY - scrollY + "px";
+// };
+
+// cursor.addEventListener('mousemove',(e) => { 
+//     cursor.style.left = `${e.clientX}px`; 
+//     cursor.style.top = `${e.clientY}px`; 
+//   });
 
 // navLinks.forEach((link) => {
 // link.addEventListener("mouseover", () => {
@@ -48,6 +54,51 @@ function cursor(e) {
 //     link.classList.remove("hovered-link");
 // });
 // });
+
+// const mouseImg = document.querySelector('.cursor');
+// // const mouseImgRect = mouseImg.getBoundingClientRect();
+// // const mouseImgHalfWidth = mouseImgRect.width / 2;
+// // const mouseImgHalfHeight = mouseImgRect.height / 2;
+// // const tag = document.querySelector('.tag');
+
+// document.addEventListener('mousemove', (e) => {
+//     const x = e.pageX;
+//   const y = e.pageY;
+//   //   mouseImg.style.transform = `translate(${x - mouseImgHalfWidth}px, ${
+//       //     y - mouseImgHalfHeight
+//       //   }px)`;
+//       mouseImg.style.transform = `translate(${x}px, ${y}px)`;
+//       //   tag.innerHTML = `${x}px ${y}px`;
+//     });
+
+
+
+
+
+
+
+
+
+
+}
+
+// $(function(){
+// 	// mouse cursor
+// 	let mouseCursor = document.querySelector(".cursor");
+// 	// let navLinks = document.querySelectorAll(".gnb li a"); //메뉴 링크
+// 	//window 객체에 scroll & mouse 이벤트를 추가하고 cursor함수 실행되도록 함
+	
+// 	window.addEventListener("scroll", cursor);
+// 	window.addEventListener("mousemove", cursor);
+// 	//커스텀 커서의 left값과 top값을 커서의 XY좌표값과 일치시킴
+	
+// 	function cursor(e) {
+// 		mouseCursor.style.left = e.windowX + "px";
+// 		mouseCursor.style.top = e.windowY - scrollY + "px";
+//     }
+// });
+
+
 
 // slick 슬라이드 
 $(document).ready(function() {
