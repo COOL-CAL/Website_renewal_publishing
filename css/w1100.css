@@ -1,0 +1,22 @@
+/*** media 1100 ~ 769px ***/
+
+/* Our Values */
+#mainOurValues .wrap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#mainOurValues .v-ctnt1 {
+    margin-bottom: 20px;
+    padding-right: 0;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#mainOurValues .v-ctnt1 > p { width: 275px; }
+
+@media all and (max-width: 785px) {.v-ctnt2 { padding-right: 54px; }}
+

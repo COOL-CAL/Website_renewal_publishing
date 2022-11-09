@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/main_h_f.css">
-    <link rel="stylesheet" href="css/modal.css">
+    <link rel="stylesheet" href="css/total.css">
     <!-- fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
           integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
@@ -17,17 +14,14 @@
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css" />
 
     <!-- slick(슬라이드) -->
-    <link rel="stylesheet" type="text/css" href="lib/slick.css"/>
-    <link rel="stylesheet" type="text/css" href="lib/slick-theme.css"/>
     <link rel="stylesheet" href="lib/fonts/slick.ttf">
     <link rel="stylesheet" href="lib/fonts/slick.woff">
-    <!-- <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" /> -->
-
+    <link rel="stylesheet" href="lib/slick.css">
+    <link rel="stylesheet" href="lib/slick-theme.css">
+    
     <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
     <script type="text/javascript" src="lib/slick.js"></script>
-    <!-- <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script> -->
-    <!-- <script defer src="js/modal.js"></script> -->
+    <script defer type="text/javascript" src="js/common.js"></script>
     
     <title>ROOTCORE</title>
 </head>
@@ -58,7 +52,6 @@
             </nav>
         </div>
     </header>
-    <script defer type="text/javascript" src="js/common.js"></script>
 
     <main>
         <div class="main-bg">
@@ -105,8 +98,8 @@
         <div class="wrap">
             <div class="intro-ctnt">
                 <h2 class="font-en-i">Who We Are</h2>
-                <p class="font-en-m font14">ROOTCORE is a software / Web, App / Sercives platform / Smart software design & development,</p>
-                <p class="font-en-m font14">maintenance and operation agency business.</p>
+                <p class="font-en-m font14">ROOTCORE is a software / Web, App / Sercives platform / Smart software design & development,
+                <br>maintenance and operation agency business.</p>
             </div>
             <ul class="intro-list">
                 <li>
@@ -141,8 +134,7 @@
             </div>
             <div class="v-ctnt2">
                 <h3>당신의 비지니스에 <span style="color: var(--mainColor);">빛</span>을 밝혀드립니다.</h3>
-                <p>통찰력 있는 전문가의 웹 개발 노하우로 무장한 루트코어는 PC/Mobile Web, Android,</p>
-                <p>iOS 등 모든 환경에서 최적화된 기술 개발 솔루션을 제공합니다.</p>
+                <p>통찰력 있는 전문가의 웹 개발 노하우로 무장한 루트코어는 PC/Mobile Web, Android, <br> iOS 등 모든 환경에서 최적화된 기술 개발 솔루션을 제공합니다.</p>
             </div>
         </div>
     </section>
@@ -157,28 +149,32 @@
                 <p class="font-en-m font14">This is our overall business process. Estimates may vary depending on the
                     process.</p>
             </div>
-            <ul class="process-list-wrap">
-                <li class="process-list-t">
-                    <p class="process-num">01</p>
-                    <p class="process-nm-t">컨설팅 및 기획</p>
-                    <div class="process-img"><img src="img/01.png" alt="컨설팅 및 기획"></div>
-                </li>
-                <li class="process-list-b">
-                    <div class="process-img"><img src="img/02.png" alt="UX/UI 디자인"></div>
-                    <p class="process-num">02</p>
-                    <p class="process-nm-b">UX/UI 디자인</p>
-                </li>
-                <li class="process-list-t">
-                    <p class="process-num">03</p>
-                    <p class="process-nm-t">프론트/백엔드 개발</p>
-                    <div class="process-img"><img src="img/03.png" alt="프론트/백엔드 개발"></div>
-                </li>
-                <li class="process-list-b">
-                    <div class="process-img"><img src="img/04.png" alt="서비스 유치"></div>
-                    <p class="process-num">04</p>
-                    <p class="process-nm-b">서비스 유치</p>
-                </li>
-            </ul>
+            <div class="process-wrap">
+                <ul class="process-list-wrap">
+                    <li class="process-list-t">
+                        <p class="process-num">01</p>
+                        <p class="process-nm-t">컨설팅 및 기획</p>
+                        <div class="process-img"><img src="img/01.png" alt="컨설팅 및 기획"></div>
+                    </li>
+                    <li class="process-list-b">
+                        <div class="process-img"><img src="img/02.png" alt="UX/UI 디자인"></div>
+                        <p class="process-num">02</p>
+                        <p class="process-nm-b">UX/UI 디자인</p>
+                    </li>
+                </ul>
+                <ul class="process-list-wrap">
+                    <li class="process-list-t">
+                        <p class="process-num">03</p>
+                        <p class="process-nm-t">프론트/백엔드 개발</p>
+                        <div class="process-img"><img src="img/03.png" alt="프론트/백엔드 개발"></div>
+                    </li>
+                    <li class="process-list-b">
+                        <div class="process-img"><img src="img/04.png" alt="서비스 유치"></div>
+                        <p class="process-num">04</p>
+                        <p class="process-nm-b">서비스 유치</p>
+                    </li>
+                </ul>
+            </div>
         </div>
     </section>
 

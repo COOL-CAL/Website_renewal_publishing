@@ -17,11 +17,9 @@
   border: 1px solid #fff;
   transition: all 0.5s;
 }
-@media screen and (max-width: 570px){
+/* @media screen and (max-width: 570px){
 	.sendBtn{padding-bottom:50px;}
-	.MR1per{margin-right:0%;}
-	.width-half{width:100%; float:none;}
-}
+} */
 
 
 /*** START contact css ***/
@@ -54,11 +52,6 @@
 #contact #left .input_wr span.min_auto{ min-width:auto !important;border-bottom:0 !important;margin-right:0;vertical-align:text-top; word-break: keep-all; word-wrap: break-word; }
 #contact #left .input_wr #load_title.min_auto{ vertical-align:text-top; }
 
-@keyframes move {
-  0% { opacity:1; }
-  50%{ opacity:1; transform: translateY(20px) ; }
-  100% { opacity:0; transform: translateY(40px); }
-}
 .contact_cname{position:relative;}
 .contact_cname > div::after{content:"";position:absolute;width:0;height:3px; background:#191919;left:0;bottom:0;}
 .contact_cname > div.on::after{width:100%;transition:all .5s;}
@@ -176,8 +169,6 @@ textarea.input-lg,select[multiple].input-lg{height:auto}
 .form-group-lg select.form-control{height:66px;line-height:66px}
 .form-group-lg textarea.form-control,.form-group-lg select[multiple].form-control{height:auto}
 .form-group-lg .form-control-static{height:66px;min-height:40px;padding:19px 27px;font-size:19px;line-height:1.3333333}
-.has-feedback{position:relative}
-.has-feedback .form-control{padding-right:56.25px}
 .form-control-feedback{position:absolute;top:0;right:0;z-index:2;display:block;width:45px;height:45px;line-height:45px;text-align:center;pointer-events:none}
 .input-lg+.form-control-feedback,.input-group-lg+.form-control-feedback,.form-group-lg .form-control+.form-control-feedback{width:66px;height:66px;line-height:66px}
 .input-sm+.form-control-feedback,.input-group-sm+.form-control-feedback,.form-group-sm .form-control+.form-control-feedback{width:35px;height:35px;line-height:35px}

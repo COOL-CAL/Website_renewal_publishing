@@ -1,0 +1,35 @@
+/*** media 768 ~ 361px ***/
+
+/* main .main-bg { height: 665px;} */
+
+@media all and (max-width: 710px) {
+    #mainWhoWeAre .intro-ctnt > p > br { display: none; }
+    #mainOurValues .v-ctnt2 > p > br{ display: none; }
+}
+
+@media all and (max-width: 570px) {
+    #mainBusinessProcess .process-list-wrap { margin: 0 auto;}
+    #mainRootcoreWay .way-list { width: 260px; margin: 0 auto;}
+}
+
+/* Who We Are */
+.intro-list { max-width: 560px; display: flex; flex-wrap: wrap; }
+/* Business Process */
+.process-wrap {
+    max-width: 560px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.process-list-wrap { margin-bottom: 20px; }
+
+/* Rootcore Way */
+.way-list { max-width: 540px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin-bottom: 0;}
+.way-list > li { margin-bottom: 20px; margin-right: 0; }
+.way-list > li:nth-child(2n) { margin-right: 0;}
+.way-list > li:nth-child(3n) { margin-left: 0;}
+
+.team-list { max-width: 540px; display: flex; flex-direction: column; }
+.team-intro { margin: 15px 0; min-width: 480px; }
