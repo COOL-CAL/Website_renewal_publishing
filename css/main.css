@@ -133,7 +133,7 @@ main {
     }
 }
 @keyframes moveLetter {
-    50% { transform: translateY(100%) translateX(-100%); }
+    50% { transform: translateY(100%) translateY(-100%); }
 }
 
 
@@ -242,14 +242,26 @@ main {
     position: relative;
 }
 .process-list-wrap > li:hover > .process-img > img {
-    animation: motion .2s linear 0s infinite alternate;
+    animation: undefined-easeOutBounce .8s linear 0s infinite alternate;
     /* -webkit-animation: motion .2s linear 0s infinite alternate;
     -moz-animation: motion .2s linear 0s infinite alternate; */
 }
-@keyframes motion {
+/* @keyframes motion {
     0% { transform: translateY(0%);}
-    /* 50% { transform: translateY(10%); } */
+    /* 50% { transform: translateY(10%); }
     100% { transform: translateY(10%);}
+} */
+@keyframes undefined-easeOutBounce {
+	0% { transform: translateY(0%); }
+	12% { transform: translateY(-2%); }
+	24% { transform: translateY(-5%); }
+	36% { transform: translateY(-9.9%); }
+	54% { transform: translateY(-7%); }
+	74% { transform: translateY(-10%); }
+	82% { transform: translateY(-8%); }
+	92% { transform: translateY(-5%); }
+	96% { transform: translateY(-2.8%); }
+	100% { transform: translateY(0%); }
 }
 .process-list-b { bottom: 58px; }
 .process-num {
