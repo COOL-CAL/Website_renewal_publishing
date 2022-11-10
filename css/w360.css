@@ -1,0 +1,8 @@
+/* 360 ~  */
+
+/* Who We Are */
+.intro-list { display: flex; flex-direction: column; }
+.intro-list li {
+    width: 100% !important;
+    
+}

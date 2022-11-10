@@ -1,5 +1,17 @@
 /*** media 1100 ~ 769px ***/
 
+/* Who We Are */
+.intro-list li {
+    width: 30%; height: auto;
+    margin: 10px; 
+    /* position: relative;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center; */
+}
+.intro-list li > img { width: 100%; }
+
 /* Our Values */
 #mainOurValues .wrap {
     display: flex;
@@ -20,3 +32,7 @@
 
 @media all and (max-width: 785px) {.v-ctnt2 { padding-right: 54px; }}
 
+@media all and (max-width: 1023px) {
+    #mainRootcoreWay .team-intro{ padding-right: 30px; }
+    
+}

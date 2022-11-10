@@ -33,3 +33,18 @@
 }
 .control-privacy .agree-box input[type="checkbox"] + label{font-size: 13px; color:#999999;}
 .control-privacy .agree-box input[type="checkbox"]:checked + label{color:#fff;}
+
+.sendBtn button {
+    width: 205px; height: 59px;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    font-size: 13px;
+    margin-bottom: 100px;
+    font-family: 'Pretendard', sans-serif;
+  }
+  .sendBtn button:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid #fff;
+    transition: all 0.5s;
+  }

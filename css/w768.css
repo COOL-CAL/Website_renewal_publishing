@@ -13,7 +13,13 @@
 }
 
 /* Who We Are */
-.intro-list { max-width: 560px; display: flex; flex-wrap: wrap; }
+.intro-list { display: grid; grid-template-columns: repeat(2, 1fr); }
+.intro-list li {
+    width: 80% !important;
+    
+}
+.intro-list li > img { width: 100%; }
+
 /* Business Process */
 .process-wrap {
     max-width: 560px;
@@ -33,3 +39,44 @@
 
 .team-list { max-width: 540px; display: flex; flex-direction: column; }
 .team-intro { margin: 15px 0; min-width: 480px; }
+
+/* Our Work */
+.three-imgs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+.three-imgs:nth-child(2) { display: grid; grid-template-columns: repeat(2, 1fr); }
+.three-imgs:nth-child(2) > .work-list-ctnt:first-child { 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    order: 1;
+}
+
+/* Contact */
+#mainJoinUs { padding-top: 60px; padding-bottom: 80px; }
+#mainJoinUs > .wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding-bottom: 100px; */
+}
+#mainJoinUs .wrap .join-wrap { margin-bottom: 20px; padding: 0; text-align: center; }
+#mainJoinUs .wrap .join-box {
+    max-width: 500px;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 30px; */
+}
+#mainJoinUs .join-btns {
+    display: inline-flex;
+    flex-direction: column;
+    padding: 0;
+}
+#mainJoinUs .join-btn, .apply-btn {
+    /* max-width: ; */
+    font-size: 16px;
+    margin: 0;
+}
+#mainJoinUs .join-btn { margin-bottom: 10px; }
