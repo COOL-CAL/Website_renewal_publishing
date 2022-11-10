@@ -75,14 +75,6 @@ header {
     -o-transform-origin: left top;
     transform-origin: left top;
 }
-/* @media (hover: hover) {
-    .menu a p:hover {
-      transform: rotateY(-150%) skewX(-7deg);
-    }
-    .menu a p:hover:after {
-      transform: skewX(7deg);
-    }
-} */
 .menu > a > p:hover { 
     color: var(--mainColor);
 }
