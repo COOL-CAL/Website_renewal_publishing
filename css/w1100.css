@@ -13,24 +13,28 @@
 .intro-list li > img { width: 100%; }
 
 /* Our Values */
-#mainOurValues .wrap {
+/* #mainOurValues .wrap {
     display: flex;
     justify-content: center;
     flex-direction: column;
-}
+}*/
 
 #mainOurValues .v-ctnt1 {
-    margin-bottom: 20px;
-    padding-right: 0;
+    /* margin-bottom: 20px; */
+    padding: 0 !important;
+    padding-right: 30px !important;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-#mainOurValues .v-ctnt1 > p { width: 275px; }
+/* #mainOurValues .v-ctnt1 > p { width: 275px; } */
 
-@media all and (max-width: 785px) {.v-ctnt2 { padding-right: 54px; }}
+@media all and (max-width: 785px) {
+    .v-ctnt2 { padding-right: 54px !important; }
+    .v-ctnt2 br { display: none; }
+}
 
 @media all and (max-width: 1023px) {
     #mainRootcoreWay .team-intro{ padding-right: 30px; }

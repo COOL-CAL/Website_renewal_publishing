@@ -103,12 +103,54 @@ window.onload = function() {
 // slick 슬라이드 
 $(document).ready(function() {
     $('.bg-slide').slick({
+        slide: 'div',
         dots: true,
         infinite: true,
         arrows: true,
         speed: 500,
         slidesToShow: 1,
-        slidesToScroll: 1
+        slidesToScroll: 1,
+        responsive:[
+            {
+                breakpoint: 360,
+                setting: {
+                    autoplay: true,
+                    autoplaySpeed: 10000,
+                }
+            },
+            {
+                breakpoint: 768,
+            },
+            {
+                breakpoint: 1024,
+            }
+        ]
+    });
+});
+
+$(document).ready(function() {
+    $('.bg-slide1').slick({
+        dots: true,
+        infinite: true,
+        arrows: true,
+        speed: 500,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        responsive:[
+            {
+                breakpoint: 360,
+                setting: {
+                    autoplay: true,
+                    autoplaySpeed: 10000,
+                }
+            },
+            {
+                breakpoint: 768,
+            },
+            {
+                breakpoint: 1024,
+            }
+        ]
     });
 });
 
