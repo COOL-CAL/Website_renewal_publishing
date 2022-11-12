@@ -7,10 +7,10 @@
     #mainOurValues .v-ctnt2 > p > br{ display: none; }
 }
 
-@media all and (max-width: 570px) {
+/* @media all and (max-width: 570px) {
     #mainBusinessProcess .process-list-wrap { margin: 0 auto;}
     #mainRootcoreWay .way-list { width: 260px; margin: 0 auto;}
-}
+} */
 
 /* Who We Are */
 .intro-list { display: grid !important; grid-template-columns: repeat(2, 1fr); place-items: center; }
@@ -35,7 +35,7 @@
     justify-content: center;
     align-items: center;
 }
-#mainOurValues .v-ctnt1 > p { width: 275px; }
+#mainOurValues .v-ctnt1 > p { width: 231px; }
 #mainOurValues v-ctnt2 p > br { display: none; }
 
 /* Business Process */
@@ -50,13 +50,23 @@
 .process-list-wrap { margin-bottom: 20px; }
 
 /* Rootcore Way */
-.way-list { max-width: 540px; display: flex; flex-wrap: wrap; justify-content: center; align-items: center; margin-bottom: 0;}
-.way-list > li { margin-bottom: 20px; margin-right: 0; }
-.way-list > li:nth-child(2n) { margin-right: 0;}
-.way-list > li:nth-child(3n) { margin-left: 0;}
+/* .way-wrap { display: flex; flex-direction: column; } */
+.way-list { display: grid !important; justify-items: center; place-items: center; grid-template-columns: repeat(2,1fr); margin-bottom: 20px !important;}
+.way-list > li { margin-bottom: 20px; margin-right: 0 !important; }
+.way-list > li:nth-child(2n-1) { margin-right: 10px !important;}
+.way-list > li:nth-child(2n) { margin-left: 10px !important;}
+.way-list > .way-img {
+    max-width: 250px !important;
+    height: auto;
+    position: relative;
+    display: inline-flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
 
-.team-list { max-width: 540px; display: flex; flex-direction: column; }
-.team-intro { margin: 15px 0; min-width: 480px; }
+.team-list { display: flex; flex-direction: column; }
+.team-intro { margin: 15px 0 !important; max-width: 520px !important; }
 
 /* Our Work */
 .three-imgs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }

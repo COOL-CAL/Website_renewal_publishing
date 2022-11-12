@@ -6,3 +6,8 @@
     width: 100% !important;
     
 }
+
+/* Rootcore Way */
+.way-list { grid-template-columns: repeat(1, 1fr) !important; }
+.way-list > li:nth-child(2n-1) { margin-right: 0 !important;}
+.way-list > li:nth-child(2n) { margin-left: 0 !important;}
