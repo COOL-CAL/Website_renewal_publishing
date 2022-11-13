@@ -1,11 +1,22 @@
 /* 360 ~  */
 
+/* main */
+.main-kr1 > h1 { font-size: 20px !important; }
+.main-en1 > h1 { font-size: 55px !important; }
+
 /* Who We Are */
 .intro-list { grid-template-columns: repeat(1, 1fr) !important; }
 .intro-list li {
     width: 100% !important;
     
 }
+
+/* Business Process */
+#mainBusinessProcess { margin-bottom: 100px; }
+.process-list-wrap {
+    grid-template-columns: repeat(1, 1fr) !important;
+}
+
 
 /* Rootcore Way */
 .way-list { grid-template-columns: repeat(1, 1fr) !important; }

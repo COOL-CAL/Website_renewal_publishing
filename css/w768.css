@@ -1,5 +1,9 @@
 /*** media 768 ~ 361px ***/
 
+/* main */
+
+.main-kr1 > h1 { font-size: 30px !important; }
+.main-en1 > h1 { font-size: 65px !important; }
 /* main .main-bg { height: 665px;} */
 
 @media all and (max-width: 710px) {
@@ -39,15 +43,20 @@
 #mainOurValues v-ctnt2 p > br { display: none; }
 
 /* Business Process */
-.process-wrap {
+/* .process-wrap {
     max-width: 560px;
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+} */
+.process-list-wrap {
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center !important;
+    margin-bottom: 20px;
 }
-.process-list-wrap { margin-bottom: 20px; }
 
 /* Rootcore Way */
 /* .way-wrap { display: flex; flex-direction: column; } */

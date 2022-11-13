@@ -10,6 +10,7 @@ main {
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    transition: all 1s;
 }
 
 /* header */
@@ -231,7 +232,7 @@ header {
 
 /* 슬라이드 위 글 */
 #main-ctnt1 {
-    max-width: 1100px;
+    width: 100%;
     height: 280px;
     display: block;
     position: absolute;
@@ -242,16 +243,12 @@ header {
     margin: 0 30px;
 }
 .main-box1 {
-    /* position: relative; */
     position: relative;
-    top: 30%;
-    left: 0%;
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 934px;
     text-align: center;
-    padding: 8rem 0;
+    margin: 0 30px;
 }
 .main-kr1 {
     position: absolute;
@@ -260,7 +257,7 @@ header {
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    font-size: 1.8rem;
+    /* font-size: 1.8rem; */
     padding-top: 1rem;
 }
 .main-kr1 > h1 { font-family: 'Pretendard'; font-weight: 700; font-size: 45px;line-height: 60px; }
@@ -270,7 +267,7 @@ header {
     font-weight: 900;
     font-style: italic;
     font-size: 85px;
-    line-height: 100px;
+    /* line-height: 100px; */
     letter-spacing: -0.4%;
 }
 .main-detail1 { padding-top: 19rem; color: var(--lightGray); }
@@ -414,9 +411,9 @@ header {
 }
 .process-nm-t { right: 7.2rem; top: 1.2rem; margin-bottom: 20px; }
 .process-nm-b { right: 7.2rem; bottom: -58px; margin-top: 40px; }
-.process-img { max-width: 260px; height: auto; }
+.process-img { max-width: 100%; height: auto; }
 .process-img > img {
-    max-width: 260px;
+    max-width: 100%;
     height: auto;
     margin-top: 60px;
 }
