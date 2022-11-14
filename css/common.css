@@ -3,7 +3,7 @@
     padding: 0;
     scroll-behavior: smooth;
 }
-html, body, div, span, p, h1, h2, h3 {
+html, body, div, p, h1, h2, h3 {
     margin: 0;
     padding: 0;
     border: 0;
@@ -71,12 +71,12 @@ html {
     font-weight: 400;
     font-style: normal;
 }
-.font30 { font-size: 30px; }
-.font20 { font-size: 20px; }
-.font18 { font-size: 18px; }
-.font16 { font-size: 16px; }
-.font14 { font-size: 14px; }
-.font13 { font-size: 13px; }
+.font30 { font-size: 1.875rem; }
+.font20 { font-size: 1.25rem; }
+.font18 { font-size: 1.125rem; }
+.font16 { font-size: 1rem; }
+.font14 { font-size: 0.875rem; }
+.font13 { font-size: 0.813rem; }
 .bold { font-weight: bold; }
 .bolder { font-weight: bolder; }
 

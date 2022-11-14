@@ -2,20 +2,24 @@
 
 /* main */
 .main-kr1 > h1 { font-size: 20px !important; }
-.main-en1 > h1 { font-size: 55px !important; }
+.main-en1 > h1 { font-size: 40px !important; }
 
 /* Who We Are */
 .intro-list { grid-template-columns: repeat(1, 1fr) !important; }
 .intro-list li {
-    width: 100% !important;
-    
+    /* width: 160 !important; */
+    height: 75% !important;
+    margin: 0 auto;
+    padding: 0;
 }
+.intro-list > li > img { max-height: 50% !important; object-fit: cover; border-radius: 16px; }
+/* .intro-list > li > p {  } */
 
 /* Business Process */
-#mainBusinessProcess { margin-bottom: 100px; }
+/* #mainBusinessProcess { margin-bottom: 100px; }
 .process-list-wrap {
     grid-template-columns: repeat(1, 1fr) !important;
-}
+} */
 
 
 /* Rootcore Way */

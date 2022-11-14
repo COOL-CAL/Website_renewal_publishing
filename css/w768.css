@@ -17,10 +17,11 @@
 } */
 
 /* Who We Are */
-.intro-list { display: grid !important; grid-template-columns: repeat(2, 1fr); place-items: center; }
+.intro-list { display: grid !important; grid-template-columns: repeat(2, 1fr); place-items: center; transform: all 1s;}
 .intro-list li {
     width: 90% !important;
     margin: 0 !important;
+    transition: all 1s;
 }
 .intro-list li:first-child, .intro-list li:nth-child(2) { margin-bottom: 20px !important; }
 .intro-list li > img { width: 100%; }
@@ -31,16 +32,9 @@
     justify-content: center;
     flex-direction: column;
 }
-#mainOurValues .v-ctnt1 {
-    margin-bottom: 20px;
-    padding-right: 0;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-#mainOurValues .v-ctnt1 > p { width: 231px; }
-#mainOurValues v-ctnt2 p > br { display: none; }
+#mainOurValues .v-ctnt1 { align-items: center; }
+#mainOurValues .v-ctnt1 > p { width: 275px; }
+#mainOurValues .v-ctnt2 p > br { display: none; }
 
 /* Business Process */
 /* .process-wrap {
@@ -51,12 +45,12 @@
     align-items: center;
     flex-direction: column;
 } */
-.process-list-wrap {
+/* .process-list-wrap {
     display: grid !important;
     grid-template-columns: repeat(2, 1fr);
     place-items: center !important;
     margin-bottom: 20px;
-}
+} */
 
 /* Rootcore Way */
 /* .way-wrap { display: flex; flex-direction: column; } */
