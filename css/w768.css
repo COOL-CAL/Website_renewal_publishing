@@ -2,14 +2,9 @@
 
 /* main */
 
-.main-kr1 > h1 { font-size: 30px !important; }
-.main-en1 > h1 { font-size: 65px !important; }
-/* main .main-bg { height: 665px;} */
+.main-kr1 > h1 { font-size: 30px; }
+.main-en1 > h1 { font-size: 65px; }
 
-@media all and (max-width: 710px) {
-    #mainWhoWeAre .intro-ctnt > p > br { display: none; }
-    #mainOurValues .v-ctnt2 > p > br{ display: none; }
-}
 
 /* @media all and (max-width: 570px) {
     #mainBusinessProcess .process-list-wrap { margin: 0 auto;}
@@ -22,16 +17,12 @@
     width: 90% !important;
     margin: 0 !important;
     transition: all 1s;
+    margin-bottom: 20px !important;
 }
-.intro-list li:first-child, .intro-list li:nth-child(2) { margin-bottom: 20px !important; }
 .intro-list li > img { width: 100%; }
 
 /* Our Values */
-#mainOurValues .wrap {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
+#mainOurValues .wrap { display: flex; justify-content: center; flex-direction: column; }
 #mainOurValues .v-ctnt1 { align-items: center; }
 #mainOurValues .v-ctnt1 > p { width: 275px; }
 #mainOurValues .v-ctnt2 p > br { display: none; }
@@ -111,3 +102,8 @@
     margin: 0;
 }
 #mainJoinUs .join-btn { margin-bottom: 10px; }
+
+@media all and (max-width: 710px) {
+    #mainWhoWeAre .intro-ctnt > p > br { display: none; }
+    #mainOurValues .v-ctnt2 > p > br{ display: none; }
+}

@@ -23,7 +23,7 @@
 #mainOurValues .v-ctnt1 {
     margin-bottom: 20px;
     padding: 0 !important;
-    padding-right: 30px !important;
+    padding-right: 30px;
     display: inline-flex;
     flex-direction: column;
     justify-content: center;

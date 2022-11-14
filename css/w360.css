@@ -1,19 +1,52 @@
 /* 360 ~  */
+h2 { font-size: 1.5rem !important; }
+#mainWhoWeAre, #mainBusinessProcess, #mainOurValues, #mainRootcoreWay, #mainOurWork, #mainJoinUs { padding-top: 4.375rem; padding-bottom: 30px !important; }
+.intro-ctnt > p, .v-ctnt1 > p, .process-ctnt > p, .way-ctnt > p, .work-ctnt > p, .join-wrap > p { font-size: 0.75rem !important; }
 
 /* main */
-.main-kr1 > h1 { font-size: 20px !important; }
-.main-en1 > h1 { font-size: 40px !important; }
+#submit1 { bottom: 9.42rem !important; }
+.sub-box1 {
+    margin: 0 !important;
+    top: 0; bottom: 0 !important;
+    border-radius: 0 !important;
+}
+.sub-p1 { padding: 0 20px !important; }
+.sub-p1 > div > img { margin-left: 0px;}
+.sub-p1 > div > p {
+    font-size: 0.875rem !important;
+    margin-right: 13px !important;
+    width: 196px;
+}
+
+.slick-slider img { height: 580px !important;}
+.slick-prev, .slick-next { display: none !important; }
+
+#main-ctnt1 { height: auto !important; }
+.main-box1 { margin: 0 20px !important; }
+.main-kr1 > h1 { font-size: 1.5rem !important; line-height: 40px !important; }
+.main-en1 > h1 { font-size: 3.125rem !important; line-height: 52px !important;}
+.main-detail1 > h3 { font-size: 0.875rem !important; }
 
 /* Who We Are */
-.intro-list { grid-template-columns: repeat(1, 1fr) !important; }
+#mainWhoWeAre { margin-top: 22.125rem !important; }
+.intro-ctnt { margin-bottom: 40px !important;}
+.intro-list { grid-template-columns: repeat(1, 1fr) !important; grid-column-gap: 26px !important; }
 .intro-list li {
-    /* width: 160 !important; */
-    height: 75% !important;
-    margin: 0 auto;
-    padding: 0;
+    max-width: 308px !important;
+    height: 140px !important;
+    margin: 0 !important;
+    /* padding: 0 !important; */
+    margin-bottom: 20px !important;
 }
-.intro-list > li > img { max-height: 50% !important; object-fit: cover; border-radius: 16px; }
-/* .intro-list > li > p {  } */
+.intro-list > li > img {
+    max-height: 140px !important;
+    object-fit: cover;
+    border-radius: 16px;
+    /* background-color: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%) !important; */
+}
+
+/* Our Values */
+#mainOurValues .v-ctnt1 { text-align: center !important; padding: 0 !important; }
 
 /* Business Process */
 /* #mainBusinessProcess { margin-bottom: 100px; }
