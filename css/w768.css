@@ -1,109 +1,87 @@
 /*** media 768 ~ 361px ***/
+@media screen and (max-width: 768px){
 
-/* main */
+    /* main */
+    .main-kr1 > h1 { font-size: 1.875rem; }
+    .main-en1 > h1 { font-size: 4.063rem; }
+    .main-detail1 {  }
 
-.main-kr1 > h1 { font-size: 30px; }
-.main-en1 > h1 { font-size: 65px; }
+    /* Who We Are */
+    .intro-list { display: grid !important; grid-template-columns: repeat(2, 1fr); place-items: center; transform: all 1s;}
+    .intro-list li {
+        width: 90% !important;
+        margin: 0 !important;
+        transition: all 1s;
+        margin-bottom: 20px !important;
+    }
+    .intro-list li > img { width: 100%; }
 
+    /* Our Values */
+    #mainOurValues .wrap { display: flex; justify-content: center; flex-direction: column; }
+    #mainOurValues .v-ctnt1 { align-items: center; }
+    #mainOurValues .v-ctnt1 > p { width: 275px; }
+    #mainOurValues .v-ctnt2 p > br { display: none; }
 
-/* @media all and (max-width: 570px) {
-    #mainBusinessProcess .process-list-wrap { margin: 0 auto;}
-    #mainRootcoreWay .way-list { width: 260px; margin: 0 auto;}
-} */
+    /* Business Process */
+    /* .process-wrap {
+        max-width: 560px;
+        display: inline-flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    } */
+    /* .process-list-wrap {
+        display: grid !important;
+        grid-template-columns: repeat(2, 1fr);
+        place-items: center !important;
+        margin-bottom: 20px;
+    } */
 
-/* Who We Are */
-.intro-list { display: grid !important; grid-template-columns: repeat(2, 1fr); place-items: center; transform: all 1s;}
-.intro-list li {
-    width: 90% !important;
-    margin: 0 !important;
-    transition: all 1s;
-    margin-bottom: 20px !important;
-}
-.intro-list li > img { width: 100%; }
+    /* Rootcore Way */
+    .way-list { display: grid !important; justify-items: center; place-items: center; grid-template-columns: repeat(2,1fr); }
+    .way-list > li { margin-bottom: 20px; margin-right: 0 !important; }
+    .way-list > .way-img {
+        height: auto;
+        position: relative;
+        display: inline-flex;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
 
-/* Our Values */
-#mainOurValues .wrap { display: flex; justify-content: center; flex-direction: column; }
-#mainOurValues .v-ctnt1 { align-items: center; }
-#mainOurValues .v-ctnt1 > p { width: 275px; }
-#mainOurValues .v-ctnt2 p > br { display: none; }
+    .team-list { display: flex; flex-direction: column; }
+    .team-intro { margin: 0; max-width: 520px !important; }
 
-/* Business Process */
-/* .process-wrap {
-    max-width: 560px;
-    display: inline-flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-} */
-/* .process-list-wrap {
-    display: grid !important;
-    grid-template-columns: repeat(2, 1fr);
-    place-items: center !important;
-    margin-bottom: 20px;
-} */
+    /* Our Work */
+    .three-imgs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
+    .three-imgs:nth-child(2) { display: grid; grid-template-columns: repeat(2, 1fr); }
+    .three-imgs:nth-child(2) > .work-list-ctnt:first-child {  display: grid; grid-template-columns: repeat(2, 1fr); order: 1; }
 
-/* Rootcore Way */
-/* .way-wrap { display: flex; flex-direction: column; } */
-.way-list { display: grid !important; justify-items: center; place-items: center; grid-template-columns: repeat(2,1fr); margin-bottom: 20px !important;}
-.way-list > li { margin-bottom: 20px; margin-right: 0 !important; }
-.way-list > li:nth-child(2n-1) { margin-right: 10px !important;}
-.way-list > li:nth-child(2n) { margin-left: 10px !important;}
-.way-list > .way-img {
-    max-width: 250px !important;
-    height: auto;
-    position: relative;
-    display: inline-flex;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-}
+    /* Contact */
+    #mainJoinUs { padding-top: 60px; padding-bottom: 80px; }
+    #mainJoinUs > .wrap {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #mainJoinUs .wrap .join-wrap { margin-bottom: 20px; padding: 0; text-align: center; }
+    #mainJoinUs .wrap .join-box {
+        max-width: 500px;
+        height: auto;
+        display: flex; 
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #mainJoinUs .join-btns { display: flex; flex-direction: column; padding: 0; }
+    .join-btns .join-btn, .join-btns .apply-btn { font-size: 16px; margin: 0; }
+    #mainJoinUs .join-btn { margin-bottom: 10px; }
 
-.team-list { display: flex; flex-direction: column; }
-.team-intro { margin: 15px 0 !important; max-width: 520px !important; }
-
-/* Our Work */
-.three-imgs { display: grid; grid-template-columns: repeat(2, 1fr); gap: 15px; }
-.three-imgs:nth-child(2) { display: grid; grid-template-columns: repeat(2, 1fr); }
-.three-imgs:nth-child(2) > .work-list-ctnt:first-child { 
-    display: grid; 
-    grid-template-columns: repeat(2, 1fr); 
-    order: 1;
-}
-
-/* Contact */
-#mainJoinUs { padding-top: 60px; padding-bottom: 80px; }
-#mainJoinUs > .wrap {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    /* padding-bottom: 100px; */
-}
-#mainJoinUs .wrap .join-wrap { margin-bottom: 20px; padding: 0; text-align: center; }
-#mainJoinUs .wrap .join-box {
-    max-width: 500px;
-    height: 100%;
-    display: flex; 
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* margin-right: 30px; */
-}
-#mainJoinUs .join-btns {
-    display: inline-flex;
-    flex-direction: column;
-    padding: 0;
-}
-#mainJoinUs .join-btn, .apply-btn {
-    /* max-width: ; */
-    font-size: 16px;
-    margin: 0;
-}
-#mainJoinUs .join-btn { margin-bottom: 10px; }
-
-@media all and (max-width: 710px) {
-    #mainWhoWeAre .intro-ctnt > p > br { display: none; }
-    #mainOurValues .v-ctnt2 > p > br{ display: none; }
+    @media all and (max-width: 710px) {
+        #mainWhoWeAre .intro-ctnt > p > br { display: none; }
+        #mainOurValues .v-ctnt2 > p > br{ display: none; }
+    }
 }

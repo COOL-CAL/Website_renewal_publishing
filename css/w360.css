@@ -1,61 +1,94 @@
 /* 360 ~  */
-h2 { font-size: 1.5rem !important; }
-#mainWhoWeAre, #mainBusinessProcess, #mainOurValues, #mainRootcoreWay, #mainOurWork, #mainJoinUs { padding-top: 4.375rem; padding-bottom: 30px !important; }
-.intro-ctnt > p, .v-ctnt1 > p, .process-ctnt > p, .way-ctnt > p, .work-ctnt > p, .join-wrap > p { font-size: 0.75rem !important; }
+@media screen and (max-width:360px) {
+    h2 { font-size: 1.5rem !important; }
+    #mainWhoWeAre, #mainBusinessProcess, #mainOurValues, #mainRootcoreWay, #mainOurWork, #mainJoinUs { padding-top: 4.375rem; padding-bottom: 30px !important; }
+    .intro-ctnt > p, .v-ctnt1 > p, .process-ctnt > p, .way-ctnt > p, .work-ctnt > p, .join-wrap > p { font-size: 0.75rem !important; }
 
-/* main */
-#submit1 { bottom: 9.42rem !important; }
-.sub-box1 {
-    margin: 0 !important;
-    top: 0; bottom: 0 !important;
-    border-radius: 0 !important;
+    /* main */
+    #submit1 { bottom: 9.42rem !important; }
+    .sub-box1 {
+        margin: 0 !important;
+        top: 0; bottom: 0 !important;
+        border-radius: 0 !important;
+    }
+    .sub-p1 { padding: 0 20px !important; }
+    .sub-p1 > div > img { margin-left: 0px;}
+    .sub-p1 > div > p {
+        font-size: 0.875rem !important;
+        margin-right: 13px !important;
+        width: 196px;
+    }
+
+    .slick-slider img { height: 580px !important;}
+    .slick-prev, .slick-next { display: none !important; }
+
+    #main-ctnt1 { height: auto !important; }
+    .main-box1 { margin: 0 20px !important; }
+    .main-kr1 > h1 { font-size: 1.5rem !important; line-height: 40px !important; }
+    .main-en1 > h1 { font-size: 3.125rem !important; line-height: 52px !important;}
+    .main-detail1 > h3 { font-size: 0.875rem !important; }
+
+    /* Who We Are */
+    #mainWhoWeAre { margin-top: 22.125rem !important; }
+    .intro-ctnt > p { margin-bottom: 40px !important;}
+    .intro-list { grid-template-columns: repeat(1, 1fr) !important; grid-column-gap: 26px !important; }
+    .intro-list li {
+        max-width: 308px !important;
+        height: 140px !important;
+        margin: 0 !important;
+        margin-bottom: 20px !important;
+    }
+    .intro-list > li > img {
+        max-height: 140px !important;
+        object-fit: cover;
+        border-radius: 16px;
+        /* background-color: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%) !important; */
+    }
+
+    /* Our Values */
+    .v-ctnt1 { text-align: center !important; padding: 0 !important; }
+    .v-ctnt2 {
+        padding: 70px 16px !important;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .v-ctnt2 > h3 { font-size: 1.25rem !important; max-width: 183px; }
+    .v-ctnt2 > p { font-size: 0.875rem !important; line-height: 20px; }
+
+    /* Business Process */
+    /* #mainBusinessProcess { margin-bottom: 100px; }
+    .process-list-wrap {
+        grid-template-columns: repeat(1, 1fr) !important;
+    } */
+
+
+    /* Rootcore Way */
+    #mainRootcoreWay { display: block; background: url(../img/way_bg.png) no-repeat center fixed !important; overflow: auto; }
+    #mainRootcoreWay > .wrap { background-attachment: scroll; }
+    .way-ctnt { margin-bottom: 40px !important; }
+    .way-list { margin: 0 !important; margin-bottom: 30px !important; grid-template-columns: repeat(1, 1fr) !important; }
+    .way-list .way-img { max-width: 320px !important; height: 140px !important; }
+    .way-list > .way-img > img { width: 320px !important; max-height: 140px !important; object-fit: cover !important; border-radius: 16px; }
+    .way-list li:last-child { margin-bottom: 0 !important; }
+    .way-nm { margin-bottom: 0.75rem !important; }
+    .way-p { font-size: 14px !important; margin: 0 30px; }
+    .team-intro { max-width: 320px; margin-bottom: 22px !important; margin: 0 !important; margin-bottom: 22px !important; }
+    .team-tag { font-size: 0.75rem !important; }
+
+    /* Our Work */
+    .work-ctnt { margin-bottom: 40px !important; }
+    .three-imgs { grid-template-columns: repeat(1, 1fr) !important; }
+    .work-list-ctnt { width: 308px !important; margin: 0 auto !important; top: 0 !important; margin-bottom: 5px !important; }
+    .work-more { margin: 40px 60px !important; }
+    .magnify { left: 8.5rem !important; }
+
+    /* Contact */
+    .join-wrap { padding: 0 !important; }
+    .join-box { display: block !important; max-width: 308px !important; height: auto !important; padding: 20px !important; margin: 0 auto ;}
+    .join-box p { margin: 0 !important;}
+    .join-btns { max-width: 268px;}
+    .join-btns button { width: 100%; }
 }
-.sub-p1 { padding: 0 20px !important; }
-.sub-p1 > div > img { margin-left: 0px;}
-.sub-p1 > div > p {
-    font-size: 0.875rem !important;
-    margin-right: 13px !important;
-    width: 196px;
-}
-
-.slick-slider img { height: 580px !important;}
-.slick-prev, .slick-next { display: none !important; }
-
-#main-ctnt1 { height: auto !important; }
-.main-box1 { margin: 0 20px !important; }
-.main-kr1 > h1 { font-size: 1.5rem !important; line-height: 40px !important; }
-.main-en1 > h1 { font-size: 3.125rem !important; line-height: 52px !important;}
-.main-detail1 > h3 { font-size: 0.875rem !important; }
-
-/* Who We Are */
-#mainWhoWeAre { margin-top: 22.125rem !important; }
-.intro-ctnt { margin-bottom: 40px !important;}
-.intro-list { grid-template-columns: repeat(1, 1fr) !important; grid-column-gap: 26px !important; }
-.intro-list li {
-    max-width: 308px !important;
-    height: 140px !important;
-    margin: 0 !important;
-    /* padding: 0 !important; */
-    margin-bottom: 20px !important;
-}
-.intro-list > li > img {
-    max-height: 140px !important;
-    object-fit: cover;
-    border-radius: 16px;
-    /* background-color: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%) !important; */
-}
-
-/* Our Values */
-#mainOurValues .v-ctnt1 { text-align: center !important; padding: 0 !important; }
-
-/* Business Process */
-/* #mainBusinessProcess { margin-bottom: 100px; }
-.process-list-wrap {
-    grid-template-columns: repeat(1, 1fr) !important;
-} */
-
-
-/* Rootcore Way */
-.way-list { grid-template-columns: repeat(1, 1fr) !important; }
-.way-list > li:nth-child(2n-1) { margin-right: 0 !important;}
-.way-list > li:nth-child(2n) { margin-left: 0 !important;}

@@ -29,7 +29,7 @@
     justify-content: center;
 }
 @media all and (max-width: 785px) {
-    .v-ctnt2 { padding-right: 54px !important; }
+    .v-ctnt2 { padding-right: 54px; }
     .v-ctnt2 br { display: none; }
 }
 
