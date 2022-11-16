@@ -95,8 +95,8 @@ footer {
     max-width: 100%;
     min-height: 12.5rem;
     background-color: #121211;
-    display: felx;
-    justify-content: center;
+    /* display: flex;
+    justify-content: center; */
     margin: 0 auto;
 }
 .footer-box {

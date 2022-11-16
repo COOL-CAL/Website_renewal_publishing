@@ -1,6 +1,6 @@
-#contact, #apply { font-family: 'Pretendard', sans-serif; width: 1100px; }
+#contact, #apply { font-family: 'Pretendard', sans-serif; max-width: 1100px; padding: 0 30px; }
 
-#left { padding: 10rem 0; top: 0; width: 350px; position: fixed; float: left; }
+#left { padding: 10rem 0; top: 0; max-width: 350px; position: fixed; }
 #left h1, #right h1 { font-size: 30px; }
 #right { float: right; width: 717px; top: 0; padding-top:12.1rem; };
 #right h1 { padding-bottom: 50px; }

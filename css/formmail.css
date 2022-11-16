@@ -1,8 +1,8 @@
 /*** START contact css ***/
 
 /* left side */
-#contact #left .input_wr{ font-size:20px; font-weight:400; color:#fff; line-height: 40px; margin-bottom: 20px; }
-#contact #left .input_wr .input_line_wr{ margin-bottom:30px; font-weight:300; margin-bottom: 0; }
+#contact #left .input_wr { font-size:20px; font-weight:400; color:#fff; line-height: 40px; margin-bottom: 20px; }
+#contact #left .input_wr .input_line_wr { margin-bottom:30px; font-weight:300; margin-bottom: 0; }
 #contact #left .input_wr span {
   border: none;
   border-bottom: 1px solid #fff;
@@ -20,8 +20,8 @@
 #contact #left .input_wr .load_ctnt1 { border: none; color: #fff; height: 0; }
 #contact #left .input_wr .load_ctnt.hide .hidden { display: none; }
 #contact #left .input_wr .load_ctnt1.hidden { display: none; }
-#contact #left .input_wr #load_title{ height: 0; min-width:130px;max-width: 260px; text-overflow: ellipsis; overflow: hidden;-webkit-line-clamp: 1; -webkit-box-orient: vertical;word-break:keep-all; }
-#contact #left .input_wr #load_cate{ height: auto; min-width:200px; max-width: 390px; text-overflow: ellipsis; overflow: hidden;-webkit-line-clamp: 2; -webkit-box-orient: vertical;word-break:keep-all; }
+#contact #left .input_wr #load_title { height: 0; min-width:130px; max-width: 260px; text-overflow: ellipsis; overflow: hidden;-webkit-line-clamp: 1; -webkit-box-orient: vertical;word-break:keep-all; }
+#contact #left .input_wr #load_cate { height: auto; min-width:200px; max-width: 390px; text-overflow: ellipsis; overflow: hidden;-webkit-line-clamp: 2; -webkit-box-orient: vertical;word-break:keep-all; }
 #contact #left .input_wr #load_cate > strong:last-child{ display:none; }
 #contact #left .input_wr #load_budget{ height: 0; min-width:115px; }
 #contact #left .input_wr #load_time{ height: 0; min-width:85px; }
@@ -31,7 +31,6 @@
 
 
 /* right side */
-
 .contact_cname{position:relative;}
 .contact_cname > div::after{content:"";position:absolute;width:0;height:3px; background:#191919;left:0;bottom:0;}
 .contact_cname > div.on::after{width:100%;transition:all .5s;}
@@ -118,34 +117,7 @@
 }
 
 .textarea_wr{position:relative;}
-/* textarea.form-control{height:auto;} */
 input[type="search"]{-webkit-appearance:none}
-/* @media screen and (-webkit-min-device-pixel-ratio:0) {
-
-  input[type="date"].form-control,
-  input[type="time"].form-control,
-  input[type="datetime-local"].form-control,
-  input[type="month"].form-control {
-    line-height: 45px
-  }
-
-  input[type="date"].input-sm,
-  input[type="time"].input-sm,
-  input[type="datetime-local"].input-sm,
-  input[type="month"].input-sm,
-  .input-group-sm input[type="date"],
-  .input-group-sm input[type="time"],
-  .input-group-sm input[type="datetime-local"],
-  .input-group-sm input[type="month"] { line-height: 35px; }
-  input[type="date"].input-lg,
-  input[type="time"].input-lg,
-  input[type="datetime-local"].input-lg,
-  input[type="month"].input-lg,
-  .input-group-lg input[type="date"],
-  .input-group-lg input[type="time"],
-  .input-group-lg input[type="datetime-local"],
-  .input-group-lg input[type="month"] {line-height:66px}
-} */
 
 .form-group { margin-bottom:15px }
 .radio,.checkbox{position:relative;display:block;margin-top:10px;margin-bottom:10px}
@@ -416,7 +388,7 @@ input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"
 	.control-privacy .agree-text{font-size:3.2vw;}
 	/* .btn-lg, .btn-group-lg>.btn{font-size:14px; padding: 25px 45px;} */
 }
-
+/* 
 
 .visible1700{display:none;}
 .hidden1700{display:inline-block;}
@@ -449,7 +421,7 @@ input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"
 	.control-privacy .agree-box{font-size:14px;}
 	.result_box{padding:160px 0 260px;}
 	#contact #formMail .send_btn button{margin:80px 0 0 54px; }
-}
+} */
 /* @media screen and (max-width:1024px ){
 	#contact{    background: url(/images/contact_result_bg.svg) no-repeat 110% 101%/40%;transition:none;}
 	#contact #left{position:fixed;top:auto;left:0;z-index:99999999;background:#0a0a0a;width:100%;padding:0 5%;padding-top:60px;transition:all 1s; height: auto; }
