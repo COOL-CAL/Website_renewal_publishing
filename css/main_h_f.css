@@ -19,7 +19,7 @@ header {
     align-items: center;
     padding-top: 1rem;
     max-width: 1100px;
-    margin: 0 20px;
+    margin: 0 30px;
 }
 .header-wrap.header-blur {
     border-radius: 16px;
@@ -28,7 +28,7 @@ header {
     height: 3.75rem;
     padding-top: 5.7rem;
     top: -4rem;
-    /* padding: 0 20px; */
+    padding: 0 20px;
     position: sticky;
     transition: all .3s;
 }
@@ -51,8 +51,7 @@ header {
     overflow: hidden;
     z-index: 2;
     padding-right: 20px;
-}
-.menu > a > p {
+}.menu > a > p {
     font-family: 'Pretendard';
     font-style: normal; font-weight: 300; font-size: 16px;
     line-height: 19px;
@@ -79,14 +78,11 @@ header {
     -o-transform-origin: left top;
     transform-origin: left top;
 }
-.menu > a > p:hover { 
-    color: var(--mainColor);
-}
+.menu > a > p:hover { color: var(--mainColor); }
 .menu > a > p:after {
     content: attr(data-text);
     display: block;
     position: absolute;
-    /* top: 150%; */
     left: 0;
     transform: skewY(5deg);
     transform-origin: left top;
@@ -111,7 +107,7 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     background-color: #121211;
     color: #fff;
@@ -135,19 +131,20 @@ footer {
 .tel > p { margin-right: 50px; }
 .tel > p:first-child { margin-right: 0; }
 
-/* @media screen and (max-width:833px) {
-    .menu > a { padding-right: 14px; }
-}
-@media (max-width:803px) { .menu > a {padding-right: ;}} */
 
+@media screen and (max-width:940px) and (min-width: 725px) {
+    .footer-box {justify-content: space-between;}
+    .tel {margin-top: 1rem;}
+}
 @media screen and (max-width: 768px) { 
-    /* .header-wrap { max-width: 800px;} */
-    .menu > a { display: none; }
-    .menu > a:last-child { display: flex; }
+    .menu > a {display: none;}
+    .menu > a:last-child {display: flex;}
+    .footer-box {justify-content: space-between;}
 }
-@media screen and (max-width: 360px) {
-    .footer-box { padding: 50px 0; justify-content: flex-start; }
-    .logo-box { margin-bottom: 1.875rem; }
-    .address { max-width: 260px; }
-    .tel { margin-top: 1.875rem; }
+@media screen and (max-width: 714px) and {
+    .footer-box {padding: 50px 0; justify-content: space-between;}
+    .logo-box {margin-bottom: 1.875rem;}
+    .address {max-width: 260px;}
+    .tel {margin-top: 1.875rem;}
 }
+@media (max-width: 680px) { .logo-box {margin-bottom: 1.875rem;} }
