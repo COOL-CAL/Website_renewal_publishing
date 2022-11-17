@@ -141,7 +141,7 @@ footer {
     .menu > a:last-child {display: flex;}
     .footer-box {justify-content: space-between;}
 }
-@media screen and (max-width: 714px) and {
+@media screen and (max-width: 714px) {
     .footer-box {padding: 50px 0; justify-content: space-between;}
     .logo-box {margin-bottom: 1.875rem;}
     .address {max-width: 260px;}

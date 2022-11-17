@@ -73,8 +73,7 @@
     color: #fff;
 }
 
-.applyType_check .applyType00{margin-right:17px;}
-.applyType00{display:inline-block;}
+.applyType_check .applyType00{ display: inline-block; margin-bottom: 17px; margin-right: 17px; }
 .applyType00 input {
     position: absolute;
     padding: 0;
@@ -246,7 +245,6 @@
 }
 
 .applyType00 label { border-color: var(--mainColor); }
-/* .applyType00 label input:checked + .applyType01 { color: var(--mainColor); } */
 .applyType00 label input:checked + .cb-checkbox_rounded-box .cb-checkbox_rounded-title span { color: var(--mainColor); transform: translateY(-150%) skewY(-7deg); }
 .applyType00 label input:checked + .cb-checkbox_rounded-box .cb-checkbox_rounded-title span:after { transform: skewY(7deg); }
 .applyType00 label input:checked + .cb-checkbox_rounded-box .cb-checkbox_rounded-ripple span {
@@ -272,7 +270,6 @@
     width: 100%;
     height: 45px;
     padding: 0;
-    /* padding-left: 10px; */
     line-height: 1.42857143;
     color: #fff;
     background-color: transparent;
@@ -332,7 +329,6 @@
 /* 파일 첨부  */
 .apply-file-btn { position:static; padding-top: 14px; padding-right: 20px; }
 .apply-file-btn input[type="file"] { position: absolute; width: 0; height: 0; padding: 0; border: 0; }
-/* .apply-file-btn input::file-selector-button { display: none; } */
 .apply-file-btn label {
     border: 1px solid #fff;
     border-radius: 16px;
@@ -370,8 +366,5 @@
     margin-bottom: 100px;
     font-family: 'Pretendard', sans-serif;
 }
-.sendBtn button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border: 1px solid #fff;
-    transition: all 0.5s;
-}
+.sendBtn button:hover { background-color: rgba(255, 255, 255, 0.2); border: 1px solid #fff; transition: all 0.5s; }
+@media screen and (max-width:775px) { .applicant-info input {display: block; width: 100%;} }

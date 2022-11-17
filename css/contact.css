@@ -1,8 +1,8 @@
 #contact, #apply { font-family: 'Pretendard', sans-serif; max-width: 1100px; padding: 0 30px; }
 
-#left { padding: 10rem 0; top: 0; max-width: 350px; position: fixed; }
+#left { padding: 10rem 0; top: 0; position: fixed; max-width: 350px; margin-left: 30px;}
 #left h1, #right h1 { font-size: 30px; }
-#right { float: right; width: 717px; top: 0; padding-top:12.1rem; };
+#right { float: right; max-width: 717px; top: 0; padding-top:12.1rem; };
 #right h1 { padding-bottom: 50px; }
 .page-nm { margin-bottom: 40px; font-family: 'Montserrat',sans-serif; }
 .page-nm h1 { font-style: italic; font-weight: 900; }
@@ -35,16 +35,21 @@
 .control-privacy .agree-box input[type="checkbox"]:checked + label{color:#fff;}
 
 .sendBtn button {
-    width: 205px; height: 59px;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 16px;
-    font-size: 13px;
-    margin-bottom: 100px;
-    font-family: 'Pretendard', sans-serif;
-  }
-  .sendBtn button:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    border: 1px solid #fff;
-    transition: all 0.5s;
-  }
+  width: 205px; height: 59px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 16px;
+  font-size: 13px;
+  margin-bottom: 100px;
+  font-family: 'Pretendard', sans-serif;
+}
+.sendBtn button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid #fff;
+  transition: all 0.5s;
+}
+@media (max-width: 1150px) {
+  #left {padding: 0; margin-top: 10rem; position: relative; max-width: 100%; margin-left: 0;}
+  #right {padding: 0; padding-top: 3rem;}
+}
+@media (max-width: 768px) { #left .input_wr, #left > p {display: none;} }
