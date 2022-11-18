@@ -10,7 +10,7 @@ window.onscroll = function () {
     }
 };
 
-// header(work, contact, apply)
+// header(work)
 let header1 = document.querySelector(".header-wrap1");
 
 window.onscroll = function () {
@@ -203,7 +203,8 @@ function resize(obj) {
     obj.style.height = '1px';
     obj.style.height = (12 + obj.scrollHeight) + 'px';
 }
-    // 파일명 
+
+    // 문의 파일명 
 $(document).ready(function () {
     var fileTarget = $('.formmail_file .upload-hidden');
     fileTarget.on('change', function () { // 값이 변경되면 
@@ -218,12 +219,38 @@ $(document).ready(function () {
 });
 
 function fileUpload(){
-    var fileInput = document.getElementsByClassName("apply_file");
+    var fileInput = document.getElementsByClassName("upload-hidden");
 
     for( var i=0; i<fileInput.length; i++ ){
         if( fileInput[i].files.length > 0 ){
             for( var j = 0; j < fileInput[i].files.length; j++ ){
                 console.log(fileInput[i].files[j].name); // 파일명 출력
+            }
+        }
+    }
+}
+
+    // 채용 파일명 
+$(document).ready(function () {
+    var fileTarget1 = $('.apply-file-btn .apply_file');
+    fileTarget1.on('change', function () { // 값이 변경되면 
+        if (window.FileReader) { // modern browser 
+            var filename1 = $(this)[0].files[0].name;
+        } else { // old IE 
+            var filename1 = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출
+        } // 추출한 파일명 삽입 
+        $(this).siblings('.upload-name').css({ 'textAlign': "left" });
+        $(this).siblings('.upload-name').val(filename1);
+    });
+});
+
+function fileUpload1(){
+    var fileInput1 = document.getElementsByClassName("apply_file");
+
+    for( var i=0; i<fileInput1.length; i++ ){
+        if( fileInput1[i].files.length > 0 ){
+            for( var j = 0; j < fileInput1[i].files.length; j++ ){
+                console.log(fileInput1[i].files[j].name); // 파일명 출력
             }
         }
     }

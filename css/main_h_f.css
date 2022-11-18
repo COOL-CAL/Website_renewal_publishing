@@ -92,18 +92,19 @@ header {
 /* footer */
 footer {
     font-family: 'Pretendard';
-    max-width: 100%;
+    width: 100%;
     min-height: 12.5rem;
     background-color: #121211;
-    /* display: flex;
-    justify-content: center; */
+    display: flex;
+    justify-content: center;
     margin: 0 auto;
 }
 .footer-box {
-    margin: 0 26px;
-    max-width: 100%;
+    width: 1100px;
     height: auto;
-    padding: 50px 30px;
+    margin: 0 26px;
+    margin-top: 50px;
+    /* padding: 50px 30px; */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -112,18 +113,18 @@ footer {
     background-color: #121211;
     color: #fff;
 }
-.logo-box {  margin-left: 0; width: 240px; }
+.logo-box {  margin-left: 0; width: 240px;  }
 .logo-box > img { width: 150px; }
 .logo-box > p { margin-top: 1rem; color: var(--darkGray); font-size: 0.875rem; max-width: 220px; }
 .location > p { margin-bottom: 12px; font-weight: 800;}
-.address { color: var(--darkGray); font-size: 0.875rem; margin-top: 1rem; max-width: 340px; }
+.address { color: var(--darkGray); font-size: 0.875rem; margin-top: 1rem; max-width: 340px; padding-right: 20px; }
 .address > p { margin-bottom: 5px; }
 .address > p:first-child { color: var(--lightGray); margin-bottom: 10px; }
 .tel { 
     color: var(--lightGray);
     display: flex;
     font-size: 14px;
-    margin-top: 2.4rem;
+    margin-top: 2.2rem;
     max-width: 260px;
 }
 .tel > span { margin-left: 0; margin-right: 4px; }
@@ -134,15 +135,16 @@ footer {
 
 @media screen and (max-width:940px) and (min-width: 725px) {
     .footer-box {justify-content: space-between;}
-    .tel {margin-top: 1rem;}
+    .tel {margin-top: 2.15rem;}
 }
+@media screen and (max-width: 900px) { .tel {margin-bottom: 50px;}}
 @media screen and (max-width: 768px) { 
     .menu > a {display: none;}
     .menu > a:last-child {display: flex;}
     .footer-box {justify-content: space-between;}
 }
 @media screen and (max-width: 714px) {
-    .footer-box {padding: 50px 0; justify-content: space-between;}
+    /* .footer-box {padding: 50px 0; justify-content: space-between;} */
     .logo-box {margin-bottom: 1.875rem;}
     .address {max-width: 260px;}
     .tel {margin-top: 1.875rem;}

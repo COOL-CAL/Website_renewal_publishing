@@ -453,9 +453,13 @@ main {
     text-align: center;
     border: 1px solid #fff;
     border-radius: 16px;
-    width: 70%;
+    /* max-width: 317px;
+    height: auto; */
+    max-width: 313px;
     height: auto;
-    padding: 1.375rem 3.6rem;
+    left: calc(50% - 313px/2 - 214.5px);
+    top: calc(50% - 67px/2 - 228.5px);
+    padding: 1rem;
     color: #fff;
     list-style: none;
     text-decoration: underline;

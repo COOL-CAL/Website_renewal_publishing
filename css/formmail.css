@@ -27,7 +27,7 @@
 #contact #left .input_wr .load_ctnt.hide .hidden { display: none; }
 #contact #left .input_wr .load_ctnt1.hidden { display: none; }
 #contact #left .input_wr br { display: none; }
-@media (max-width: 1129px) { #contact #left .input_wr br { display: block} }
+/* @media (max-width: 1129px) { #contact #left .input_wr br { display: block} } */
 #contact #left .input_wr #load_title { height: 0; min-width: 130px; max-width: 260px; text-overflow: ellipsis; overflow: hidden;-webkit-line-clamp: 1; -webkit-box-orient: vertical;word-break:keep-all; }
 #contact #left .input_wr #load_cate { height: auto; min-width:200px; max-width: 390px; text-overflow: ellipsis; overflow: hidden;-webkit-line-clamp: 2; -webkit-box-orient: vertical;word-break:keep-all; }
 #contact #left .input_wr #load_cate > strong:last-child{ display:none; }
@@ -97,7 +97,7 @@
 
 /* 파일 첨부  */
 .formmail_file{position:static; padding-top: 14px; padding-right: 20px;}
-.formmail_file input[type="file"] { position: absolute; width: 0; height: 0; padding: 0; overflow: hidden; border: 0; }
+.formmail_file input[type="file"] { position: absolute; width: 0; height: 0; padding: 0; border: 0; }
 .formmail_file label {
   border: 1px solid #fff;
   border-radius: 16px;
@@ -119,7 +119,7 @@
   padding-left: 15px;
   color: #fff;
   border-radius: 16px;
-  /* width: 70%; */
+  width: 110px;
   /* vertical-align: middle; */
   /* background-color: #7C7C7C;
   border-radius: 16px; */
@@ -378,28 +378,12 @@ input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"
   transition-duration: 0s, 0s;
   animation: __capsule--rounded-ripple-in 0.5s cubic-bezier(0.4, 0, 0, 1);
 }
-@media screen and (max-width: 1150px) {
-  /* #left {display: inline-flex;}
-  #right {padding-top: 30rem;} */
-}
-/*@media screen and (max-width:1024px) {
-  .page-nm {padding-right: 85px;}
-  .page-nm {width: 0%}
-  #contact #left .input_wr {
-    width: 43%;
-    display: grid;
-    grid-template-columns:;
-  }
-  #contact #left .input_wr br {display: block;}
-  #left > .contact_stit:last-child {padding-top: 10rem;}
-} */
 @media screen and (max-width: 775px) {
   #contact #right .contact_charger .charger-box {display: block;}
   #contact #right .contact_charger .control-group .form-control {width: 100%;}
   #contact #right .contact_charger .charger-box .control-group div:nth-child(2n) { margin-left: 0; }
 }
 @media screen and (max-width:768px ) {
-  /* #contact #left .input_wr, #contact #left > p {display: none;} */
 	.contact_tit{font-size:24px; margin-bottom:25px;}
 	.control-group{margin-bottom:80px;}
 	.form-control{font-size:16px;}
@@ -407,12 +391,6 @@ input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"
 	.form-control-text{padding:15px;}
 	#right .control-group{margin-bottom:20px;}
 	.control-privacy{margin-bottom:80px;}
-	#contact #left h3{font-size:36px; padding-bottom:30px;}
-	#contact #left .send_btn button{font-size:22px;}
-	#contact #left .input_wr{font-size:18px;}
-	#contact #left .input_wr span{font-size:20px;line-height:normal;}
-	#contact #left .input_wr span .min_auto{vertical-align: inherit;}
-	#contact #left .input_wr .input_line_wr{margin-bottom:10px;}
 }
 @media screen and (max-width:570px){
   #right{float:left; width:100%;}
@@ -421,33 +399,15 @@ input[type="submit"].btn-block,input[type="reset"].btn-block,input[type="button"
   .control-privacy .agree-text{font-size:3.2vw;}
 }
 @media screen and (max-width:480px ){
-	.contact_tit{font-size:5.2vw;margin-bottom:15px;}
+	.contact_tit{margin-bottom:15px;}
 	.control-group{margin-bottom:60px;}
-	.contact_stit{font-size:3.8vw;}
-	.cb-checkbox_rounded-box{font-size:2.8vw;height:40px; line-height:40px;}
-	.form-control{font-size:3.2vw;}
+	.cb-checkbox_rounded-box{height:40px; line-height:40px;}
 	.qatype_check .qatype00{margin-right:5px;}
 	.budget_type_check label{margin-right:5px;margin-bottom:10px;}
 	.time_type_check label{margin-right:5px;margin-bottom:10px;}
-	.formmail_file input{font-size:3.2vw;}
-	.formmail_file label{width:40px;height:40px;bottom:40px;right:15px;}
-	.formmail_file label img{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);}
-	#right .form-control{font-size:3.2vw;}
 	.contact_cont{margin-bottom:0;}
-	.control-privacy .agree-box{font-size:3.2vw;}
 	.control-privacy .agree-box input[type="checkbox"] + label span.cbox{margin-right:10px;    vertical-align: middle;}
 	.control-privacy{margin-bottom:60px;}
-	#contact #left .send_btn button{font-size:4.2vw;}
-	#contact #formMail .send_btn a{font-size:4.2vw;}
-	#contact #left h3{font-size:6vw;padding-bottom:20px;}
-	#contact #left .input_wr{font-size:3.8vw;}
-	#contact #left .input_wr span{font-size:4.3vw;}
-	#contact #left .input_wr span#load_cate{min-width:150px}
-	#contact #left .input_wr span#load_cate > strong:last-child{display:none;}
-	#contact #left .input_wr span.load_title{min-width:200px;max-width: 220px; text-overflow: ellipsis; overflow: hidden;-webkit-line-clamp: 1; -webkit-box-orient: vertical;word-break:keep-all;}
-	#contact #left .input_wr span#load_budget{min-width:100px;}
-	#contact #left .input_wr span#load_time{min-width:70px;}
-	#contact #left .input_wr .input_line_wr:last-child{margin-top:0;}
 }
 @media screen and (max-width:360px ){
 	.cb-checkbox_rounded-box{padding:0 10px;}

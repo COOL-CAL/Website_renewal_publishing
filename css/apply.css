@@ -342,7 +342,7 @@
 .apply-file-btn > label > div { font-size: 13px; margin-right: 0; margin-left: 24px;}
 .apply-file-btn > label > img { padding-bottom: 1px; margin-left: 5px;}
 .apply-file-btn .upload-name {
-    /* display: inline-block; */
+    display: inline-block;
     height: 43px;
     font-size:13px;
     border: 0;

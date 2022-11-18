@@ -47,122 +47,126 @@
         </section>
 
         <section id="right">
-            <h1 class="font-kr">채용 지원하기</h1>
-            <div class="apply_type">
-                <div class="control-group " tabindex="">
-                    <h3 class="apply_tit choice">지원하실 분야를 선택해주세요.</h3>
-                    <div class="applyType_check">
-                        <div class="applyType00">
-                            <label for="applyType01">
-                                <input type="radio" id="applyType01" name="apply_type" class="chk_hidden applyType[]" value="Project Manager" >
-                                <span class="cb-checkbox_rounded-box">
-                                    <span class="cb-checkbox_rounded-title">
-                                        <span data-text="Project Manager">Project Manager</span>
+            <form enctype="multipart/form-data" id="applyform" name="applyform" method="post" action="">
+                <h1 class="font-kr">채용 지원하기</h1>
+                <div class="apply_type">
+                    <div class="control-group " tabindex="">
+                        <h3 class="apply_tit choice">지원하실 분야를 선택해주세요.</h3>
+                        <div class="applyType_check">
+                            <div class="applyType00">
+                                <label for="applyType01">
+                                    <input type="radio" id="applyType01" name="apply_type" class="chk_hidden applyType[]" value="Project Manager" >
+                                    <span class="cb-checkbox_rounded-box">
+                                        <span class="cb-checkbox_rounded-title">
+                                            <span data-text="Project Manager">Project Manager</span>
+                                        </span>
+                                        <span class="cb-checkbox_rounded-ripple"><span></span></span>
                                     </span>
-                                    <span class="cb-checkbox_rounded-ripple"><span></span></span>
-                                </span>
-                            </label>
+                                </label>
+                            </div>
+                            <div class="applyType00">
+                                <label for="applyType02">
+                                    <input type="radio" id="applyType02" name="apply_type" class="chk_hidden applyType[]" value="Designer" >
+                                    <span class="cb-checkbox_rounded-box">
+                                        <span class="cb-checkbox_rounded-title">
+                                            <span data-text="Designer">Designer</span>
+                                        </span>
+                                        <span class="cb-checkbox_rounded-ripple"><span></span></span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="applyType00">
+                                <label for="applyType03">
+                                    <input type="radio" id="applyType03" name="apply_type" class="chk_hidden applyType[]" value="Publisher" >
+                                    <span class="cb-checkbox_rounded-box">
+                                        <span class="cb-checkbox_rounded-title">
+                                            <span data-text="Publisher">Publisher</span>
+                                        </span>
+                                        <span class="cb-checkbox_rounded-ripple"><span></span></span>
+                                    </span>
+                                </label>
+                            </div>				
+                            <div class="applyType00">
+                                <label for="applyType04">
+                                    <input type="radio" id="applyType04" name="apply_type" class="chk_hidden applyType[]" value="Developer" >
+                                    <span class="cb-checkbox_rounded-box">
+                                        <span class="cb-checkbox_rounded-title">
+                                            <span data-text="Developer">Developer</span>
+                                        </span>
+                                        <span class="cb-checkbox_rounded-ripple"><span></span></span>
+                                    </span>
+                                </label>
+                            </div>				
                         </div>
-                        <div class="applyType00">
-                            <label for="applyType02">
-                                <input type="radio" id="applyType02" name="apply_type" class="chk_hidden applyType[]" value="Designer" >
-                                <span class="cb-checkbox_rounded-box">
-                                    <span class="cb-checkbox_rounded-title">
-                                        <span data-text="Designer">Designer</span>
-                                    </span>
-                                    <span class="cb-checkbox_rounded-ripple"><span></span></span>
-                                </span>
+                        <!-- <p class="help-block text-danger"></p> -->
+                    </div>
+                </div>
+                <div class="control-group apply_cname">
+                    <h3 class="apply_tit">지원자님의 이름을 알려주세요.</h3>
+                    <div>
+                        <label for="applicant_name" class="formTitle"></label>
+                        <input type="name" name="applicant_name" class="form-control" placeholder="지원자님의 이름"
+                            id="applicant_name" required data-validation-required-message="Please enter your name.">
+                        <p class="help-block text-danger"></p>
+                    </div>
+                </div>
+                <div class="control-group applicant-info">
+                    <h3 class="apply_tit">지원자님의 정보를 알려주세요.</h3>
+                    <input type="text" name="applicant_tel" id="applicant_tel" class="form-control"
+                        placeholder="연락처" required data-validation-required-message="Please enter your phone number."
+                        oninput="this.value = this.value.replace(/[^0-9-]/g, '').replace(/(\..*)\./g, '$1');"maxlength="13"autocomplete='off'>
+                    <input type="text" name="applicant_email" id="appicant_email" class="form-control"
+                        placeholder="이메일" required data-validation-required-message="Please enter your email address."autocomplete='off'>
+                </div>
+                
+                <div class="control-group abt-applicant">
+                    <h3 class="apply_tit">지원자님에 대해 알려주세요.</h3>
+                    <div class="textarea_wr">
+                        <label for="abt_applicant" class="formTitle"></label>
+                        <textarea rows="1" name="abt_applicant" class="form-control form-control-text"
+                            placeholder="내용을 기재해주세요." id="comments"
+                            data-validation-required-message="Please enter a message."
+                            onkeydown="resize(this)" onkeyup="resize(this)" required></textarea>
+                            
+                        <div class="apply-file-btn">
+                            <label for="apply-file">
+                                <div>파일 첨부하기</div><img src="img/file_upload_icon.png" alt="">
                             </label>
+                            <input id="apply_file" type="file" multiple class="apply_file" onchange="fileUpload1()">
+                            <input class="upload-name font-kr" value="" disabled="disabled">
                         </div>
-                        <div class="applyType00">
-                            <label for="applyType03">
-                                <input type="radio" id="applyType03" name="apply_type" class="chk_hidden applyType[]" value="Publisher" >
-                                <span class="cb-checkbox_rounded-box">
-                                    <span class="cb-checkbox_rounded-title">
-                                        <span data-text="Publisher">Publisher</span>
-                                    </span>
-                                    <span class="cb-checkbox_rounded-ripple"><span></span></span>
-                                </span>
-                            </label>
-                        </div>				
-                        <div class="applyType00">
-                            <label for="applyType04">
-                                <input type="radio" id="applyType04" name="apply_type" class="chk_hidden applyType[]" value="Developer" >
-                                <span class="cb-checkbox_rounded-box">
-                                    <span class="cb-checkbox_rounded-title">
-                                        <span data-text="Developer">Developer</span>
-                                    </span>
-                                    <span class="cb-checkbox_rounded-ripple"><span></span></span>
-                                </span>
-                            </label>
-                        </div>				
                     </div>
-                    <!-- <p class="help-block text-danger"></p> -->
-                </div>
-            </div>
-            <div class="control-group apply_cname">
-                <h3 class="apply_tit">지원자님의 이름을 알려주세요.</h3>
-                <div>
-                    <label for="applicant_name" class="formTitle"></label>
-                    <input type="name" name="applicant_name" class="form-control" placeholder="지원자님의 이름"
-                           id="applicant_name" required data-validation-required-message="Please enter your name.">
-                    <p class="help-block text-danger"></p>
-                </div>
-            </div>
-            <div class="control-group applicant-info">
-                <h3 class="apply_tit">지원자님의 정보를 알려주세요.</h3>
-                <input type="text" name="applicant_tel" id="applicant_tel" class="form-control"
-                       placeholder="연락처" required data-validation-required-message="Please enter your phone number."
-                       oninput="this.value = this.value.replace(/[^0-9-]/g, '').replace(/(\..*)\./g, '$1');"maxlength="13"autocomplete='off'>
-                <input type="text" name="applicant_email" id="appicant_email" class="form-control"
-                       placeholder="이메일" required data-validation-required-message="Please enter your email address."autocomplete='off'>
-            </div>
-            
-            <div class="control-group abt-applicant">
-                <h3 class="apply_tit">지원자님에 대해 알려주세요.</h3>
-                <div class="textarea_wr">
-                    <label for="abt_applicant" class="formTitle"></label>
-                    <textarea rows="1" name="abt_applicant" class="form-control form-control-text"
-                        placeholder="내용을 기재해주세요." id="comments"
-                        data-validation-required-message="Please enter a message."
-                        onkeydown="resize(this)" onkeyup="resize(this)" required></textarea>
-                    <div class="apply-file-btn">
-                        <label for="apply-file">
-                            <div>파일 첨부하기</div><img src="img/file_upload_icon.png" alt=""></label>
-                        <input class="apply-file" type="file" multiple id="apply-file" onchange="fileUpload()">
-                        <input class="upload-name font-kr" value="" disabled="disabled">
-                    </div>
-                    <!-- <div>
-                        <label for="">
-                            <div>파일 첨부하기</div>
-                        </label>
-                        <input type="file" multiple>
-                    </div> -->
+                        <!-- <div>
+                            <label for="">
+                                <div>파일 첨부하기</div>
+                            </label>
+                            <input type="file" multiple>
+                        </div> -->
 
-                    <!-- <div class="formmail_file">
-                        <label for="applicant_file">
-                            <div>파일 첨부하기</div><img src="img/file_upload_icon.png" alt="">
-                        </label>
-                        <input id="applicant_file" type="file" multiple style="width:300px" class="upload-hidden font-kr">
-                        <input class="upload-name font-kr" value="" disabled="disabled">
-                    </div> -->
+                        <!-- <div class="formmail_file">
+                            <label for="applicant_file">
+                                <div>파일 첨부하기</div><img src="img/file_upload_icon.png" alt="">
+                            </label>
+                            <input id="applicant_file" type="file" multiple style="width:300px" class="upload-hidden font-kr">
+                            <input class="upload-name font-kr" value="" disabled="disabled">
+                        </div> -->
+                        
+                    <div class="control-privacy">
+                        <div class="agree-box">
+                            <input type="checkbox" name="privacy" id="privacy" class="hide" value="Y"  >
+                            <label for="privacy"><span class="cbox"></span><u>개인정보보호정책</u>에 동의합니다.</label>
+                        </div>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="control-privacy">
-                <div class="agree-box">
-                    <input type="checkbox" name="privacy" id="privacy" class="hide" value="Y"  >
-                    <label for="privacy"><span class="cbox"></span><u>개인정보보호정책</u>에 동의합니다.</label>
+                
+                <div class="sendBtn" style="text-align:center;">
+                    <div class="form-group">
+                        <button type="button" value="제출하기" onclick="form_Check();">
+                            <span class="text font-kr">제출하기</span>
+                        </button>
+                    </div>
                 </div>
-            </div>
-            
-            <div class="sendBtn" style="text-align:center;">
-                <div class="form-group col-xs-12">
-                    <button type="button" value="제출하기" onclick="form_Check();">
-                        <span class="text font-kr">제출하기</span>
-                    </button>
-                </div>
-            </div>
+            </form>
         </section>
     </main> 
     

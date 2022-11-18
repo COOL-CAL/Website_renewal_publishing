@@ -43,17 +43,17 @@
 				<p>안녕하세요! 😄</p>
 				<div class="input_line_wr">
 					<span id="load_title"></span> <span class="load_ctnt">프로젝트의</span>
-				</div>
-				<div class="input_line_wr">
+				<!-- </div>
+				<div class="input_line_wr"> -->
 					<span id="load_cate"></span> <span class="load_ctnt hide">을</span>
 				</div>
 				<div class="input_line_wr">
-					<span id="load_budget"></span> <span class="load_ctnt">의 규모로 </span> <br> <span id="load_time"></span> <span
-						class="load_ctnt">동안</span>
+					<span id="load_budget"></span> <span class="load_ctnt">의 규모로 </span>
+					<br><span id="load_time"></span><span class="load_ctnt">동안</span>
 				</div>
 				<p><b>루트코어</b>와 함께 <br>진행하시겠습니까?</p>
 			</div>
-			<p class="contact_stit font16">문의를 남겨주시면 확인 후 담당자가 <br> 빠른 시일 내에 연락 드리겠습니다.</p>
+			<p class="contact_stit font16">문의를 남겨주시면 확인 후 담당자가 빠른 시일 내에 연락 드리겠습니다.</p>
 		</section>
 
 		<section id="right">
@@ -279,7 +279,7 @@
 									<label for="userfile1">
 										<div>파일 첨부하기</div><img src="img/file_upload_icon.png" alt="">
 									</label>
-									<input id="userfile1" type="file" multiple style="width:300px" class="upload-hidden font-kr">
+									<input id="userfile1" type="file" multiple class="upload-hidden" onchange="fileUpload()">
 									<input class="upload-name font-kr" value="" disabled="disabled">
 								</div>
 							</div>
@@ -290,13 +290,12 @@
 									<label for="privacy"><span class="cbox"></span><span><u>개인정보보호정책</u>에 동의합니다.</span> </label>
 								</div>
 							</div>
-
 						</div>
 					</div>
 				</div>
 
 				<div class="sendBtn" style="text-align:center;">
-					<div class="form-group col-xs-12">
+					<div class="form-group">
 						<button type="button" value="제출하기" onclick="form_Check();">
 							<span class="text font-kr">제출하기</span>
 						</button>

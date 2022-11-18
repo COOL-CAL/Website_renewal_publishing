@@ -4,6 +4,6 @@
 @import url('modal.css');
 
 @import url('main1.css') screen and (min-width:1100px);
-/* @import url('w1100.css') screen and (max-width:1100px);
+@import url('w1100.css') screen and (max-width:1100px);
 @import url('w768.css') screen and (max-width:768px);
-@import url('w360.css') screen and (max-width:360px); */
+@import url('w360.css') screen and (max-width:360px);

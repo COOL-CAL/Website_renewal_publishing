@@ -79,13 +79,13 @@
     .three-imgs .work-list-ctnt:nth-child(2n) { top: 45px; margin-right: 0; margin-left: 20px;}
     .three-imgs .work-list-ctnt:last-child {margin-bottom: 0;}
     .work-desc { margin-right: 0; }
+    .magnify {display: none;}
     @media (max-width: 450px) {
         .ctnt-work{margin: 0 15px; margin-bottom: 15px;}
         .work-nm{font-size: 1rem;}
         .work-desc{font-size: 0.75rem; line-height: 15px;}
         .three-imgs .work-list-ctnt:hover .ctnt-work{margin-bottom: 40px;}
         .three-imgs .work-list-ctnt:hover .list-dark{border-radius: 7px; height: 98%;}
-        .magnify {display: none;}
     }
     .work-more { margin-top: 50px; margin-bottom: 60px;}
 

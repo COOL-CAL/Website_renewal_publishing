@@ -85,12 +85,11 @@
     #mainOurWork > .wrap { margin: 0 26px; }
     .work-ctnt { margin-bottom: 40px; }
     .three-imgs { grid-template-columns: repeat(1, 1fr); }
-    .three-imgs .work-list-ctnt { width: 308px; margin: 0 auto; top: 0; margin-bottom: 26px; }
+    .three-imgs .work-list-ctnt { max-width: 308px; margin: 0 auto; top: 0; margin-bottom: 26px; }
     .three-imgs .work-list-ctnt:nth-child(2n) { margin-left: 0; top: 0;}
     .ctnt-work { padding: 15px 10px; }
     .work-more { margin: 40px 60px; }
     .three-imgs .work-list-ctnt:hover .list-dark { height: 99%; }
-    .magnify { left: 8.5rem; display: block;}
 
     /* Contact */
     .join-wrap { padding: 0; }
