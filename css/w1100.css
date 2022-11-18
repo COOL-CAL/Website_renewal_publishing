@@ -1,37 +1,57 @@
 /*** media 1100 ~ 769px ***/
-/* Who We Are */
-.intro-list li {
-    width: 30%; height: auto;
-    margin: 10px; 
-}
-.intro-list li > img { width: 100%; }
+@media (max-width: 1100px) {
+    /* main */
 
-/* Our Values */
-/* #mainOurValues { touch-action: none;} */
-/* #mainOurValues .wrap {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}*/
 
-#mainOurValues .v-ctnt1 {
-    margin-bottom: 20px;
-    padding: 0 !important;
-    padding-right: 30px;
-    display: inline-flex;
-    flex-direction: column;
-    justify-content: center;
+    /* Who We Are */
+    .intro-list li {
+        width: 30%; height: auto;
+        margin: 10px; 
+    }
+    .intro-list li > img { width: 100%; }
+
+    /* Our Values */
+    /* #mainOurValues { touch-action: none;} */
+    /* #mainOurValues .wrap {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }*/
+
+    #mainOurValues .v-ctnt1 {
+        margin-bottom: 20px;
+        padding: 0 !important;
+        padding-right: 30px;
+        display: inline-flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    /* Business Process */
+    .process-wrap { touch-action: pan-x; }
+    /* .process-list-wrap { touch-action: pan-x; transition: transform .5s; } */
+    
+    /* Rootcore Way */
 }
 @media all and (max-width: 1023px) {
     /* #mainRootcoreWay .team-intro{ padding-right: 30px; }  */
+}
+@media (max-width: 852px) {
+    #submit { bottom: 9.42rem; }
+    .sub-box {
+        margin: 0;
+        top: 0; bottom: 0;
+        border-radius: 0;
+    }
+    .sub-p { padding: 0 20px; }
+    .sub-p > div > img { margin-left: 0px;}
+    .sub-p > div > p {
+        font-size: 0.875rem;
+        margin-right: 13px;
+        /* width: 196px; */
+    }
 }
 @media all and (max-width: 785px) {
     .v-ctnt2 { padding-right: 54px; }
     .v-ctnt2 br { display: none; }
 }
-
-/* Business Process */
-.process-wrap { touch-action: pan-x; }
-/* .process-list-wrap { touch-action: pan-x; transition: transform .5s; } */
-
-/* Rootcore Way */
