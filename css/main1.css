@@ -236,7 +236,7 @@ main {
 #mainBusinessProcess { display: block; }
 #mainBusinessProcess .wrap { margin: 0 20px; }
 #mainBusinessProcess .wrap .process-ctnt { margin: 0 20px; margin-bottom: 50px; text-align: center; }
-#mainBusinessProcess .wrap .process-wrap { 
+.process-wrap { 
     margin: 0 20px; 
     -ms-user-select: none; 
     -moz-user-select: -moz-none; 
@@ -257,14 +257,14 @@ main {
     touch-action: pan-x;
     margin: 0 20px;
 }
-.process-list-wrap > li {
+.process-list-wrap > div {
     width: 260px;
     height: auto;
     margin-right: 20px;
     position: relative;
 }
-.process-list-wrap > li:last-child { margin-right: 0; }
-.process-list-wrap > li:hover > .process-img > img {
+.process-list-wrap > div:last-child { margin-right: 0; }
+.process-list-wrap > div:hover > .process-img > img {
     animation: undefined-easeOutBounce .8s linear 0s infinite alternate;
     -webkit-animation: undefined-easeOutBounce .8s linear 0s infinite alternate;
     -moz-animation: undefined-easeOutBounce .8s linear 0s infinite alternate;
@@ -301,6 +301,12 @@ main {
 .process-nm-b { left: 6%; bottom: -58px; margin-top: 40px; }
 .process-img { max-width: 100%; height: auto; }
 .process-img > img { max-width: 100%; height: auto; margin-top: 60px; }
+@media (max-width: 1150px) {
+    #mainBusinessProcess .wrap {overflow: hidden}
+    .process-wrap {position: relative; overflow: visible; height: 264px;}
+    .process-list-wrap {position: absolute; left: 0; top: 0; overflow: hidden;}
+    .process-list-wrap div {position: relative;}
+}
 
 /* Rootcore Way */
 #mainRootcoreWay { display: block; background: url(../img/way_bg.png) no-repeat center; overflow: auto; }
@@ -398,7 +404,6 @@ main {
     display: inline-flex;
     align-items: center;
 }
-@media (min-width: 769px ) {.three-imgs .work-list-ctnt:nth-child(3n-1){top: 70px;}}
 .work-img > img { max-width: 100%; height: auto; }
 .three-imgs .work-list-ctnt:hover .ctnt-work { margin-bottom: 70px; transition: all .5s; }
 .three-imgs .work-list-ctnt:hover .list-dark {
@@ -427,6 +432,7 @@ main {
 .three-imgs .work-list-ctnt:hover .magnify { opacity: 1; transition: all .3s; }
 .work-more { margin-top: 110px; margin-bottom: 100px; transition: all .5s; }
 .work-more:hover { transform: rotate(90deg); }
+@media (min-width: 769px ) {.three-imgs .work-list-ctnt:nth-child(3n-1){top: 70px;}}
 
 /* Join Us */
 #mainJoinUs { background: url(../img/contact.png) no-repeat center; margin-top: 0px; }

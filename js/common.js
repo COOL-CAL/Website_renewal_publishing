@@ -159,42 +159,27 @@ $(document).ready(function() {
 
 // Business process
 
-// let curPos = 0;
-// let position = 0;
-// let start_x, end_x;
-// const img_width = 260;
-// const imgs = document.querySelector(".process-list-t",".process-list-b") 
- 
-// imgs.addEventListener('touchstart', touch_start);
-// imgs.addEventListener('touchend', touch_end);
- 
-// function prev(){
-//   if(curPos > 0){
-//     position += img_width;
-//     imgs.style.transform = `translateX(${position}px)`;
-//     curPos = curPos - 1;
-//   }
-// }
-// function next(){
-//   if(curPos < 3){
-//     position -= img_width;
-//     imgs.style.transform = `translateX(${position}px)`;
-//     curPos = curPos + 1;
-//   }
-// }
- 
-// function touch_start(event) {
-//   start_x = event.touches[0].pageX
-// }
- 
-// function touch_end(event) {
-//   end_x = event.changedTouches[0].pageX;
-//   if(start_x > end_x){
-//     next();
-//   }else{
-//     prev();
-//   }
-// }
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'vertical',
+    loop: false,
+  
+    // If we need pagination
+    pagination: {
+      el: '.swiper-pagination',
+    },
+  
+    // Navigation arrows
+    // navigation: {
+    //   nextEl: '.swiper-button-next',
+    //   prevEl: '.swiper-button-prev',
+    // },
+  
+    // And if we need scrollbar
+    // scrollbar: {
+    //   el: '.swiper-scrollbar',
+    // },
+});
 
 // contact, apply page
 

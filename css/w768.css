@@ -35,6 +35,11 @@
     .v-ctnt2 > p > br { display: none; }
 
     /* Business Process */
+    /* #mainBusinessProcess .wrap {overflow: hidden}
+    .process-wrap {position: relative; overflow: visible;}
+    .process-list-wrap {position: absolute; left: 0; top: 0; overflow: hidden;}
+    .process-list-wrap li {position: relative;} */
+
     /* .process-wrap {
         max-width: 560px;
         display: inline-flex;
