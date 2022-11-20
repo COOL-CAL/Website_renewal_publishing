@@ -58,27 +58,25 @@ $(".chk_hidden").click(function(){
 		$(".chk_hidden").each(function(idx){
 			if($(this).is(":checked")){
 				if(idx === 3 ){
-					qatype += `<br>` + $(this).val() + ` <span class="load_ctnt1">을</span>`
+					qatype += $(this).val()
 					$(".hide").addClass('hidden');
-					$("#load_cate").css('width', '300px');
 				}
-				else if(idx <= 2) {
+				else if(idx <= 2){
 					qatype += $(this).val() + "<strong>,</strong> "; 
 					// qatype +=  "<strong>,</strong> ";
 					// // if(idx === 2){
 					// // 	qatype += "<br>"
 				}
-				else if(idx === 1) {
-					qatype += $(this).val()
+				else if(idx === 1){
+					qatype += "<br>" + $(this).val();
 				}
-				else {
+				else{
 					$(".hide").removeClass('hidden');
 					qatype = "";
 					$(".hide").addClass('hidden');
 				}
 			}
 		});
-
 		$("#load_cate").html(qatype);  
 		c1 = 1;
 
@@ -90,9 +88,15 @@ $(".chk_hidden").click(function(){
 		// $("#load_cate").html(qatype);  
 		// c1 = 1;
 	}
+	else{
+		$("#load_cate").html("");  
+		c1 =0;	
+	}
+	
 	if(check >= 1){
 		$("#load_cate").addClass('min_auto');
-	} else {
+	}
+	else{
 		$("#load_cate").removeClass('min_auto');
 	}
 

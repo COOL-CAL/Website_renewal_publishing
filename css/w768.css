@@ -2,6 +2,25 @@
 @media screen and (max-width: 768px){
 
     /* main */
+    @media (max-width: 694px) {
+        .sub-p {
+            overflow-x: hidden; overflow-y: hidden; position: relative; width: 100%; max-width:100%; height: auto;
+        }
+        /* .sub-p > div > img { margin-left: 0px;} */
+        .sub-p > div > p {
+            font-size: 0.875rem;
+            margin-right: 13px;
+            position: absolute; white-space: nowrap;will-change: transform;animation: marquee 10s linear infinite;
+        }
+        @keyframes marquee {
+          from { transform: translateX(0); }
+          to { transform: translateX(-50%); }
+        }
+        @media (hover: hover){
+        .sup-p > div > p {-webkit-transform: translateY(calc(100% - 10rem)); transform: translateY(calc(100% - 10rem));}
+        }
+    }
+
     @media (max-width: 630px) {
         .main-kr > h1 {font-size: 2.5rem;}
         .main-en > h1 {font-size: 4.9rem;}
