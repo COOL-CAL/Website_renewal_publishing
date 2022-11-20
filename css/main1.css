@@ -172,7 +172,8 @@ main {
 .intro-ctnt { text-align: center; margin-bottom: 50px; margin: 0 20px; }
 .intro-ctnt > h2 { margin-bottom: 10px; }
 .intro-ctnt > p { margin-bottom: 50px; color: var(--lightGray); font-family: 'Montserrat', sans-serif; font-weight: 500; }
-.intro-list { display: flex; justify-content: center; align-items: center; margin: 0 20px; }
+.intro-list { margin: 0 auto;}
+.intro-list ul { display: flex; justify-content: center; align-items: center; margin: 0 20px; }
 .intro-list li {
     border-radius: 16px;
     max-width: 260px;
@@ -307,6 +308,8 @@ main {
     .process-list-wrap {position: absolute; left: 0; top: 0; overflow: hidden;}
     .process-list-wrap div {position: relative;}
 }
+
+.swiper
 
 /* Rootcore Way */
 #mainRootcoreWay { display: block; background: url(../img/way_bg.png) no-repeat center; overflow: auto; }

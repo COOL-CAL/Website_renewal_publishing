@@ -18,13 +18,16 @@
 
     /* Who We Are */
     #mainWhoWeAre {margin-top: 45rem;}
-    .intro-list { display: grid; grid-template-columns: repeat(2, 1fr); place-items: center; transform: all 1s;}
+    .intro-list { margin: 0 auto; display: flex; }
+    .intro-list ul { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; place-items: center; transform: all 1s; max-width: 592px; margin: 0 26px;}
     .intro-list li {
-        width: 90%;
+        width: 100%;
         margin: 0;
         transition: all 1s;
         margin-bottom: 20px;
     }
+    .intro-list li:nth-child(2n-1) { margin-left: 26px; margin-right: 13px; }
+    .intro-list li:nth-child(2n) { margin-right: 26px; margin-left: 13px; }
     .intro-list li > img { width: 100%; }
 
     /* Our Values */
