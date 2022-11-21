@@ -128,37 +128,7 @@ $(document).ready(function() {
     });
 });
 
-// $(document).ready(function() {
-//     $('.bg-slide1').slick({
-//         dots: true,
-//         infinite: true,
-//         arrows: true,
-//         speed: 500,
-//         slidesToShow: 1,
-//         slidesToScroll: 1,
-//         responsive:[
-//             {
-//                 breakpoint: 360,
-//                 setting: {
-//                     autoplay: true,
-//                     autoplaySpeed: 10000,
-//                 }
-//             },
-//             {
-//                 breakpoint: 768,
-//             },
-//             {
-//                 breakpoint: 1024,
-//             }
-//         ]
-//     });
-// });
-
-
-
-
 // Business process
-// window.onload = function() {
     let delay = 300;
     let timer = null;
     
@@ -185,12 +155,10 @@ $(document).ready(function() {
             }
         }, delay);
     });
-// }
-
 
 // contact, apply page
 
-    //textarea 크기 자동 조절
+//textarea 크기 자동 조절
 function resize(obj) {
     obj.style.height = '1px';
     obj.style.height = (12 + obj.scrollHeight) + 'px';
@@ -224,15 +192,15 @@ function fileUpload(){
 
     // 채용 파일명 
 $(document).ready(function () {
-    var fileTarget1 = $('.apply-file-btn .apply_file');
+    var fileTarget1 = $('.apply-file-btn .upload-hidden1');
     fileTarget1.on('change', function () { // 값이 변경되면 
         if (window.FileReader) { // modern browser 
             var filename1 = $(this)[0].files[0].name;
         } else { // old IE 
             var filename1 = $(this).val().split('/').pop().split('\\').pop(); // 파일명만 추출
         } // 추출한 파일명 삽입 
-        $(this).siblings('.upload-name').css({ 'textAlign': "left" });
-        $(this).siblings('.upload-name').val(filename1);
+        $(this).siblings('.upload-name1').css({ 'textAlign': "left" });
+        $(this).siblings('.upload-name1').val(filename1);
     });
 });
 

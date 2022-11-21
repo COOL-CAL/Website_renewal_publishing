@@ -50,7 +50,6 @@ function wrestRequired(fld)
     }
 }
 
-// 김선용 2006.3 - 전화번호(휴대폰) 형식 검사 : 123-123(4)-5678
 function wrestTelNum(fld)
 {
     if (!wrestTrim(fld)) return;
@@ -143,7 +142,6 @@ function wrestHangulAlpha(fld)
 }
 
 // 숫자인지검사
-// 배부른꿀꿀이님 추가 (http://dasir.com) 2003-06-24
 function wrestNumeric(fld)
 {
     if (fld.value.length > 0) {
@@ -157,7 +155,6 @@ function wrestNumeric(fld)
 }
 
 // 영문자 검사
-// 배부른꿀꿀이님 추가 (http://dasir.com) 2003-06-24
 function wrestAlpha(fld)
 {
     if (!wrestTrim(fld)) return;
@@ -173,7 +170,6 @@ function wrestAlpha(fld)
 }
 
 // 영문자와 숫자 검사
-// 배부른꿀꿀이님 추가 (http://dasir.com) 2003-07-07
 function wrestAlNum(fld)
 {
     if (!wrestTrim(fld)) return;

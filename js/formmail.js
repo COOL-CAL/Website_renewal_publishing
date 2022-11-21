@@ -30,98 +30,97 @@ $(function(){
 
 	var c1 = 0;
 	let newValue02;
-	// let newValue03;
-	// let newValue04;
-	// let newValue05;
-	// let newValue06;
-	// let newValue07;
 
-// 프로젝트명
-$("#title").on("propertychange change keyup paste input", function() {
-	// 현재 변경된 데이터 셋팅
-	newValue02 = $(this).val();
-	// 현재 실시간 데이터 표츌
-	$("#load_title").text(newValue02);
+	// 프로젝트명
+	$("#title").on("propertychange change keyup paste input", function() {
+		// 현재 변경된 데이터 셋팅
+		newValue02 = $(this).val();
+		// 현재 실시간 데이터 표츌
+		$("#load_title").text(newValue02);
+			
+		if($(this).val().length >= 1 ){
+			$("#load_title").addClass('min_auto');
+		}else{
+			$("#load_title").removeClass('min_auto');
+		}
+	});
+
+	//문의 유형
+	$(".chk_hidden").click(function(){  
+		var check = $("#qatype01").is(":checked") + $("#qatype02").is(":checked") + $("#qatype03").is(":checked") + $("#qatype04").is(":checked");
+		if($(".chk_hidden").is(":checked")){
+			var qatype = "";
+			$(".chk_hidden").each(function(idx){
+				if($(this).is(":checked")){
+					if(idx === 3 ){
+						// qatype += $(this).val()
+						qatype += $(this).val() + ` <span class="load_ctnt">을</span>`
+
+						$(".hide").addClass('hidden');
+					}
+					else if(idx <= 2){
+						qatype += $(this).val() + "<strong>,</strong> "; 
+					}
+					// else if(idx === 1){
+					// 	qatype += "<br>" + $(this).val();
+					// }
+					else{
+						$(item).removeClass('hidden');
+						// $(".hide").removeClass('hidden');
+						qatype = "";
+						$(".hide").addClass('hidden');
+					}
+				}
+			});
+			$("#load_cate").html(qatype);  
+			c1 = 1;
+		}
+		else{
+			$("#load_cate").html("");  
+			c1 =0;	
+		}
 		
-	if($(this).val().length >= 1 ){
-		$("#load_title").addClass('min_auto');
-	}else{
-		$("#load_title").removeClass('min_auto');
-	}
-});
+		if(check >= 1){
+			$("#load_cate").addClass('min_auto');
+		}
+		else{
+			$("#load_cate").removeClass('min_auto');
+		}
 
-//문의 유형
-$(".chk_hidden").click(function(){  
-	var check = $("#qatype01").is(":checked") + $("#qatype02").is(":checked") + $("#qatype03").is(":checked") + $("#qatype04").is(":checked");
-	if($(".chk_hidden").is(":checked")){
-		var qatype = "";
-		$(".chk_hidden").each(function(idx){
-			if($(this).is(":checked")){
-				if(idx === 3 ){
-					qatype += $(this).val()
-					$(".hide").addClass('hidden');
-				}
-				else if(idx <= 2){
-					qatype += $(this).val() + "<strong>,</strong> "; 
-					// qatype +=  "<strong>,</strong> ";
-					// // if(idx === 2){
-					// // 	qatype += "<br>"
-				}
-				else if(idx === 1){
-					qatype += "<br>" + $(this).val();
-				}
-				else{
-					$(".hide").removeClass('hidden');
-					qatype = "";
-					$(".hide").addClass('hidden');
-				}
-			}
-		});
-		$("#load_cate").html(qatype);  
-		c1 = 1;
-
-		// $(".chk_hidden").each(function(){  
-		// 	if($(this).is(":checked")){
-		// 		qatype += $(this).val() + "<strong>,</strong> "; 
-		// 	}
-		// });
-		// $("#load_cate").html(qatype);  
-		// c1 = 1;
-	}
-	else{
-		$("#load_cate").html("");  
-		c1 =0;	
-	}
-	
-	if(check >= 1){
-		$("#load_cate").addClass('min_auto');
-	}
-	else{
-		$("#load_cate").removeClass('min_auto');
-	}
-
-});
+	});
 
 
-
-
-
-// document.getElementByClassName("chk_hidden").click(function(){  
-// 	let check = document.getElementById("qatype01").is(":checked") + document.getElementById("qatype02").is(":checked") + document.getElementById("qatype03").is(":checked") + document.getElementById("qatype04").is(":checked");
-// 	if(document.getElementByClassName("chk_hidden").is(":checked")){
-// 		let qatype = "";
-// 	document.getElementByClassName("chk_hidden").each(function(){  
-// 			if(this.is(":checked")){
-// 				qatype += this.value + "<strong>,</strong> "; 
+// 	$(".chk_hidden").click(function(){  
+// 		var check = $("#qatype01").is(":checked") + $("#qatype02").is(":checked") + $("#qatype03").is(":checked") + $("#qatype04").is(":checked");
+// 		if($(".chk_hidden").is(":checked")){
+// 			var qatype = "";
+// 			$(".chk_hidden").each(function(idx, item){
+// 				if($(item).is(":checked")){
+// 					if(idx === 3 ){
+// 						qatype += $(this).val() + ` <span class="load_ctnt">을</span>`
+// 						$(item).addClass('hidden');
+// 						// $(".hidden").css('height', '0');
+// 					}
+// 					else if(idx <= 2) {
+// 						qatype += $(this).val() + "<strong>,</strong> "; 
+// 					// qatype +=  "<strong>,</strong> ";
+// 					// // if(idx === 2){
+// 					// // 	qatype += "<br>"
+// 				} 
+// 				else {
+// 					$(item).removeClass('hidden');
+// 					// $(".load_ctnt1").addClass('hidden');
+// 				}
 // 			}
 // 		});
-// 		document.getElementById("load_cate").innerHTML = qatype;  
+
+// 		$("#load_cate").html(qatype);  
 // 		c1 = 1;
 // 	}
 // 	if(check >= 1){
-// 		document.getElementById("load_cate").classList.add("min_auto");
-// 	} else if(check === 0) {
-// 		document.getElementById("load_cate").classList.remove("min_auto");
+// 		$("#load_cate").addClass('min_auto');
+// 	} else {
+// 		$("#load_cate").removeClass('min_auto');
 // 	}
 
 // });
@@ -130,28 +129,7 @@ $(".chk_hidden").click(function(){
 
 
 
-		// if($(".chk_hidden").is(":checked")){
-        //     var qatype = "";  
-        //     $(".chk_hidden").each(function(idx){  
-        //         if($(this).is(":checked")){
-        //             console.log(idx);
-        //             if(idx === 3){
-		// 				qatype += "<strong>"+ $(this).val() + "</strong>"; 
-		// 			} else if(idx === 2){
-		// 				qatype += "<strong>"+ $(this).val() + "</strong>, <br>";
-		// 			} else {
-		// 				qatype += "<strong>"+ $(this).val() + "</strong>, "; 
-		// 			}
-		// 		}
-        //     });
-        //     console.log(qatype);
-        //     // $(".text").html(qatype);
-        // // }
 
-		// 	$("#load_cate").html(qatype);  
-		// 	c1 = 1;
-		// }
-		
 
 	//예산
 	$(".budget_input").click(function(){  
@@ -177,6 +155,7 @@ $(".chk_hidden").click(function(){
 			$("#load_budget").removeClass('min_auto');
 		}
 	});
+
 	//일정
 	$(".timeline_input").click(function(){  
 		if($(".timeline_input").is(":checked")){
@@ -201,21 +180,4 @@ $(".chk_hidden").click(function(){
 			$("#load_time").removeClass('min_auto');
 		}
 	});
-
-	// if($(window).width() <= 1024){
-	// 	$(".control-privacy input:checkbox").on('click', function() {
-	// 		if ( $(this).prop('checked') ) {
-	// 			if(!$('.contact_right .control-group').eq(3).is('.contact-readonly') && !$("#email").val() == ""){
-	// 				$('.result_box').addClass('active');
-	// 				$('#ch-plugin , body.mobile .contact_gobtn_wr').addClass('on');
-	// 				let height = $('.contact-wrap .left_contact').innerHeight() + 50;
-	// 				$('.contact-wrap .left_contact').css({"bottom":0});
-					
-	// 			}
-	// 		} else {
-	// 			$('.result_box').removeClass('active');
-	// 			$('#ch-plugin, body.mobile .contact_gobtn_wr').removeClass('on');
-	// 		}
-	// 	});
-	// }
 }); 

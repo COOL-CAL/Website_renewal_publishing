@@ -98,7 +98,6 @@
                                 </label>
                             </div>				
                         </div>
-                        <!-- <p class="help-block text-danger"></p> -->
                     </div>
                 </div>
                 <div class="control-group apply_cname">
@@ -128,12 +127,20 @@
                             data-validation-required-message="Please enter a message."
                             onkeydown="resize(this)" onkeyup="resize(this)" required></textarea>
                             
+                        <!-- <div class="apply-file-btn">
+                            <label for="apply-file">
+                                <div>파일 첨부하기</div><img src="img/file_upload_icon.png" alt="">
+                            </label>
+                            <input id="apply_file" type="file" multiple class="apply_file" onchange="fileUpload()">
+                            <input class="upload-name1 font-kr" value="" disabled="disabled">
+                        </div> -->
+
                         <div class="apply-file-btn">
                             <label for="apply-file">
                                 <div>파일 첨부하기</div><img src="img/file_upload_icon.png" alt="">
                             </label>
-                            <input id="apply_file" type="file" multiple class="apply_file" onchange="fileUpload1()">
-                            <input class="upload-name font-kr" value="" disabled="disabled">
+                            <input id="apply-file" type="file" multiple class="upload-hidden1" onchange="fileUpload1()">
+                            <input class="upload-name1 font-kr" value="" disabled="disabled">
                         </div>
                     </div>
                         <!-- <div>
