@@ -33,18 +33,8 @@
     #mainWhoWeAre { margin-top: 22.125rem; }
     .intro-ctnt > p { margin-bottom: 40px;}
     .intro-list { grid-template-columns: repeat(1, 1fr); grid-column-gap: 26px; }
-    .intro-list li {
-        max-width: 308px;
-        height: 140px;
-        margin: 0;
-        margin-bottom: 20px;
-    }
-    .intro-list li > img {
-        max-height: 140px;
-        object-fit: cover;
-        border-radius: 16px;
-        /* background-color: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 100%); */
-    }
+    .intro-list li { max-width: 308px; max-height: 140px; }
+    .intro-list li > img { max-height: 140px; object-fit: cover; border-radius: 16px; }
 
     /* Our Values */
     .v-ctnt1 { text-align: center; padding: 0; }

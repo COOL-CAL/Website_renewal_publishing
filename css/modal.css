@@ -1,29 +1,45 @@
-#modal { display: none; position: absolute; font-family: "Pretendard-Regular";}
-#modal.modal-overlay {
-    background-attachment: scroll;
-    width: 100%;
-    height: 40.26%;
-    /* height: auto; */
-    position: absolute;
-    left: 0;
-    bottom: 192px;
+#modal {
     display: none;
     align-items: flex-start;
     justify-content: center;
+    position: fixed;
+    font-family: "Pretendard-Regular";
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 10;
+    overflow-y: scroll;
+    background: #00000091;
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+}
+/* #modal.modal-overlay {
+    background-attachment: scroll;
+    width: 100%;
+    height: 40.26%;
+    min-height: auto;
+    position: relative;
+    left: 0;
+    bottom: 192px;
+    display: none;
     background: #00000091;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
     z-index: 10;
-}
+} */
+#modal > div { display: flex; align-items: flex-start; flex-direction: row; margin: 0 26px; max-width: 1100px;}
 #modal .modal-window {
     position: relative;
+    overflow: hidden;
+    /* max-width: 1100px; */
+    width: 100%;
+    min-height: 100%;
     margin: 100px 20px;
+    /* padding: 0 26px; */
 }
 #modal .modal-head {
     color: #fff;
     margin-bottom: 50px;
-    width: 1100px;
     margin-left: 20px;
+    width: 96%;
 }
 #modal .modal-head .ctnt-tit {
     font-size: 24px;
@@ -31,17 +47,17 @@
     margin-bottom: 35px;
     display: flex;
     justify-content: space-between;
-    width: 1100px;
+    /* width: 1100px; */
 }
 #modal .modal-head .ctnt-tit p { margin: 0; }
 #modal .modal-head .ctnt-desc { font-size: 16px; display: flex; }
-#modal .modal-head .ctnt-desc p:first-child { font-size:16px; width: 353px; margin-right: 20px; font-weight: 700; }
-#modal .modal-head .ctnt-desc p:last-child { font-size: 16px; width: 727px; line-height: 22px; text-overflow: ellipsis; -webkit-box-orient: vertical;word-break:keep-all;}
+#modal .modal-head .ctnt-desc p:first-child { font-size:16px; width: 30%; margin-right: 20px; font-weight: 700; }
+#modal .modal-head .ctnt-desc p:last-child { font-size: 16px; width: 70%; line-height: 22px; text-overflow: ellipsis; -webkit-box-orient: vertical;word-break:keep-all; margin-right: 20px;}
 #modal .closeBtn {
     position: sticky;
     top: 80px;
-    float: right;
-    padding-right: 10px;
+    /* float: right; */
+    /* padding-right: 10px; */
     cursor: pointer;
     color: #fff;
     font-size: 30px;
@@ -49,4 +65,15 @@
     margin-top: 100px;
 }
 #modal .closeBtn > img { width: 30px; height: 30px; }
-#modal .modal-ctnt { margin-top: 20px; padding: 0px 10px; }
+#modal .modal-ctnt { margin-top: 20px; padding: 0px 10px; vertical-align: middle;}
+#modal .modal-ctnt img {
+    vertical-align: middle;
+    border: 0 none;
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 1100px) {
+    #modal > div {flex-direction: column-reverse; align-items: flex-end; margin-top: 70px;}
+    #modal .modal-window {margin: 0;}
+    #modal .closeBtn {position: absolute; top: 0; margin-top: 20px;}
+}

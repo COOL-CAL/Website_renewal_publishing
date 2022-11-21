@@ -3,12 +3,14 @@ window.onload = function() {
     const modal = document.getElementById("modal")
     function modalOn() {
         modal.style.display = "flex"
+        document.body.style.overflow = "hidden"
     }
     function isModalOn() {
         return modal.style.display === "block"
     }
     function modalOff() {
         modal.style.display = "none"
+        document.body.style.overflow = "unset"
     }
     const btnModal = document.querySelector(".magnify")
     btnModal.addEventListener("click", e => {
@@ -24,7 +26,7 @@ window.onload = function() {
             modalOff()
         }
     })
-    window.addEventListener("keyup", e => {
+    modal.addEventListener("keyup", e => {
         if(isModalOn() && e.key === "Escape") {
             modalOff()
         }

@@ -158,26 +158,33 @@ $(document).ready(function() {
 
 
 // Business process
-// let window = document.getElementsByTagName("body");
-
-// window.onresize = function(event) {
-    // let innerWidth = window.innerWidth;
-    // if(innerWidth <= 1150) {
-        let swiper = new Swiper(".process-wrap", {
-            slidesPerView: 4,
-            spaceBetween: 26,
-            freeMode: true,
-            breakpoints: {
-                768: {
-                    slidesPerView: 3,
-                },
-                360: {
-                    slidesPerView: 2,
-                }
+// window.onload = function() {
+    let delay = 300;
+    let timer = null;
+    
+    window.addEventListener('resize', function() {
+        this.clearTimeout(timer);
+        timer = this.setTimeout(function() {
+            if(window.innerWidth <= 1160) {
+                let swiper = new Swiper(".process-wrap", {
+                    slidesPerView: 4,
+                    spaceBetween: 26,
+                    freeMode: true,
+                    breakpoints: {
+                        768: {
+                            slidesPerView: 3,
+                        },
+                        360: {
+                            slidesPerView: 2,
+                        }
+                    }
+                });
             }
-        });
-    // }
-//     event();
+            else {
+                
+            }
+        }, delay);
+    });
 // }
 
 
