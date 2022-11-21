@@ -11,12 +11,12 @@
         top: 0; bottom: 0;
         border-radius: 0;
     }
-    .sub-p { padding: 0 20px; }
-    .sub-p > div > img { margin-left: 0px;}
+    /* .sub-p { padding: 0 20px; } */
+    .sub-p > img { margin-left: 0px;}
     .sub-p > div > p {
         font-size: 0.875rem;
-        margin-right: 13px;
-        width: 196px;
+        /* margin-right: 13px; */
+        /* width: 196px; */
     }
 
     .slick-slider img { height: 580px !important; transition: all 1s;}

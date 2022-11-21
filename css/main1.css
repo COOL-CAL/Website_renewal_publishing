@@ -67,7 +67,7 @@ main {
     justify-content: space-between;
     align-items: center;
 }
-.sub-p > div > img { width: 50px; }
+.sub-p > img { width: 50px; }
 .sub-p > div > p { 
     font-family: 'Pretendard'; font-size: 1rem; font-weight: 300;
     color: #fff;
