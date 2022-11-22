@@ -457,17 +457,27 @@ main {
     padding: 2.5rem;
 }
 .join-ctnt { margin-left: 4px; font-size: 14px; font-family: 'Pretendard'; font-weight: 300; }
-.join-btns { display: flex; justify-content: space-between; margin-top: 10px; margin-right: 40px; }
-.join-btns a {
+.join-btns {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-right: 40px;
+    box-sizing: border-box;
+}
+/* .join-btns button { 
+    width: 100%;
+} */
+/* .join-btns a {
     display: block;
     justify-content: center;
     text-align: center;
     border: 1px solid #fff;
     border-radius: 16px;
     max-width: 313px;
-    height: auto;
-    left: calc(50% - 313px/2 - 214.5px);
-    top: calc(50% - 67px/2 - 228.5px);
+    padding: 0 73px;
+    max-height: 67px;
+    width: calc(313px);
+    height: calc(50% - 67px/2 - 228.5px);
     padding: 1rem;
     color: #fff;
     list-style: none;
@@ -476,7 +486,21 @@ main {
     text-underline-offset: 0.5px;
     text-decoration-thickness: from-font;
     font-size: 1.25rem; font-family: 'Pretendard'; font-weight: 200;
+} */
+
+.join-btns a {
+    flex: 1;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 16px;
+    box-sizing: border-box;
+    padding: 1em 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.25rem;font-family: 'Pretendard'; font-weight: 200;
 }
+
 .join-btns img { width: 12px; margin-left: 9px;}
-.join-btns button:first-child { margin-right: 60px; }
+.join-btns a:first-child { margin-right: 60px; }
 .join-btns a:hover { background-color: rgba(255, 255, 255, 0.2); border: 1px solid #fff; transition: all 0.5s; }

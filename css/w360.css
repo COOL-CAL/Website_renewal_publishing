@@ -23,10 +23,16 @@
     /* Who We Are */
     #mainWhoWeAre { margin-top: 22.125rem; }
     .intro-ctnt > p { margin-bottom: 40px;}
-    .intro-list { grid-template-columns: repeat(1, 1fr); grid-column-gap: 26px; }
-    .intro-list li { max-width: 308px; max-height: 140px; }
-    .intro-list li > img { max-height: 140px; object-fit: cover; border-radius: 16px; }
-
+    .intro-list ul {grid-template-columns: repeat(1, 1fr); max-width: 308px; margin: 0;}
+    .intro-list li { width: 100%; max-height: 140px; }
+    .intro-list li:nth-child(2n) { margin-right: 0; margin-left: 0; }
+    .intro-list li>img {
+        width: 308px;
+        max-height: 140px;
+        object-fit: cover;
+        object-position: bottom;
+        border-radius: 16px;
+    }
     /* Our Values */
     .v-ctnt1 { text-align: center; padding: 0; }
     .v-ctnt2 {
@@ -70,5 +76,4 @@
     .join-box { display: block; max-width: 308px; height: auto; padding: 20px; margin: 0 auto ;}
     .join-box > p { margin: 0;}
     .join-btns { max-width: 268px;}
-    .join-btns button { width: 100%; }
 }
