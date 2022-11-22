@@ -52,78 +52,24 @@ $(function(){
 			var qatype = "";
 			$(".chk_hidden").each(function(idx){
 				if($(this).is(":checked")){
-					if(idx === 3 ){
-						// qatype += $(this).val()
-						qatype += $(this).val() + ` <span class="load_ctnt">을</span>`
-
-						$(".hide").addClass('hidden');
-					}
-					else if(idx <= 2){
-						qatype += $(this).val() + "<strong>,</strong> "; 
-					}
-					// else if(idx === 1){
-					// 	qatype += "<br>" + $(this).val();
-					// }
-					else{
-						$(item).removeClass('hidden');
-						// $(".hide").removeClass('hidden');
-						qatype = "";
-						$(".hide").addClass('hidden');
-					}
+					qatype += $(this).val() + "<strong>,</strong> "; 
 				}
 			});
 			$("#load_cate").html(qatype);  
 			c1 = 1;
-		}
-		else{
+		}else{
 			$("#load_cate").html("");  
 			c1 =0;	
 		}
 		
 		if(check >= 1){
 			$("#load_cate").addClass('min_auto');
-		}
-		else{
+		}else{
 			$("#load_cate").removeClass('min_auto');
 		}
-
 	});
 
 
-// 	$(".chk_hidden").click(function(){  
-// 		var check = $("#qatype01").is(":checked") + $("#qatype02").is(":checked") + $("#qatype03").is(":checked") + $("#qatype04").is(":checked");
-// 		if($(".chk_hidden").is(":checked")){
-// 			var qatype = "";
-// 			$(".chk_hidden").each(function(idx, item){
-// 				if($(item).is(":checked")){
-// 					if(idx === 3 ){
-// 						qatype += $(this).val() + ` <span class="load_ctnt">을</span>`
-// 						$(item).addClass('hidden');
-// 						// $(".hidden").css('height', '0');
-// 					}
-// 					else if(idx <= 2) {
-// 						qatype += $(this).val() + "<strong>,</strong> "; 
-// 					// qatype +=  "<strong>,</strong> ";
-// 					// // if(idx === 2){
-// 					// // 	qatype += "<br>"
-// 				} 
-// 				else {
-// 					$(item).removeClass('hidden');
-// 					// $(".load_ctnt1").addClass('hidden');
-// 				}
-// 			}
-// 		});
-
-// 		$("#load_cate").html(qatype);  
-// 		c1 = 1;
-// 	}
-// 	if(check >= 1){
-// 		$("#load_cate").addClass('min_auto');
-// 	} else {
-// 		$("#load_cate").removeClass('min_auto');
-// 	}
-
-// });
 
 
 

@@ -7,11 +7,9 @@
             overflow-x: hidden;
             overflow-y: hidden;
             position: relative;
-            /* width: 100%; */
             max-width: 100%;
             height: auto;
         }
-        /* .sub-p > div > img { margin-left: 0px;} */
         .sub-p > div {
             font-size: 0.875rem;
             position: absolute;
@@ -57,13 +55,7 @@
     #mainWhoWeAre {margin-top: 45rem;}
     .intro-list { margin: 0 auto; display: flex; justify-content: center; align-items: center; }
     .intro-list ul { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; place-items: center; transform: all 1s; max-width: 592px; margin: 0 26px;}
-    .intro-list li {
-        width: 100%;
-        margin: 0;
-        transition: all 1s;
-        /* margin-bottom: 20px; */
-    }
-    /* .intro-list li:nth-child(2n-1) { margin-left: 26px; margin-right: 13px; }
+    .intro-list li { width: 100%; margin: 0; transition: all 1s; }
     .intro-list li:nth-child(2n) { margin-right: 26px; margin-left: 13px; } */
     .intro-list li > img { width: 100%; }
 
@@ -75,25 +67,6 @@
     .v-ctnt2 > p > br { display: none; }
 
     /* Business Process */
-    /* #mainBusinessProcess .wrap {overflow: hidden}
-    .process-wrap {position: relative; overflow: visible;}
-    .process-list-wrap {position: absolute; left: 0; top: 0; overflow: hidden;}
-    .process-list-wrap li {position: relative;} */
-
-    /* .process-wrap {
-        max-width: 560px;
-        display: inline-flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    } */
-    /* .process-list-wrap {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        place-items: center;
-        margin-bottom: 20px;
-    } */
 
     /* Rootcore Way */
     #mainRootcoreWay { background: url(../img/way_bg.png) no-repeat center fixed; }
@@ -124,7 +97,7 @@
     .three-imgs .work-list-ctnt:nth-child(2n) { top: 45px; margin-right: 0; margin-left: 10px;}
     .three-imgs .work-list-ctnt:last-child {margin-bottom: 0;}
     .work-desc { margin-right: 0; }
-    /* .magnify {display: none;} */
+    
     @media (max-width: 450px) {
         .ctnt-work{margin: 0 15px; margin-bottom: 15px;}
         .work-nm{font-size: 1rem;}

@@ -18,9 +18,7 @@
         /* margin-right: 13px; */
         /* width: 196px; */
     }
-
     .slick-slider img { height: 580px !important; transition: all 1s;}
-    /* .slick-prev, .slick-next { display: none !important; } */
 
     #main-ctnt { height: auto; }
     .main-box { margin: 0 20px; }
@@ -48,13 +46,6 @@
     }
     .v-ctnt2 > h3 { font-size: 1.25rem; max-width: 183px; }
     .v-ctnt2 > p { font-size: 0.875rem; line-height: 20px; }
-
-    /* Business Process */
-    /* #mainBusinessProcess { margin-bottom: 100px; }
-    .process-list-wrap {
-        grid-template-columns: repeat(1, 1fr);
-    } */
-
 
     /* Rootcore Way */
     #mainRootcoreWay { display: block; background: url(../img/way_bg.png) no-repeat center fixed; overflow: auto; }

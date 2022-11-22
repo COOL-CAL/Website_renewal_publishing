@@ -10,7 +10,7 @@
 }
 #ourWork.stop-scroll { overflow: hidden; }
 
-#ourWork { width: 100%; height: 100%; background: url(../img/work_bg.png) no-repeat fixed; overflow: auto; padding-bottom: 0; }
+#ourWork { width: 100%; height: 100%; background: url(../img/work_bg.png) no-repeat center fixed; overflow: auto; padding-bottom: 0; }
 #ourWork > .wrap { background-attachment : scroll; display: block; padding: 10rem 0;}
 .work-ctnt { text-align: center; margin-bottom: 90px; }
 .work-ctnt > h2 { margin-bottom: 10px; font-family: 'Montserrat', sans-serif; font-style: italic; font-weight: 900; }
@@ -37,24 +37,9 @@
     position: fixed;
     bottom: 50px;
     right: 50px;
-    z-index: 9999;
+    z-index: 9;
 }
-.top-btn:hover {
-    background-color: rgba(255, 255, 255, 0.4);
-    /* color: #fff; */
-    transition: all .5s;
-}
-/* .work-list {
-    width: 1100px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-    display: grid;
-	grid-template-columns: repeat(3, 21rem);
-    gap: 35px 50px;
-} */
+.top-btn:hover { background-color: rgba(255, 255, 255, 0.4); transition: all .5s; }
 .three-imgs { 
     margin: 0 auto;
     max-width: 1100px;
@@ -91,11 +76,11 @@
 }
 .magnify {
     position: absolute;
-    top: 11rem;
-    left: 8.5rem;
+    top: 40%; left: 43%;
     color: #fff;
     text-align: center;
     opacity: 0;
+    width: auto;
 }
 .three-imgs .work-list-ctnt:hover .magnify { opacity: 1; transition: all .3s; }
 
@@ -104,46 +89,57 @@
     #ourWork > .wrap { margin: 0 30px; }
     .three-imgs { grid-template-columns: repeat(2, 1fr); }
     .work-list { margin: 0; }
-    .three-imgs .work-list-ctnt { margin: 0; margin-right: 20px; margin-bottom: 50px; }
+    .three-imgs .work-list-ctnt { margin: 0; margin-right: 10px; margin-bottom: 30px; }
     .three-imgs .work-list-ctnt:nth-child(3n-1) { top: 0px; }
-    .three-imgs .work-list-ctnt:nth-child(2n) { top: 45px; margin-right: 0; margin-left: 20px;}
+    .three-imgs .work-list-ctnt:nth-child(2n) { top: 45px; margin-right: 0; margin-left: 10px;}
     .three-imgs .work-list-ctnt:last-child {margin-bottom: 0;}
     .work-desc { margin-right: 0; }
-    @media (max-width: 450px) {
-        .ctnt-work{margin: 0 15px; margin-bottom: 15px;}
-        .work-nm{font-size: 1rem;}
-        .work-desc{font-size: 0.75rem; line-height: 15px;}
-        .three-imgs .work-list-ctnt:hover .ctnt-work{margin-bottom: 40px;}
-        .three-imgs .work-list-ctnt:hover .list-dark{border-radius: 7px; height: 98%;}
-        .magnify {display: none;}
-    }
+}
+@media (max-width: 450px) {
+    .ctnt-work{margin: 0 15px; margin-bottom: 15px;}
+    .work-nm{font-size: 1rem;}
+    .work-desc{font-size: 0.75rem; line-height: 15px;}
+    .three-imgs .work-list-ctnt:hover .ctnt-work{margin-bottom: 40px;}
+    .three-imgs .work-list-ctnt:hover .list-dark{border-radius: 7px; height: 98%;}
+}
+@media (max-width: 360px) {
+    #ourWork > .wrap { margin: 0 26px; }
+    .work-ctnt { margin-bottom: 40px; }
+    .three-imgs { grid-template-columns: repeat(1, 1fr); }
+    .three-imgs .work-list-ctnt { max-width: 308px; margin: 0 auto; top: 0; margin-bottom: 26px; }
+    .three-imgs .work-list-ctnt:nth-child(2n) { margin-left: 0; top: 0;}
+    .ctnt-work { padding: 15px 10px; }
+    .work-more { margin: 40px 60px; }
+    .three-imgs .work-list-ctnt:hover .list-dark { height: 99%; }
 }
 
 /* modal */
-#modal { display: block; font-family: "Pretendard-Regular"; width: 100%; height: 100%; }
-#modal.modal-overlay {
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    padding-bottom: 100px;
+/* #modal {
     display: none;
     align-items: flex-start;
     justify-content: center;
+    position: fixed;
+    font-family: "Pretendard-Regular";
+    top: 0; left: 0; right: 0; bottom: 0;
+    z-index: 10;
+    overflow-y: scroll;
     background: #00000091;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(5px);
-    z-index: 10;
 }
+#modal > div { display: flex; align-items: flex-start; flex-direction: row; margin: 0 26px; max-width: 1100px;}
 #modal .modal-window {
-    max-height: 100%;
-    position: absolute;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    min-height: 100%;
     margin: 100px 20px;
-    background-attachment : scroll;
-    overflow-y: scroll;
-    top: 0px;
-    bottom: 30px;
+}
+#modal .modal-head {
+    color: #fff;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    width: 96%;
 }
 #modal .modal-head .ctnt-tit {
     font-size: 24px;
@@ -151,24 +147,31 @@
     margin-bottom: 35px;
     display: flex;
     justify-content: space-between;
-    width: 1100px;
 }
 #modal .modal-head .ctnt-tit p { margin: 0; }
 #modal .modal-head .ctnt-desc { font-size: 16px; display: flex; }
-#modal .modal-head .ctnt-desc p:first-child { font-size:16px; width: 353px; margin-right: 20px; font-weight: 700; }
-#modal .modal-head .ctnt-desc p:last-child { font-size: 16px; width: 727px; line-height: 22px; text-overflow: ellipsis; -webkit-box-orient: vertical;word-break:keep-all;}
+#modal .modal-head .ctnt-desc p:first-child { font-size:16px; width: 30%; margin-right: 20px; font-weight: 700; }
+#modal .modal-head .ctnt-desc p:last-child { font-size: 16px; width: 70%; line-height: 22px; text-overflow: ellipsis; -webkit-box-orient: vertical;word-break:keep-all; margin-right: 20px;}
 #modal .closeBtn {
     position: sticky;
-    top: 0px;
-    margin-top: 0;
-    margin: 0;
-    padding-right: 13px;
+    top: 80px;
     cursor: pointer;
     color: #fff;
     font-size: 30px;
     margin: 0;
     margin-top: 100px;
-    margin-left: 1180px;
+    margin-right: 20px;
 }
 #modal .closeBtn > img { width: 30px; height: 30px; }
-#modal .modal-ctnt { margin-top: 20px; padding: 0px 10px; }
+#modal .modal-ctnt { margin-top: 20px; padding: 0px 10px; vertical-align: middle;}
+#modal .modal-ctnt img {
+    vertical-align: middle;
+    border: 0 none;
+    max-width: 100%;
+    height: auto;
+}
+@media (max-width: 1100px) {
+    #modal > div {flex-direction: column-reverse; align-items: flex-end; margin-top: 70px;}
+    #modal .modal-window {margin: 0;}
+    #modal .closeBtn {position: relative; top: 0; margin-top: 20px;}
+} */

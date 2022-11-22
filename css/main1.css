@@ -430,8 +430,7 @@ main {
 }
 .magnify {
     position: absolute;
-    /* top: 40%; */
-    left: 43%;
+    top: 40%; left: 43%;
     color: #fff;
     text-align: center;
     opacity: 0;
