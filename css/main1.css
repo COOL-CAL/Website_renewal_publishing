@@ -47,7 +47,8 @@ main {
     z-index: 2;
 }
 .sub-box {
-    display: block;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
     border-radius: 16px;
     background: rgba(255, 255, 255, 0.3);
@@ -56,7 +57,7 @@ main {
 }
 .sub-p {
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 0 30px;
     max-width: 100%;
@@ -67,7 +68,7 @@ main {
     justify-content: space-between;
     align-items: center;
 }
-.sub-p > img { width: 50px; }
+.sub-p > img { width: 50px; margin: 0; }
 .sub-p > div > p { 
     font-family: 'Pretendard'; font-size: 1rem; font-weight: 300;
     color: #fff;
@@ -75,7 +76,8 @@ main {
     display: inline-flex;
     align-items: center;
 }
-.sub-p > a { margin: 0; }
+.sub-p > div > p > span { display: none; }
+.sub-box > a { margin: 0; margin-right: 30px; }
 .sub-btn {
     background-color: var(--mainColor);
     border: 2px solid var(--mainColor);
@@ -86,11 +88,7 @@ main {
     color: #fff;
     font-family: 'Pretendard'; 
     font-size: 12px; font-weight: 300;
-    flex-shrink: 0;
-    width: auto;
-    overflow: hidden;
-    animation: marquee 20s linear infinite;
-    animation-duration: 40s;
+    /* flex-shrink: 0; */
 }
 .sub-btn:hover {
     background-color: #fff;
@@ -98,7 +96,7 @@ main {
     color: var(--mainColor);
     transition: all .5s;
 }
-.sub-btn > span { display: inline-block; animation: moveLetter 2000ms infinite ease-in-out;}
+.sub-btn>span { display: inline-block; }
 @media(min-width:768px) {
     .sub-btn > span {
         -webkit-animation: wt-btn_sign-marquee 2s linear infinite;
@@ -168,7 +166,7 @@ main {
 .main-detail > h3 { font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 1.125rem; }
 
 /* Who We Are */
-#mainWhoWeAre { margin-top: 49.125rem; }
+#mainWhoWeAre { margin-top: 45rem; }
 .intro-ctnt { text-align: center; margin-bottom: 50px; margin: 0 20px; }
 .intro-ctnt > h2 { margin-bottom: 10px; }
 .intro-ctnt > p { margin-bottom: 50px; color: var(--lightGray); font-family: 'Montserrat', sans-serif; font-weight: 500; }
@@ -466,8 +464,6 @@ main {
     text-align: center;
     border: 1px solid #fff;
     border-radius: 16px;
-    /* max-width: 317px;
-    height: auto; */
     max-width: 313px;
     height: auto;
     left: calc(50% - 313px/2 - 214.5px);

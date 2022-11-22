@@ -2,12 +2,16 @@
 @media screen and (max-width: 768px){
 
     /* main */
-    @media (max-width: 694px) {
+    /* @media (min-width: 704px) {
+
+    } */
+    .slick-slider img {height: 768px !important; transition: all 1s;}
+    @media (max-width: 706px) {
         .sub-p {
             overflow-x: hidden;
             overflow-y: hidden;
             position: relative;
-            max-width: 100%;
+            width: 79%;
             height: auto;
         }
         .sub-p > div {
@@ -15,18 +19,18 @@
             position: absolute;
             display: block;
             overflow: hidden;
-            max-width: 100%;
             margin-right: 70px;
             margin-left: 50px;
+            width: 100%;
         }
         .sub-p > div > p {
             white-space: nowrap;
-            /* will-change: transform; */
-            animation: marquee 5s linear infinite;
-            display: block;
-            overflow: hidden;
-            width: 100%;
+            will-change: transform;
+            animation: marquee 8s linear infinite;
+            /* display: block; */
+            /* overflow: hidden; */
         }
+        .sub-p > div > p > span {display: block;}
     }
     @keyframes marquee {
         from { transform: translateX(0); }
@@ -36,23 +40,18 @@
     .sup-p > div > p {-webkit-transform: translateY(calc(100% - 10rem)); transform: translateY(calc(100% - 10rem));}
     }
 
-
     @media (max-width: 630px) {
         .main-kr > h1 {font-size: 2.5rem;}
         .main-en > h1 {font-size: 4.9rem;}
     }
     @media (max-width: 535px) {
-        .main-kr > h1 {font-size: 1.8rem;}
-        .main-en > h1 {font-size: 3.9rem;}
-    }
-    @media (max-width: 420px) {
-        .main-kr > h1 {font-size: 1.5rem; line-height: 40px;}
-        .main-en > h1 {font-size: 3.125rem; line-height: 52px;}
+        .main-kr > h1 {font-size: 7vw;}
+        .main-en > h1 {font-size: 13vw;}
     }
     .main-detail { padding-top: 30rem; }
 
     /* Who We Are */
-    #mainWhoWeAre {margin-top: 45rem;}
+    #mainWhoWeAre {margin-top: 34rem;}
     .intro-list { margin: 0 auto; display: flex; justify-content: center; align-items: center; }
     .intro-list ul { display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px; place-items: center; transform: all 1s; max-width: 592px; margin: 0 26px;}
     .intro-list li { width: 100%; margin: 0; transition: all 1s; }
@@ -97,7 +96,7 @@
     .three-imgs .work-list-ctnt:nth-child(2n) { top: 45px; margin-right: 0; margin-left: 10px;}
     .three-imgs .work-list-ctnt:last-child {margin-bottom: 0;}
     .work-desc { margin-right: 0; }
-    
+
     @media (max-width: 450px) {
         .ctnt-work{margin: 0 15px; margin-bottom: 15px;}
         .work-nm{font-size: 1rem;}
@@ -108,7 +107,7 @@
     .work-more { margin-top: 50px; margin-bottom: 60px;}
 
     /* Contact */
-    #mainJoinUs { padding-top: 60px; padding-bottom: 80px; }
+    #mainJoinUs { padding-top: 30px; padding-bottom: 40px; }
     #mainJoinUs .wrap {
         display: flex;
         flex-wrap: wrap;

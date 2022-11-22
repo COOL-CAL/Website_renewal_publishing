@@ -1,8 +1,8 @@
 /*** media 1100 ~ 769px ***/
 @media (max-width: 1100px) {
     /* Who We Are */
-    .intro-list li { width: 30%; height: auto; margin: 10px; }
-    .intro-list li > img { width: 100%; }
+    .intro-list li {width: 30%; height: auto; margin: 10px;}
+    .intro-list li > img {width: 100%;}
 
     /* Our Values */
     #mainOurValues .v-ctnt1 {
@@ -19,21 +19,14 @@
 }
 @media (max-width: 852px) {
     /* main */
-    #submit { bottom: 9.42rem; }
-    .sub-box {
-        margin: 0;
-        top: 0; bottom: 0;
-        border-radius: 0;
-    }
-    .sub-p {padding: 0 20px;}
-    .sub-p > img { margin-left: 0px;}
-    .sub-p > div > p {
-        font-size: 0.875rem;
-        margin-right: 13px;
-    }
+    #submit {bottom: 9.42rem;}
+    .sub-box {margin: 0; top: 0; bottom: 0; border-radius: 0;}
+    .sub-box > img {margin-left: 0px;}
+    .sub-p {padding: 0 20px; padding-right: 0}
+    .sub-p > div > p {font-size: 0.875rem; margin-right: 13px;}
 }
 @media all and (max-width: 785px) {
     /* Our Values */
-    .v-ctnt2 { padding-right: 54px; }
-    .v-ctnt2 br { display: none; }
+    .v-ctnt2 {padding-right: 54px;}
+    .v-ctnt2 br {display: none;}
 }

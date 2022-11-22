@@ -5,25 +5,18 @@
     .intro-ctnt > p, .v-ctnt1 > p, .process-ctnt > p, .way-ctnt > p, .work-ctnt > p, .join-wrap > p { font-size: 0.75rem; }
 
     /* main */
-    #submit { bottom: 9.42rem; }
-    .sub-box {
-        margin: 0;
-        top: 0; bottom: 0;
-        border-radius: 0;
-    }
-    /* .sub-p { padding: 0 20px; } */
-    .sub-p > img { margin-left: 0px;}
-    .sub-p > div > p {
-        font-size: 0.875rem;
-        /* margin-right: 13px; */
-        /* width: 196px; */
-    }
-    .slick-slider img { height: 580px !important; transition: all 1s;}
+    #submit {bottom: 9.42rem;}
+    .sub-box {margin: 0; top: 0; bottom: 0; border-radius: 0;}
+    .sub-box > a {margin-right: 10px;}
+    .sub-p {padding: 0 10px; width: 64%;}
+    .sub-p > div > p {font-size: 0.875rem;}
+
+    .slick-slider img {height: 580px !important; transition: all 1s;}
 
     #main-ctnt { height: auto; }
     .main-box { margin: 0 20px; }
-    .main-kr > h1 { font-size: 1.5rem; line-height: 40px; }
-    .main-en > h1 { font-size: 3.125rem; line-height: 52px;}
+    /* .main-kr > h1 { line-height: 40px; }
+    .main-en > h1 { line-height: 52px;} */
     .main-detail { padding-top: 19rem; }
     .main-detail > h3 { font-size: 0.875rem; }
 
