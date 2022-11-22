@@ -3,10 +3,10 @@
 
     /* main */
     /* @media (min-width: 704px) {
-
+            버튼 인터랙션 들어갈 예정 
     } */
     .slick-slider img {height: 768px !important; transition: all 1s;}
-    @media (max-width: 706px) {
+    @media (max-width: 721px) {
         .sub-p {
             overflow-x: hidden;
             overflow-y: hidden;
@@ -129,8 +129,18 @@
     .join-btns a { font-size: 16px; margin: 0 auto; }
     .join-btn { margin-bottom: 10px; }
 
-    @media all and (max-width: 710px) {
-        #mainWhoWeAre .intro-ctnt > p > br { display: none; }
-        #mainOurValues .v-ctnt2 > p > br{ display: none; }
-    }
+}
+@media all and (max-width: 710px) {
+    #mainWhoWeAre .intro-ctnt > p > br { display: none; }
+    #mainOurValues .v-ctnt2 > p > br{ display: none; }
+}
+@media (max-width: 615px) {
+    #mainOurWork > .wrap { margin: 0 26px; }
+    .work-ctnt { margin-bottom: 40px; }
+    .three-imgs { grid-template-columns: repeat(1, 1fr); }
+    .three-imgs .work-list-ctnt { max-width: 308px; margin: 0 auto; top: 0; margin-bottom: 26px; }
+    .three-imgs .work-list-ctnt:nth-child(2n) { margin-left: 0; top: 0;}
+    .ctnt-work { padding: 15px 10px; }
+    .work-more { margin: 40px 60px; }
+    .three-imgs .work-list-ctnt:hover .list-dark {height: 99%;}
 }

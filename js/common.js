@@ -139,14 +139,14 @@ $(document).ready(function() {
                 var swiper = new Swiper(".process-wrap", {
                     slidesPerView: 4,
                     spaceBetween: 26,
-                    // centeredSlides: true,
+                    loop: false,
                     freeMode: true,
                     breakpoints: {
                         768: {
-                            slidesPerView: 3,
+                            slidesPerView: 2,
                         },
                         360: {
-                            slidesPerView: 2,
+                            slidesPerView: 1,
                         }
                     }
                 });

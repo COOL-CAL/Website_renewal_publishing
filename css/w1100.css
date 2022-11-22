@@ -17,6 +17,26 @@
     /* Business Process */
     .process-wrap { touch-action: pan-x; }   
 }
+@media (max-width: 960px) {
+    /* Our Work */
+    #mainOurWork > .wrap { margin: 0 30px; }
+    .three-imgs { grid-template-columns: repeat(2, 1fr); }
+    .work-list { margin: 0; }
+    .three-imgs .work-list-ctnt { margin: 0; margin-right: 10px; margin-bottom: 30px; }
+    .three-imgs .work-list-ctnt:nth-child(3n-1) { top: 0px; }
+    .three-imgs .work-list-ctnt:nth-child(2n) { top: 45px; margin-right: 0; margin-left: 10px;}
+    .three-imgs .work-list-ctnt:last-child {margin-bottom: 0;}
+    .work-desc { margin-right: 0; }
+
+    @media (max-width: 450px) {
+        .ctnt-work{margin: 0 15px; margin-bottom: 15px;}
+        .work-nm{font-size: 1rem;}
+        .work-desc{font-size: 0.75rem; line-height: 15px;}
+        .three-imgs .work-list-ctnt:hover .ctnt-work{margin-bottom: 40px;}
+        .three-imgs .work-list-ctnt:hover .list-dark{border-radius: 7px; height: 98%;}
+    }
+    .work-more { margin-top: 50px; margin-bottom: 60px;}
+}
 @media (max-width: 852px) {
     /* main */
     #submit {bottom: 9.42rem;}
