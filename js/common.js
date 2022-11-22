@@ -136,9 +136,10 @@ $(document).ready(function() {
         this.clearTimeout(timer);
         timer = this.setTimeout(function() {
             if(window.innerWidth <= 1160) {
-                let swiper = new Swiper(".process-wrap", {
+                var swiper = new Swiper(".process-wrap", {
                     slidesPerView: 4,
                     spaceBetween: 26,
+                    // centeredSlides: true,
                     freeMode: true,
                     breakpoints: {
                         768: {

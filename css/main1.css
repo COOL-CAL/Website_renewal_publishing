@@ -272,7 +272,6 @@ main {
 }
 .swiper-slide {
     width: 260px !important;
-    /* margin: 0 !important; */
 }
 @keyframes undefined-easeOutBounce {
 	0% { transform: translateY(0%); }
