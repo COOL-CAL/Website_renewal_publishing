@@ -12,10 +12,20 @@ window.onload = function() {
         modal.style.display = "none"
         document.body.style.overflow = "unset"
     }
-    const btnModal = document.querySelector(".magnify")
+    const btnModal = document.querySelector(".work-list-ctnt")
     btnModal.addEventListener("click", e => {
         modalOn()
     })
+    // const btnModal2 = document.querySelector(".ctnt-work")
+    // // function modalOn360() {
+    //     if( window <= 360) {
+    //         btnModal2.addEventListener("click", e => {
+    //             modalOn()
+    //         })
+    //     }
+    // // }
+    
+
     const closeBtn = modal.querySelector(".closeBtn")
     closeBtn.addEventListener("click", e => {
         modalOff()
@@ -31,9 +41,6 @@ window.onload = function() {
             modalOff()
         }
     })
-
-    // document.body.classList.add("stop-scroll");
-    // document.body.classList.remove("stop-scroll");
 }
 
 

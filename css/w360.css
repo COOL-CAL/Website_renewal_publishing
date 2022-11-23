@@ -1,8 +1,8 @@
 /* 360 ~  */
 @media screen and (max-width:360px) {
-    h2 { font-size: 1.5rem !important; }
-    #mainWhoWeAre, #mainBusinessProcess, #mainOurValues, #mainRootcoreWay, #mainOurWork, #mainJoinUs { padding-top: 4.375rem; padding-bottom: 30px; }
-    .intro-ctnt > p, .v-ctnt1 > p, .process-ctnt > p, .way-ctnt > p, .work-ctnt > p, .join-wrap > p { font-size: 0.75rem; }
+    h2 {font-size: 1.5rem !important;}
+    #mainWhoWeAre, #mainBusinessProcess, #mainOurValues, #mainRootcoreWay, #mainOurWork, #mainJoinUs {padding-top: 4.375rem; padding-bottom: 30px;}
+    .intro-ctnt > p, .v-ctnt1 > p, .process-ctnt > p, .way-ctnt > p, .work-ctnt > p, .join-wrap > p {font-size: 0.75rem;}
 
     /* main */
     #submit {bottom: 9.42rem;}
@@ -13,19 +13,17 @@
 
     .slick-slider img {height: 580px !important; transition: all 1s;}
 
-    #main-ctnt { height: auto; }
-    .main-box { margin: 0 20px; }
-    /* .main-kr > h1 { line-height: 40px; }
-    .main-en > h1 { line-height: 52px;} */
-    .main-detail { padding-top: 19rem; }
-    .main-detail > h3 { font-size: 0.875rem; }
+    #main-ctnt {height: auto;}
+    .main-box {margin: 0 20px;}
+    .main-detail {padding-top: 19rem;}
+    .main-detail > h3 {font-size: 0.875rem;}
 
     /* Who We Are */
-    #mainWhoWeAre { margin-top: 22.125rem; }
-    .intro-ctnt > p { margin-bottom: 40px;}
+    #mainWhoWeAre {margin-top: 22.125rem;}
+    .intro-ctnt > p {margin-bottom: 40px;}
     .intro-list ul {grid-template-columns: repeat(1, 1fr); max-width: 308px; margin: 0;}
-    .intro-list li { width: 100%; max-height: 140px; }
-    .intro-list li:nth-child(2n) { margin-right: 0; margin-left: 0; }
+    .intro-list li {width: 100%; max-height: 140px;}
+    .intro-list li:nth-child(2n) {margin-right: 0; margin-left: 0;}
     .intro-list li>img {
         width: 308px;
         max-height: 140px;
@@ -34,7 +32,7 @@
         border-radius: 16px;
     }
     /* Our Values */
-    .v-ctnt1 { text-align: center; padding: 0; }
+    .v-ctnt1 {text-align: center; padding: 0;}
     .v-ctnt2 {
         padding: 70px 16px;
         text-align: center;
@@ -43,39 +41,61 @@
         justify-content: center;
         align-items: center;
     }
-    .v-ctnt2 > h3 { font-size: 1.25rem; max-width: 183px; }
-    .v-ctnt2 > p { font-size: 0.875rem; line-height: 20px; }
+    .v-ctnt2 > h3 {font-size: 1.25rem; max-width: 183px;}
+    .v-ctnt2 > p {font-size: 0.875rem; line-height: 20px;}
 
     /* Rootcore Way */
-    #mainRootcoreWay { display: block; background: url(../img/way_bg.png) no-repeat center fixed; overflow: auto; }
-    #mainRootcoreWay > .wrap { background-attachment: scroll; }
-    .way-ctnt { margin-bottom: 40px; }
-    .way-list { margin: 0; margin-bottom: 30px; grid-template-columns: repeat(1, 1fr); }
-    .way-list .way-img { max-width: 320px; height: 140px; margin-right: 0; }
-    .way-list .way-img:last-child { margin-bottom: 0; }
-    .way-list .way-img:nth-child(2n-1) { margin-right: 0; }
-    .way-list .way-img:nth-child(2n) { margin-left: 0; }
-    .way-list .way-img img { width: 320px; max-height: 140px; object-fit: cover; border-radius: 16px; }
-    .way-nm { margin-bottom: 0.75rem; }
-    .way-p { font-size: 14px; margin: 0 30px; }
-    .team-intro { max-width: 320px; margin-bottom: 22px; margin: 0; margin-bottom: 22px; }
-    .team-tag { font-size: 0.75rem; }
+    #mainRootcoreWay {display: block; background: url(../img/way_bg.png) no-repeat center fixed; overflow: auto;}
+    #mainRootcoreWay > .wrap {background-attachment: scroll;}
+    .way-ctnt {margin-bottom: 40px;}
+    .way-list {margin: 0; margin-bottom: 30px; grid-template-columns: repeat(1, 1fr);}
+    .way-list .way-img {max-width: 320px; height: 140px; margin-right: 0;}
+    .way-list .way-img:last-child {margin-bottom: 0;}
+    .way-list .way-img:nth-child(2n-1) {margin-right: 0;}
+    .way-list .way-img:nth-child(2n) {margin-left: 0;}
+    .way-list .way-img img {width: 320px; max-height: 140px; object-fit: cover; border-radius: 16px;}
+    .way-nm {margin-bottom: 0.75rem;}
+    .way-p {font-size: 14px; margin: 0 30px;}
+    .team-intro {max-width: 320px; margin-bottom: 22px; margin: 0; margin-bottom: 22px; padding: 30px;}
+    .team-tag {font-size: 0.75rem;}
 
     /* Our Work */
-    #mainOurWork > .wrap { margin: 0 26px; }
-    .work-ctnt { margin-bottom: 40px; }
-    .three-imgs { grid-template-columns: repeat(1, 1fr); }
-    .three-imgs .work-list-ctnt { max-width: 308px; margin: 0 auto; top: 0; margin-bottom: 26px; }
-    .three-imgs .work-list-ctnt:nth-child(2n) { margin-left: 0; top: 0;}
+    #mainOurWork > .wrap {margin: 0 26px;}
+    .work-ctnt {margin-bottom: 40px;}
+    .three-imgs {grid-template-columns: repeat(1, 1fr);}
+    .three-imgs .work-list-ctnt {max-width: 308px; margin: 0 auto; top: 0; margin-bottom: 26px;}
+    .three-imgs .work-list-ctnt:nth-child(2n) {margin-left: 0; top: 0;}
     /* .work-img::after {} */
-    .ctnt-work { padding: 15px 10px; }
-    .work-more { margin: 40px 60px; }
-    .three-imgs .work-list-ctnt:hover .list-dark { height: 99%; }
-    /* .magnify {display: none;} */
+    .ctnt-work {padding: 15px 10px; padding-right: 80px;}
+    .work-more {margin: 40px 60px;}
+    .three-imgs .work-list-ctnt:hover .ctnt-work { margin-bottom: 20px;}
+    .three-imgs .work-list-ctnt:hover .list-dark {display: none;}
+    .three-imgs .work-list-ctnt .list-dark {display: block;}
+    /* .list-dark {display: none;} */
+    /* .magnify {
+        position: absolute;
+        opacity: 1;
+        top: 5%;
+        left: 76%;
+        color: #fff;
+        text-align: center;
+        width: auto;
+    } */
+    /* .magnify > img {width: 15vw;} */
+    .magnify {display: none;}
 
     /* Contact */
-    .join-wrap { padding: 0; }
-    .join-box { display: block; max-width: 308px; height: auto; padding: 20px; margin: 0 auto ;}
-    .join-box > p { margin: 0;}
-    .join-btns { max-width: 268px;}
+    #mainJoinUs .wrap {margin: 0 26px;}
+    .join-wrap {padding: 0;}
+    .join-box {
+        display: block;
+        max-width: 308px;
+        height: auto;
+        padding: 20px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+    .join-box > p {margin: 0;}
+    .join-btns {max-width: 268px;}
+    .join-btns a {width: 100%; box-sizing: border-box; margin: 0;}
 }

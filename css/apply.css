@@ -10,7 +10,13 @@
 /*** START apply form css ***/
 
 /* left side */
-#left .input_wr { font-size: 20px; font-weight:400; color:#fff; line-height: 40px; margin-bottom: 28px; }
+#left .input_wr {
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    line-height: 40px;
+    margin-bottom: 28px;
+}
 #left .input_wr .input_line_wr { margin-bottom:30px; font-weight:300; margin-bottom: 0; }
 #left .input_wr span {
     border: none;
@@ -54,7 +60,6 @@
     word-wrap: break-word;
     height: 32px;
 }
-/* #left .input_wr span#load_title.min_auto{vertical-align:text-top;} */
 #left .input_wr .apply_stit{ font-size:16px; font-weight:300; color:#999999; }
 
 /* right side */
@@ -297,34 +302,6 @@
 .form-control:-ms-input-placeholder{color:#aaa}
 .form-control::-webkit-input-placeholder{color:#aaa}
 .form-control[disabled],fieldset[disabled].form-control{cursor:not-allowed}
-
-/* .formmail_file { position:static; padding-top: 14px; padding-right: 20px; }
-.formmail_file input[type="file"] { position: absolute; width: 0; height: 0; padding: 0; overflow: hidden; border: 0; }
-.formmail_file input::file-selector-button { display: none; }
-.formmail_file label {
-    border: 1px solid #fff;
-    border-radius: 16px;
-    height: 43px;
-    width: 136px;
-    display: inline-flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-}
-.formmail_file > label > div { font-size: 13px; margin-right: 0; margin-left: 24px;}
-.formmail_file > label > img { padding-bottom: 1px; margin-left: 5px;}
-.formmail_file .upload-name {
-    /* display: inline-block; */
-    /* height: 43px;
-    font-size:13px;
-    border: 0;
-    padding: 0 15px;
-    width: 110px;
-    color: #fff; */
-    /* background: transparent; */
-    /* background-color: #999999; */
-    /* border-radius: 16px;
-} */
 
 /* 파일 첨부  */
 .apply-file-btn { position:static; padding-top: 14px; padding-right: 20px; }

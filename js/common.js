@@ -100,7 +100,7 @@ window.onload = function() {
 
 
 
-// slick 슬라이드 
+// main slick 슬라이드 
 $(document).ready(function() {
     $('.bg-slide').slick({
         slide: 'div',

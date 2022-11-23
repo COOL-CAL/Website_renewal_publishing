@@ -14,28 +14,26 @@
         justify-content: center;
     }
     
-    /* Business Process */
-    .process-wrap { touch-action: pan-x; }   
+    /* Contact */
+    .join-wrap {padding-right: 30px;}
 }
 @media (max-width: 960px) {
-    /* Our Work */
-    #mainOurWork > .wrap { margin: 0 30px; }
-    .three-imgs { grid-template-columns: repeat(2, 1fr); }
-    .work-list { margin: 0; }
-    .three-imgs .work-list-ctnt { margin: 0; margin-right: 10px; margin-bottom: 30px; }
-    .three-imgs .work-list-ctnt:nth-child(3n-1) { top: 0px; }
-    .three-imgs .work-list-ctnt:nth-child(2n) { top: 45px; margin-right: 0; margin-left: 10px;}
-    .three-imgs .work-list-ctnt:last-child {margin-bottom: 0;}
-    .work-desc { margin-right: 0; }
+    #mainWhoWeAre, #mainBusinessProcess, #mainOurValues, #mainRootcoreWay, #mainOurWork, #mainJoinUs {padding-top: 3.9rem; padding-bottom: 2.65rem;}
 
-    @media (max-width: 450px) {
-        .ctnt-work{margin: 0 15px; margin-bottom: 15px;}
-        .work-nm{font-size: 1rem;}
-        .work-desc{font-size: 0.75rem; line-height: 15px;}
-        .three-imgs .work-list-ctnt:hover .ctnt-work{margin-bottom: 40px;}
-        .three-imgs .work-list-ctnt:hover .list-dark{border-radius: 7px; height: 98%;}
-    }
-    .work-more { margin-top: 50px; margin-bottom: 60px;}
+    /* Our Work */
+    #mainOurWork > .wrap {margin: 0 30px;}
+    .three-imgs {grid-template-columns: repeat(2, 1fr);}
+    .work-list {margin: 0;}
+    .three-imgs .work-list-ctnt {margin: 0; margin-right: 10px; margin-bottom: 30px;}
+    .three-imgs .work-list-ctnt:nth-child(3n-1) {top: 0px;}
+    .three-imgs .work-list-ctnt:nth-child(2n) {top: 45px; margin-right: 0; margin-left: 10px;}
+    .three-imgs .work-list-ctnt:last-child {margin-bottom: 0;}
+    .work-desc {margin-right: 0;}
+    .work-more {margin-top: 50px; margin-bottom: 60px;}
+
+    /* Contact */
+    #mainJoinUs > .wrap {display: flex; flex-direction: column; justify-content: center;}
+    .join-wrap {margin-bottom: 50px; display: flex; flex-direction: column; justify-content: center;}
 }
 @media (max-width: 852px) {
     /* main */
@@ -45,7 +43,7 @@
     .sub-p {padding: 0 20px; padding-right: 0}
     .sub-p > div > p {font-size: 0.875rem; margin-right: 13px;}
 }
-@media all and (max-width: 785px) {
+@media (max-width: 785px) {
     /* Our Values */
     .v-ctnt2 {padding-right: 54px;}
     .v-ctnt2 br {display: none;}
