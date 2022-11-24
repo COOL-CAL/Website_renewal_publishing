@@ -17,6 +17,9 @@
     /* Contact */
     .join-wrap {padding-right: 30px;}
 }
+@media (max-width: 979px) {
+    .main-detail {padding-top: 28vh;}
+}
 @media (max-width: 960px) {
     #mainWhoWeAre, #mainBusinessProcess, #mainOurValues, #mainRootcoreWay, #mainOurWork, #mainJoinUs {padding-top: 3.9rem; padding-bottom: 2.65rem;}
 
@@ -35,9 +38,12 @@
     #mainJoinUs > .wrap {display: flex; flex-direction: column; justify-content: center;}
     .join-wrap {margin-bottom: 50px; display: flex; flex-direction: column; justify-content: center;}
 }
-@media (max-width: 852px) {
+@media (max-width: 901px) {
+    .main-detail {padding-top: 36vh;}
+}
+@media (max-width: 882px) {
     /* main */
-    #submit {bottom: 9.42rem;}
+    #submit {bottom: 0rem;}
     .sub-box {margin: 0; top: 0; bottom: 0; border-radius: 0;}
     .sub-box > img {margin-left: 0px;}
     .sub-p {padding: 0 20px; padding-right: 0}

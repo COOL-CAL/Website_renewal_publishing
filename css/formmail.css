@@ -20,7 +20,6 @@
   margin-right: 5px;
   vertical-align: bottom;
   min-height: 30px;
-  cursor: pointer;
 }
 #contact #left .input_wr .load_ctnt { border: none; color: #fff; height: 40px; }
 #contact #left .input_wr #load_title { height: 0; min-width: 238px;text-overflow: ellipsis; overflow: hidden;-webkit-line-clamp: 1; -webkit-box-orient: vertical;word-break:keep-all; }

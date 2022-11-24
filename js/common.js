@@ -107,22 +107,34 @@ $(document).ready(function() {
         dots: true,
         infinite: true,
         arrows: true,
-        speed: 500,
+        autoplay: true,
+        autoplaySpeed: 7000,
+        // speed: 30000,
+        // fade: true,
+        // cssEase: "linear",
+        // pauseOnHover: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         responsive:[
             {
                 breakpoint: 360,
                 setting: {
-                    autoplay: true,
-                    autoplaySpeed: 10000,
+                    // autoplay: true,
+                    speed: 3000,
                 }
             },
             {
                 breakpoint: 768,
+                setting: {
+                    speed: 3000,
+                }
             },
             {
                 breakpoint: 1024,
+                setting: {
+                    // autoplaySpeed: 20000,
+                    speed: 5000,
+                }
             }
         ]
     });

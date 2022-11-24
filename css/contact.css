@@ -2,6 +2,7 @@
 
 #left { padding: 10rem 0; top: 0; position: fixed; max-width: 350px; }
 #left h1, #right h1 { font-size: 30px; }
+#left .input_wr { cursor: default; }
 #right { float: right; max-width: 717px; top: 0; padding-top:12.1rem; };
 #right h1 { padding-bottom: 50px; }
 .page-nm { margin-bottom: 40px; font-family: 'Montserrat',sans-serif; }

@@ -5,7 +5,7 @@
     .intro-ctnt > p, .v-ctnt1 > p, .process-ctnt > p, .way-ctnt > p, .work-ctnt > p, .join-wrap > p {font-size: 0.75rem;}
 
     /* main */
-    #submit {bottom: 9.42rem;}
+    /* #submit {bottom: 9.42rem;} */
     .sub-box {margin: 0; top: 0; bottom: 0; border-radius: 0;}
     .sub-box > a {margin-right: 10px;}
     .sub-p {padding: 0 10px; width: 64%;}
@@ -19,7 +19,7 @@
     .main-detail > h3 {font-size: 0.875rem;}
 
     /* Who We Are */
-    #mainWhoWeAre {margin-top: 22.125rem;}
+    #mainWhoWeAre {margin-top: 27.125rem;}
     .intro-ctnt > p {margin-bottom: 40px;}
     .intro-list ul {grid-template-columns: repeat(1, 1fr); max-width: 308px; margin: 0;}
     .intro-list li {width: 100%; max-height: 140px;}

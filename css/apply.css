@@ -29,7 +29,6 @@
     margin-right: 5px;
     vertical-align: bottom;
     min-height: 25px;
-    cursor: pointer;
 }
 #left .input_wr .apply_ctnt { border: none; color: #fff; height: 32px; }
 #left .input_wr span:nth-child(2){

@@ -92,7 +92,6 @@ main {
     z-index: 9999;
     margin-right: 30px;
 }
-/* .sub-btn a */
 .sub-btn:hover {
     background-color: #fff;
     border: 2px solid var(--mainColor);
@@ -169,7 +168,7 @@ main {
 .main-detail > h3 { font-family: 'Montserrat', sans-serif; font-weight: 500; font-size: 1.125rem; }
 
 /* Who We Are */
-#mainWhoWeAre { margin-top: 45rem; }
+#mainWhoWeAre { margin-top: 49.312rem; }
 .intro-ctnt { text-align: center; margin-bottom: 50px; margin: 0 20px; }
 .intro-ctnt > h2 { margin-bottom: 10px; }
 .intro-ctnt > p { margin-bottom: 50px; color: var(--lightGray); font-family: 'Montserrat', sans-serif; font-weight: 500; }
