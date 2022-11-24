@@ -41,7 +41,7 @@
 @media (max-width: 901px) {
     .main-detail {padding-top: 36vh;}
 }
-@media (max-width: 882px) {
+@media (max-width: 863px) {
     /* main */
     #submit {bottom: 0rem;}
     .sub-box {margin: 0; top: 0; bottom: 0; border-radius: 0;}

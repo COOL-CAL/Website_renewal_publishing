@@ -134,7 +134,7 @@ footer {
     .tel {margin-top: 2.15rem;}
 }
 @media screen and (max-width: 900px) { .tel {margin-bottom: 50px;}}
-@media screen and (max-width: 882px) { 
+@media screen and (max-width: 863px) { 
     .header-wrap {padding-top: 0;}
     .menu > a {display: none;}
     .menu > a:last-child {display: flex;}

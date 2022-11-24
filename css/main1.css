@@ -66,7 +66,6 @@ main {
 .sub-p > div > p { 
     font-family: 'Pretendard'; font-size: 1rem; font-weight: 300;
     color: #fff;
-    margin-right: 30px;
     display: inline-flex;
     align-items: center;
 }
@@ -85,6 +84,7 @@ main {
     flex-shrink: 0;
     z-index: 9999;
     margin-right: 30px;
+    margin-left: 10px;
 }
 .sub-btn:hover { background-color: #fff; border: 2px solid var(--mainColor); color: var(--mainColor); transition: all .5s; }
 .sub-btn>span { display: inline-block; }
