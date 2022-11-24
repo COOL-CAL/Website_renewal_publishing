@@ -1,9 +1,9 @@
 * { margin: 0 auto; padding: 0; }
 
 @keyframes move {
-    0% { opacity:1; }
-    50%{ opacity:1; transform: translateY(20px) ; }
-    100% { opacity:0; transform: translateY(40px); }
+    0% {opacity:1;}
+    50%{opacity:1; transform: translateY(20px);}
+    100% {opacity:0; transform: translateY(40px);}
 }
 .apply_stit{ font-weight:300; color:#999999; line-height: 22px; }
 
@@ -257,10 +257,17 @@
     transition-duration: 0s, 0s;
     animation: __capsule--rounded-ripple-in 0.5s cubic-bezier(0.4, 0, 0, 1);
 }
-.apply_cname{position:relative;}
-.apply_cname > div::after{content:"";position:absolute;width:0;height:3px; background:#191919;left:0;bottom:0;}
+.apply_cname{ position:relative; }
+.apply_cname>div::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background: #191919;
+    left: 0;
+    bottom: 0;
+}
 .apply_cname > div.on::after{width:100%;transition:all .5s;}
-
 .applicant-info input { 
     display: inline-flex;
     flex-direction: row;
@@ -297,10 +304,10 @@
     line-height: 19px;
 }
 .form-control:focus { outline: 0; border-color: var(--mainColor) !important; }
-.form-control::-moz-placeholder{color:#aaa}
-.form-control:-ms-input-placeholder{color:#aaa}
-.form-control::-webkit-input-placeholder{color:#aaa}
-.form-control[disabled],fieldset[disabled].form-control{cursor:not-allowed}
+.form-control::-moz-placeholder{ color:#aaa }
+.form-control:-ms-input-placeholder{ color:#aaa }
+.form-control::-webkit-input-placeholder{ color:#aaa }
+.form-control[disabled],fieldset[disabled].form-control{ cursor:not-allowed }
 
 /* 파일 첨부  */
 .apply-file-btn { position:static; padding-top: 14px; padding-right: 20px; }
@@ -326,11 +333,9 @@
     width: 110px;
     color: #fff;
     background: transparent;
-    /* background-color: #999999; */
     border-radius: 16px;
 }
-
-.apply_cont{margin-bottom:30px;}
+.apply_cont{ margin-bottom:30px; }
 .apply_cont > .apply_left > h1 { margin-bottom: 50px; }
 
 .sendBtn button {

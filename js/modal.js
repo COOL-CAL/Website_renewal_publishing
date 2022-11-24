@@ -16,16 +16,6 @@ window.onload = function() {
     btnModal.addEventListener("click", e => {
         modalOn()
     })
-    // const btnModal2 = document.querySelector(".ctnt-work")
-    // // function modalOn360() {
-    //     if( window <= 360) {
-    //         btnModal2.addEventListener("click", e => {
-    //             modalOn()
-    //         })
-    //     }
-    // // }
-    
-
     const closeBtn = modal.querySelector(".closeBtn")
     closeBtn.addEventListener("click", e => {
         modalOff()

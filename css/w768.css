@@ -83,8 +83,6 @@
     .join-btns a {padding: 22px 37px;}
     .join-btns a:first-child {margin-right: 0; margin-left: 0; margin-bottom: 20px;}
     .join-btns a {font-size: 16px; width: 37vw;}
-    /* .join-btn {margin-bottom: 10px;} */
-
 }
 @media (max-width: 721px) {
     .sub-p {

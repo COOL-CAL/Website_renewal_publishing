@@ -43,8 +43,6 @@ $(function(){
 		}
 		if(check >= 1){
 			$("#apply_type").addClass('min_auto');
-			// $(".load_ctnt").addClass('min_auto');
-			// $('#title').attr('readonly',false);
 		}else{
 			$("#apply_type").removeClass('min_auto');
 		}

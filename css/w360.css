@@ -5,7 +5,6 @@
     .intro-ctnt > p, .v-ctnt1 > p, .process-ctnt > p, .way-ctnt > p, .work-ctnt > p, .join-wrap > p {font-size: 0.75rem;}
 
     /* main */
-    /* #submit {bottom: 9.42rem;} */
     .sub-box {margin: 0; top: 0; bottom: 0; border-radius: 0;}
     .sub-box > a {margin-right: 10px;}
     .sub-p {padding: 0 10px; width: 64%;}
@@ -71,17 +70,6 @@
     .three-imgs .work-list-ctnt:hover .ctnt-work { margin-bottom: 20px;}
     .three-imgs .work-list-ctnt:hover .list-dark {display: none;}
     .three-imgs .work-list-ctnt .list-dark {display: block;}
-    /* .list-dark {display: none;} */
-    /* .magnify {
-        position: absolute;
-        opacity: 1;
-        top: 5%;
-        left: 76%;
-        color: #fff;
-        text-align: center;
-        width: auto;
-    } */
-    /* .magnify > img {width: 15vw;} */
     .magnify {display: none;}
 
     /* Contact */

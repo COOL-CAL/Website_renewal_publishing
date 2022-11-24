@@ -69,14 +69,6 @@ $(function(){
 		}
 	});
 
-
-
-
-
-
-
-
-
 	//예산
 	$(".budget_input").click(function(){  
 

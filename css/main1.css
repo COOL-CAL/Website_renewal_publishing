@@ -24,7 +24,6 @@ main {
     height: 937px !important;
     left: 0px !important;
     width: 10% !important;
-    cursor: url(../img/angle_left.png) !important;
     opacity: 50% !important;
     z-index: 1 !important;
 }
@@ -34,7 +33,6 @@ main {
     width: 10% !important;
     opacity: 50% !important;
     z-index: 1 !important;
-    cursor: url(../img/angle_right.png) !important;
 }
 
 /* 상단 문의버튼 box */
@@ -63,11 +61,7 @@ main {
     max-width: 100%;
     height: 60px;
 }
-.sub-p > div {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
+.sub-p > div { display: flex; justify-content: space-between; align-items: center; }
 .sub-p > img { width: 50px; margin: 0; }
 .sub-p > div > p { 
     font-family: 'Pretendard'; font-size: 1rem; font-weight: 300;
@@ -92,12 +86,7 @@ main {
     z-index: 9999;
     margin-right: 30px;
 }
-.sub-btn:hover {
-    background-color: #fff;
-    border: 2px solid var(--mainColor);
-    color: var(--mainColor);
-    transition: all .5s;
-}
+.sub-btn:hover { background-color: #fff; border: 2px solid var(--mainColor); color: var(--mainColor); transition: all .5s; }
 .sub-btn>span { display: inline-block; }
 @media(min-width:768px) {
     .sub-btn > span {
@@ -216,7 +205,6 @@ main {
 .v-ctnt1 > h2 { margin-bottom: 10px; }
 .v-ctnt1 > p { color: var(--gray2); width: 215px; }
 .v-ctnt2 {
-    /* max-width: 542px; */
     height: auto;
     border-radius: 16px;
     background-color: #00000091;
@@ -260,21 +248,14 @@ main {
     touch-action: pan-x;
     margin: 0 20px;
 }
-.process-list-wrap > div {
-    width: 260px;
-    height: auto;
-    margin-right: 20px !important;
-    position: relative;
-}
+.process-list-wrap > div { width: 260px; height: auto; margin-right: 20px !important; position: relative; }
 .process-list-wrap > div:last-child { margin-right: 0 !important; }
 .process-list-wrap > div:hover > .process-img > img {
     animation: undefined-easeOutBounce .8s linear 0s infinite alternate;
     -webkit-animation: undefined-easeOutBounce .8s linear 0s infinite alternate;
     -moz-animation: undefined-easeOutBounce .8s linear 0s infinite alternate;
 }
-.swiper-slide {
-    width: 260px !important;
-}
+.swiper-slide { width: 260px !important; }
 .swiper-notification {display: none;}
 @keyframes undefined-easeOutBounce {
 	0% { transform: translateY(0%); }
@@ -367,12 +348,7 @@ main {
 .team-names { margin-left: 20px; margin-bottom: 20px; }
 .team-names > div { display: flex; margin-top: 5px; }
 .team-names > div > p { margin-right: 5px;}
-.team-nm-detail {
-    font-size: 14px;
-    font-weight: bold;
-    color: var(--mainColor);
-    margin-left: 0;
-}
+.team-nm-detail { font-size: 14px; font-weight: bold; color: var(--mainColor); margin-left: 0; }
 .team-nm-en { font-size: 12px; margin-left: 0; }
 .team-tag { font-size: 14px; line-height: 1.25rem; color: var(--lightGray); }
 
@@ -454,18 +430,11 @@ main {
     background: rgba(0, 0, 0, 0.6);
     backdrop-filter: blur(2px);
     border-radius: 16px;
-    /* max-width: 687px;
-    height: 141px; */
     padding: 2.5rem;
     box-sizing: border-box;
 }
 .join-ctnt { margin-left: 4px; font-size: 14px; font-family: 'Pretendard'; font-weight: 300; }
-.join-btns {
-    display: flex;
-    /* justify-content: space-between; */
-    margin-top: 10px;
-    /* box-sizing: border-box; */
-}
+.join-btns { display: flex; margin-top: 10px; }
 .join-btns a { 
     text-align: center;
     border: 1px solid #fff;
@@ -482,18 +451,6 @@ main {
     font-family: 'Pretendard';
     font-weight: 200;
     color: #fff;
-
-    /* width: 49%; */
-    /* height: 67px; */
-    /* text-align: center; */
-    /* border: 1px solid #fff; */
-    /* box-sizing: border-box; */
-    /* padding: 1em 0; */
-    /* display: flex;
-    align-items: center; */
-    /* font-family: "GT Walsheim Pro"; */
-    /* font-weight: 400; */
-    /* font-size: 2.6042vw; */
 }
 .join-btns img { width: 12px; margin-left: 9px;}
 .join-btns a:first-child { margin-right: 20px; }

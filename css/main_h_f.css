@@ -147,5 +147,5 @@ footer {
 }
 @media (max-width: 680px) { .logo-box {margin-bottom: 1.875rem;} }
 @media all and (max-width: 360px) {
-    .header-wrap { padding-top: 0 !important; }
+    .header-wrap {padding-top: 0 !important;}
 }
